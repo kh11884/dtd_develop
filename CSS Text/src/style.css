@@ -1,0 +1,25 @@
+body{
+color: #676565;
+background-color: #feeed6;
+}
+p{
+font: 12px "arial";
+}
+
+h1{
+font: 20px "arial";
+font-weight: normal;
+}
+
+.blueText{
+font-weight: bold;
+color: #378db2;
+}
+
+.line-throughText{
+text-decoration: line-through;
+}
+
+:first-letter p{
+margin-left: 20px;
+}
