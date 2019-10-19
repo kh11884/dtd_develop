@@ -1,0 +1,25 @@
+table{
+border-collapse: collapse;
+width: 600px;
+}
+
+th{
+border: 1px solid #cccccc;
+background-color: #3498db;
+color: white;
+text-align: left;
+padding: 8px;
+font: 15px "Open Sans";
+font-weight: bold;
+}
+
+td{
+border: 1px solid #cccccc;
+padding: 10px;
+padding-left: 8px;
+font: 15px "Open Sans";
+}
+
+.evenRow{
+background-color: #eeeeee;
+}
