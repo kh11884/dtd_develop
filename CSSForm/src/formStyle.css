@@ -1,0 +1,54 @@
+h1 {
+    font: 28px "arial";
+    color: #676565;
+    margin-bottom: 3px;
+    padding-left: 18px;
+}
+
+.outDiv {
+    font: 12px "arial";
+    color: #676565;
+    background-color: #feeed6;
+    width: 640px;
+    padding: 18px;
+    overflow: hidden;
+}
+
+.inDiv {
+    width: 97%;
+    alignment: center;
+    margin-bottom: 8px;
+}
+
+label {
+    font-weight: bold;
+    height: 24px;
+}
+
+input {
+    width: 100%;
+    height: 18px;
+    border: none;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font: 12px "arial";
+}
+
+button {
+    background-color: #378db2;
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    float: right;
+}

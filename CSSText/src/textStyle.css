@@ -1,8 +1,8 @@
-div{
-color: #676565;
-background-color: #feeed6;
-width: 560px;
-padding: 10px;
+div {
+    color: #676565;
+    background-color: #feeed6;
+    width: 560px;
+    padding: 10px;
 }
 
 p{
@@ -21,7 +21,6 @@ font-weight: normal;
 .blueText{
 font-weight: bold;
 color: #378db2;
-text-indent: -3 em;
 }
 
 .line-throughText{
