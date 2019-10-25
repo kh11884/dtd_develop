@@ -1,26 +1,25 @@
+.head1 {
+    font: 28px "arial";
+    font-weight: normal;
+    padding-bottom: 4px;
+}
 
 .block1 {
     color: #676565;
     background-color: #feeed6;
     padding: 3px 9px;
-    max-width: 716px;
+    max-width: 720px;
 }
 
 .paragraph1 {
     font: 16px "arial";
-    padding: 5px 0;
+    padding: 6px 0;
 }
 
 .paragraph2 {
-    font: 15px "Arial";
+    font: 15px "arial";
     text-indent: 1em;
     padding: 10px 0;
-}
-
-.head1 {
-    font: 28px "arial";
-    font-weight: normal;
-    padding-bottom: 4px;
 }
 
 .blue_text {

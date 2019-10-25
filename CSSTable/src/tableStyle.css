@@ -1,6 +1,10 @@
+body {
+    font: 22px "Humanst521 Lt BT";
+}
+
 .block1 {
-    max-width: 600px;
-    height: 216px;
+    max-width: 750px;
+    height: 270px;
 }
 
 .table1 {
@@ -16,14 +20,12 @@
     color: white;
     text-align: left;
     padding: 8px;
-    font: 16px "Humanst521 Lt BT";
     font-weight: bold;
 }
 
 .table1 td {
     border: 1px solid #cccccc;
     padding: 8px 10px 7px;
-    font: 17px "Humanst521 Lt BT";
 }
 
 .table1 tr:nth-child(odd) {
