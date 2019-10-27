@@ -1,30 +1,41 @@
-.head1 {
+.topic {
     font: 28px "arial";
     font-weight: normal;
-    padding-bottom: 4px;
+    padding-bottom: 3px;
+    line-height: 110%
 }
 
-.block1 {
+.text_block {
+    box-sizing: border-box;
     color: #676565;
     background-color: #feeed6;
-    padding: 3px 9px;
-    max-width: 720px;
+    padding: 5px 10px 0;
+    max-width: 740px;
 }
 
-.paragraph1 {
+.summary_text {
     font: 16px "arial";
-    padding: 6px 0;
+    padding-top: 10px;
+    line-height: 1
 }
 
-.paragraph2 {
-    font: 15px "arial";
+.main_text {
+    font: 96% "arial";
     text-indent: 1em;
-    padding: 10px 0;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    text-align: justify;
+    line-height: 1.4;
 }
 
 .blue_text {
+    font: 16px "arial";
     font-weight: bold;
     color: #378db2;
+}
+
+p.blue_text {
+    padding-top: 14px;
 }
 
 .line-through_text {
