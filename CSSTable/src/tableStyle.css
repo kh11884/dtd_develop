@@ -15,27 +15,39 @@ body {
 }
 
 .table1 th {
+    box-sizing: border-box;
     border: 1px solid #cccccc;
     background-color: #3498db;
     color: white;
     text-align: left;
-    padding: 8px;
+    height: 46px;
+    vertical-align: middle;
+    padding-left: 8px;
     font-weight: bold;
 }
 
 .table1 td {
+    box-sizing: border-box;
     border: 1px solid #cccccc;
     padding: 8px 10px 7px;
+}
+
+.first_row {
+    height: 45px;
 }
 
 .table1 tr:nth-child(odd) {
     background-color: #eeeeee;
 }
 
-.column1 .column2 {
-    width: 20%;
+.column1 {
+    width: 20.3%;
+}
+
+.column2 {
+    width: 20.2%;
 }
 
 .column4 {
-    width: 24%;
+    width: 23.4%;
 }
