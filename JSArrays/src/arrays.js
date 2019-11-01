@@ -29,7 +29,7 @@ function getSumEvenElements(array) {
 function getOneHundredRowArray() {
     var array = [];
     for (var i = 0; i < 100; i++) {
-        array[i] = i + 1;
+        array.push(i + 1);
     }
     return array;
 }
