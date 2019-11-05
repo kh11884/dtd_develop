@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Перевод температур</title>
+    <link rel="stylesheet" type="text/css" href="reset.css"/>
+    <link rel="stylesheet" type="text/css" href="temperatureConverterStyle.css"/>
+</head>
+<body>
+<div>
+    <img id="icon" src="icon.jpg" alt="картинка градусники"><br/>
+    <h1>Перевод температур<br/>из градусов Цельсия в градусы Кельвина и Фаренгейта</h1>
+    <span>Введите градусы цельсия:</span>
+    <label>
+        <input id="inputDegrees" type="number">
+    </label>
+    <button id="convertButton" type="button">Перевести</button>
+    <ul class="result">
+        <li>Кельвина: <span id="resultCalvin"></span></li>
+        <li>Фаренгейта: <span id="resultFahrenheit"></span></li>
+        <li id="errorMessage" style="display: none">Температуры ниже абсолютного нуля не бывает.</li>
+    </ul>
+</div>
+<script type="text/javascript" src="temperatureConverter.js"></script>
+</body>
+</html>
