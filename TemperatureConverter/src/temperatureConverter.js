@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", ready);
 
 function ready() {
-    var convertButton = document.getElementById("convertButton");
-    var celsiusValue = document.getElementById("inputDegrees");
-    var kalvinValue = document.getElementById("resultCalvin");
-    var fahrenheitValue = document.getElementById("resultFahrenheit");
-    var errorMessage = document.getElementById("errorMessage");
+    var convertButton = document.getElementById("convert_button");
+    var celsiusValue = document.getElementById("input_degrees");
+    var kalvinValue = document.getElementById("result_calvin");
+    var fahrenheitValue = document.getElementById("result_fahrenheit");
+    var errorMessage = document.getElementById("error_message");
 
     convertButton.addEventListener("click", function () {
         var inputValue = celsiusValue.value;
