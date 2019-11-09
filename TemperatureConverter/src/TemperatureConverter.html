@@ -7,18 +7,20 @@
     <link rel="stylesheet" type="text/css" href="temperatureConverterStyle.css"/>
 </head>
 <body>
-<div>
-    <img id="icon" src="icon.jpg" alt="картинка градусники"><br/>
-    <h1>Перевод температур<br/>из градусов Цельсия в градусы Кельвина и Фаренгейта</h1>
+<div class="main_section">
+    <img class="basic_image" src="icon.jpg" alt="картинка градусники"><br/>
+    <h1 class="heading">Перевод температур<br/>из градусов Цельсия в градусы Кельвина и Фаренгейта</h1>
     <span>Введите градусы цельсия:</span>
     <label>
         <input id="input_degrees" type="number">
     </label>
     <button id="convert_button" type="button">Перевести</button>
     <ul class="result">
-        <li>Кельвина: <span id="result_calvin"></span></li>
+        <li>Кельвина: <span id="result_kelvin"></span></li>
         <li>Фаренгейта: <span id="result_fahrenheit"></span></li>
-        <li id="error_message" style="display: none">Температуры ниже абсолютного нуля не бывает.</li>
+        <li class="error_message" id="calc_error_message" style="display: none">Температуры ниже абсолютного нуля не
+            бывает.
+        </li>
     </ul>
 </div>
 <script type="text/javascript" src="temperatureConverter.js"></script>

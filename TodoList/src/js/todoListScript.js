@@ -1,3 +1,21 @@
+function showEditField() {
+    taskSpan.style.display = "none";
+    editButton.style.display = "none";
+    removeButton.style.display = "none";
+    editField.style.display = "inline";
+    okButton.style.display = "inline";
+    cancelButton.style.display = "inline";
+}
+
+function showTaskField() {
+    taskSpan.style.display = "inline";
+    editButton.style.display = "inline";
+    removeButton.style.display = "inline";
+    editField.style.display = "none";
+    okButton.style.display = "none";
+    cancelButton.style.display = "none";
+}
+
 document.addEventListener("DOMContentLoaded", ready);
 
 function ready() {
@@ -10,27 +28,30 @@ function ready() {
         if (newTaskText === "") {
             return;
         }
+
         var taskElement = document.createElement("li");
 
         var taskSpan = document.createElement("span");
         taskSpan.textContent = newTaskText;
+        taskSpan.className = "task_field";
 
         var removeButton = document.createElement("button");
         removeButton.type = "button";
-        removeButton.style.marginRight = "6px";
+        removeButton.className = "small_button";
         var removeIcon = document.createElement("img");
-        removeIcon.src = "remove_icon.png";
-        removeIcon.style.width = "16px";
+        removeIcon.src = "icons/remove_icon.png";
+        removeIcon.className = "small_button_icon";
         removeButton.appendChild(removeIcon);
         removeButton.addEventListener("click", function () {
             todoList.removeChild(taskElement);
         });
 
-        var editButton = document.createElement("button");
+        var editButton = document.createElement("button",);
         editButton.type = "button";
+        editButton.className = "small_button";
         var editIcon = document.createElement("img");
-        editIcon.src = "editing_icon.png";
-        editIcon.style.width = "16px";
+        editIcon.src = "icons/editing_icon.png";
+        editIcon.className = "small_button_icon";
         editButton.appendChild(editIcon);
         editButton.addEventListener("click", function () {
             editField.value = taskSpan.textContent;
@@ -39,57 +60,41 @@ function ready() {
 
         var editField = document.createElement("input");
         editField.type = "text";
+        editField.className = "task_field";
 
-        var OKButton = document.createElement("button");
-        OKButton.type = "button";
-        var OKIcon = document.createElement("img");
-        OKIcon.src = "ok_icon.png";
-        OKIcon.style.width = "16px";
-        OKButton.appendChild(OKIcon);
-        OKButton.addEventListener("click", function () {
+        var okButton = document.createElement("button");
+        okButton.type = "button";
+        okButton.className = "small_button";
+        var okIcon = document.createElement("img");
+        okIcon.src = "icons/ok_icon.png";
+        okIcon.className = "small_button_icon";
+        okButton.appendChild(okIcon);
+        okButton.addEventListener("click", function () {
             taskSpan.textContent = editField.value;
             showTaskField();
         });
 
         var cancelButton = document.createElement("button");
         cancelButton.type = "button";
-        cancelButton.style.marginRight = "6px";
+        cancelButton.className = "small_button";
         var cancelIcon = document.createElement("img");
-        cancelIcon.src = "cancel_icon.png";
-        cancelIcon.style.width = "16px";
+        cancelIcon.src = "icons/cancel_icon.png";
+        cancelIcon.className = "small_button_icon";
         cancelButton.appendChild(cancelIcon);
         cancelButton.addEventListener("click", showTaskField);
 
         editField.style.display = "none";
-        OKButton.style.display = "none";
+        okButton.style.display = "none";
         cancelButton.style.display = "none";
 
         todoList.appendChild(taskElement);
         taskElement.appendChild(editButton);
         taskElement.appendChild(removeButton);
         taskElement.appendChild(taskSpan);
-        taskElement.appendChild(OKButton);
+        taskElement.appendChild(okButton);
         taskElement.appendChild(cancelButton);
         taskElement.appendChild(editField);
 
         newTask.value = "";
-
-        function showEditField() {
-            taskSpan.style.display = "none";
-            editButton.style.display = "none";
-            removeButton.style.display = "none";
-            editField.style.display = "inline";
-            OKButton.style.display = "inline";
-            cancelButton.style.display = "inline";
-        }
-
-        function showTaskField() {
-            taskSpan.style.display = "inline";
-            editButton.style.display = "inline";
-            removeButton.style.display = "inline";
-            editField.style.display = "none";
-            OKButton.style.display = "none";
-            cancelButton.style.display = "none";
-        }
     })
 }

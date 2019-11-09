@@ -1,0 +1,17 @@
+.root_div {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.small_button + .task_field {
+    margin-left: 6px;
+}
+
+.small_button_icon {
+    width: 16px;
+}
