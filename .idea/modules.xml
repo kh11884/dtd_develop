@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/1_forTest/1_forTest.iml" filepath="$PROJECT_DIR$/1_forTest/1_forTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/AcademITScoool_ClientWEB.iml" filepath="$PROJECT_DIR$/.idea/AcademITScoool_ClientWEB.iml" />
       <module fileurl="file://$PROJECT_DIR$/CSSForm/CSSForm.iml" filepath="$PROJECT_DIR$/CSSForm/CSSForm.iml" />
       <module fileurl="file://$PROJECT_DIR$/CSSTable/CSSTable.iml" filepath="$PROJECT_DIR$/CSSTable/CSSTable.iml" />
