@@ -138,10 +138,7 @@ function getCountries() {
 
 function getMaxCitiesCount(countries) {
     return countries.reduce(function (maxValue, item) {
-        if (item.cities.length > maxValue) {
-            maxValue = item.cities.length;
-        }
-        return maxValue;
+        return item.cities.length > maxValue ? item.cities.length : maxValue;
     }, 0);
 }
 
@@ -149,24 +146,23 @@ function getMostCitiesCountries(countries) {
     var maxCitiesCount = getMaxCitiesCount(countries);
 
     return countries.filter(function (mostCitiesCountries) {
-            return mostCitiesCountries.cities.length === maxCitiesCount;
-        }
-    );
+        return mostCitiesCountries.cities.length === maxCitiesCount;
+    });
 }
 
 function getMostCitiesCountriesOneRun(countries) {
     var mostCitiesCountries = [];
+    var maxCityCount = 0;
 
-    countries.reduce(function (cityCount, country) {
-        if (cityCount === country.cities.length) {
+    countries.forEach(function (country) {
+        if (maxCityCount === country.cities.length) {
             mostCitiesCountries.push(country);
-        } else if (cityCount < country.cities.length) {
-            cityCount = country.cities.length;
+        } else if (maxCityCount < country.cities.length) {
+            maxCityCount = country.cities.length;
             mostCitiesCountries = [];
             mostCitiesCountries.push(country);
         }
-        return cityCount;
-    }, 0);
+    });
 
     return mostCitiesCountries;
 }
@@ -178,10 +174,13 @@ function getSumPopulation(country) {
 }
 
 function getCountriesPopulation(countries) {
-    return countries.reduce(function (countriesPopulation, country) {
+    var countriesPopulation = {};
+
+    countries.forEach(function (country) {
         countriesPopulation[country.name] = getSumPopulation(country);
-        return countriesPopulation;
-    }, {});
+    });
+
+    return countriesPopulation;
 }
 
 console.log(getMostCitiesCountries(getCountries()));

@@ -1,29 +1,27 @@
-function showEditField() {
-    taskSpan.style.display = "none";
-    editButton.style.display = "none";
-    removeButton.style.display = "none";
-    editField.style.display = "inline";
-    okButton.style.display = "inline";
-    cancelButton.style.display = "inline";
-}
-
-function showTaskField() {
-    taskSpan.style.display = "inline";
-    editButton.style.display = "inline";
-    removeButton.style.display = "inline";
-    editField.style.display = "none";
-    okButton.style.display = "none";
-    cancelButton.style.display = "none";
-}
-
-document.addEventListener("DOMContentLoaded", ready);
-
 function ready() {
     var todoList = document.getElementById("todo_list");
     var newTask = document.getElementById("new_task");
     var addButton = document.getElementById("add_button");
 
     addButton.addEventListener("click", function () {
+        function showEditField() {
+            taskSpan.style.display = "none";
+            editButton.style.display = "none";
+            removeButton.style.display = "none";
+            editField.style.display = "inline";
+            okButton.style.display = "inline";
+            cancelButton.style.display = "inline";
+        }
+
+        function showTaskField() {
+            taskSpan.style.display = "inline";
+            editButton.style.display = "inline";
+            removeButton.style.display = "inline";
+            editField.style.display = "none";
+            okButton.style.display = "none";
+            cancelButton.style.display = "none";
+        }
+
         var newTaskText = newTask.value;
         if (newTaskText === "") {
             return;
@@ -98,3 +96,5 @@ function ready() {
         newTask.value = "";
     })
 }
+
+document.addEventListener("DOMContentLoaded", ready);

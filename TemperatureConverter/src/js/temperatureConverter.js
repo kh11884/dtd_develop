@@ -6,8 +6,6 @@ function calcFahrenheitDegrees(celsiusDegrees) {
     return parseFloat(celsiusDegrees) * 1.8 + 32;
 }
 
-document.addEventListener("DOMContentLoaded", ready);
-
 function ready() {
     var convertButton = document.getElementById("convert_button");
     var celsiusValue = document.getElementById("input_degrees");
@@ -31,3 +29,5 @@ function ready() {
         }
     })
 }
+
+document.addEventListener("DOMContentLoaded", ready);
