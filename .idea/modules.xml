@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/JSObjects/JSObjects.iml" filepath="$PROJECT_DIR$/JSObjects/JSObjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/TemperatureConverter/TemperatureConverter.iml" filepath="$PROJECT_DIR$/TemperatureConverter/TemperatureConverter.iml" />
       <module fileurl="file://$PROJECT_DIR$/TodoList/TodoList.iml" filepath="$PROJECT_DIR$/TodoList/TodoList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TodoList JQuery/TodoList JQuery.iml" filepath="$PROJECT_DIR$/TodoList JQuery/TodoList JQuery.iml" />
     </modules>
   </component>
 </project>

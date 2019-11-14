@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список дел</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="js/libs/jquery-ui-1.12.1/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="css/todoListStyle.css"/>
+</head>
+<body>
+<div class="root_div">
+    <h1 class="heading">Список дел:</h1>
+    <div>
+        <label>
+            <input id="new_task" type="text">
+        </label>
+        <button id="add_button" type="button">Добавить</button>
+    </div>
+    <ul id="todo_list">
+    </ul>
+</div>
+<div id="confirm-dialog" title="Удалить элемент?">
+</div>
+<script src="js/libs/jquery-ui-1.12.1/jquery-3.4.1.js"></script>
+<script src="js/libs/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script src="js/todoListScript.js"></script>
+</body>
+</html>
