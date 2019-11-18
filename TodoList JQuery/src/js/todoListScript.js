@@ -15,11 +15,17 @@ $(function () {
         }
 
         function changeTaskName() {
-            taskSpan.text(editField.val());
-            showTaskField();
+            var newTaskName = editField.val().trim();
+            if (newTaskName === "") {
+                showConfirmDialog();
+            } else {
+                taskSpan.text(newTaskName);
+                showTaskField();
+            }
         }
 
         function showConfirmDialog() {
+            $("#dialog-text").show();
             confirmDialog.dialog('option', 'buttons',
                 [
                     {
@@ -39,7 +45,7 @@ $(function () {
             ).dialog("open");
         }
 
-        var newTaskText = newTask.val();
+        var newTaskText = newTask.val().trim();
         if (newTaskText === "") {
             return;
         }
@@ -49,14 +55,14 @@ $(function () {
         taskSpan.addClass("task_field");
 
         var removeButton = $("<button type='button' class='small_button'>");
-        var removeIcon = $("<img alt='del' src='../icons/remove_icon.png' class='small_button_icon'>");
+        var removeIcon = $("<img alt='del' src='icons/remove_icon.png' class='small_button_icon'>");
         removeButton.append(removeIcon);
         removeButton.click(function () {
             showConfirmDialog();
         });
 
         var editButton = $("<button type='button' class='small_button'>");
-        var editIcon = $("<img alt='edit' src='../icons/editing_icon.png' class='small_button_icon'>");
+        var editIcon = $("<img alt='edit' src='icons/editing_icon.png' class='small_button_icon'>");
         editButton.append(editIcon);
         editButton.click(function () {
             editField.val(taskSpan.text());
@@ -67,19 +73,18 @@ $(function () {
         editField.keydown(function (event) {
             if (event.keyCode === 13) {
                 changeTaskName();
-            }
-            if (event.keyCode === 27) {
+            } else if (event.keyCode === 27) {
                 showTaskField();
             }
         });
 
         var okButton = $("<button type='button' class='small_button'>");
-        var okIcon = $("<img alt='edit' src='../icons/ok_icon.png' class='small_button_icon'>");
+        var okIcon = $("<img alt='edit' src='icons/ok_icon.png' class='small_button_icon'>");
         okButton.append(okIcon);
         okButton.click(changeTaskName);
 
         var cancelButton = $("<button type='button' class='small_button'>");
-        var cancelIcon = $("<img alt='edit' src='../icons/cancel_icon.png' class='small_button_icon'>");
+        var cancelIcon = $("<img alt='edit' src='icons/cancel_icon.png' class='small_button_icon'>");
         cancelButton.append(cancelIcon);
         cancelButton.click(showTaskField);
 
@@ -114,8 +119,7 @@ $(function () {
     newTask.keydown(function (event) {
         if (event.keyCode === 13) {
             addTask();
-        }
-        if (event.keyCode === 27) {
+        } else if (event.keyCode === 27) {
             clearNewTaskField();
         }
     });

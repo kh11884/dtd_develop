@@ -68,8 +68,12 @@ function ready() {
         okIcon.className = "small_button_icon";
         okButton.appendChild(okIcon);
         okButton.addEventListener("click", function () {
-            taskSpan.textContent = editField.value;
-            showTaskField();
+            if (editField.value === "") {
+                todoList.removeChild(taskElement);
+            } else {
+                taskSpan.textContent = editField.value;
+                showTaskField();
+            }
         });
 
         var cancelButton = document.createElement("button");
@@ -94,7 +98,7 @@ function ready() {
         taskElement.appendChild(editField);
 
         newTask.value = "";
-    })
+    });
 }
 
 document.addEventListener("DOMContentLoaded", ready);

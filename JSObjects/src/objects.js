@@ -138,7 +138,7 @@ function getCountries() {
 
 function getMaxCitiesCount(countries) {
     return countries.reduce(function (maxValue, item) {
-        return item.cities.length > maxValue ? item.cities.length : maxValue;
+        return Math.max(maxValue, item.cities.length);
     }, 0);
 }
 
