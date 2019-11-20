@@ -150,9 +150,24 @@ function getRefinancingRateHistory() {
 
     var x = getRefinancingRateHistory();
 
+    var issueData = new Date("25/06/2015");
+
+    x.forEach(function(item){
+    if (issueData >= item.data){
+    console.log("xxx");
+    console.log(Math.ceil((item.data - issueData)/ (1000 * 3600 * 24)));
+    }
+    });
 
 
-    console.log(x[0].data);
+
+//    for(var x = 2009; x < 2019; x++){
+//    console.log(Math.ceil((new Date("01/01/" + x) - new Date("01/01/"+(x+1)))/ (1000 * 3600 * 24)));
+//    }
+//
+//
+//
+//    console.log((new Date("01/01/2009") - new Date("01/01/2010"))/ (1000 * 3600 * 24));
 
 
 
