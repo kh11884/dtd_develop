@@ -177,7 +177,33 @@ function getFirstPeriodDays_alternate(issueData) {
     }
 }
 
-alert(getFirstPeriodDays_alternate(new Date("11/26/2009")));
+
+function calc (payment){
+var period = getRefinancingRateHistory();
+
+period.forEach(function(item){
+    var row = $("<tr>");
+    var cell1 = $("<td>").text(payment);
+    var options = { year: 'numeric', month: 'short', day: 'numeric' };
+    var cell2 = $("<td>").text(item.data.toLocaleString('ru-RU', options));
+
+    var cell4 = $("<td>").text(item.days);
+    var cell5 = $("<td>").text((item.refinancing_rate * 100).toFixed(2) + " %");
+    var cell6 = $("<td>").text((payment * item.days * item.refinancing_rate/360).toFixed(2));
+
+    row.append(cell1)
+        .append(cell2)
+        .append(cell4)
+        .append(cell5)
+        .append(cell6);
+    tableBody.append(row);
+
+})
+
+}
+
+var tableBody = $("#table_body");
+calc(10000);
 
 
 
