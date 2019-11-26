@@ -177,7 +177,110 @@ function getFirstPeriodDays_alternate(issueData) {
     }
 }
 
-alert(getFirstPeriodDays_alternate(new Date("11/26/2009")));
+function getFirstPeriodRefinancingRate(issueDate) {
+    var refinancingRateHistory = getRefinancingRateHistory();
+    var days = undefined;
+    for (var i = 0; i < refinancingRateHistory.length - 1; i++) {
+        days = Math.ceil((refinancingRateHistory[i].data - issueDate) / (1000 * 3600 * 24));
+        if (days > 0) {
+            return refinancingRateHistory[i-1].refinancing_rate;
+        }
+    }
+}
+
+
+function calc (payment){
+var period = getRefinancingRateHistory();
+
+period.forEach(function(item){
+    var row = $("<tr>");
+    var cell1 = $("<td>").text(payment);
+    var cell2 = $("<td>").text(item.data.toLocaleString('ru-RU', options));
+    var cell3 = $("<td>").text(calcFinDate(item.data, item.days).toLocaleString('ru-RU', options));
+    var cell4 = $("<td>").text(item.days);
+    var cell5 = $("<td>").text((item.refinancing_rate * 100).toFixed(2) + " %");
+    var cell6 = $("<td>").text((payment * item.days * item.refinancing_rate/360).toFixed(2));
+
+    row.append(cell1)
+        .append(cell2)
+        .append(cell3)
+        .append(cell4)
+        .append(cell5)
+        .append(cell6);
+    tableBody.append(row);
+})
+}
+
+function calcFinDate(startDate, days){
+startDate.setDate(startDate.getDate() + days - 1);
+return startDate;
+}
+
+function createTableHead(){
+var rowHead1 = $("<tr>");
+rowHead1.append($("<th rowspan=\"2\">").text("Сп"))
+        .append($("<th colspan=\"2\">").text("Период"))
+        .append($("<th rowspan=\"2\">").text("Д"))
+        .append($("<th rowspan=\"2\">").text("ст,%"))
+        .append($("<th rowspan=\"2\">").text("Прс"));
+tableHead.append(rowHead1);
+var rowHead2 = $("<tr>");
+rowHead2.append($("<th>").text("начало"))
+        .append($("<th>").text("конец"));
+
+tableHead.append(rowHead2);
+}
+
+function createInfoTable(currentDate, UNPlatSum, platSum, days, percentSum){
+var rowHead1 = $("<tr>").append($("<th>").text("Рассчет процентов за отсрочку таможенного платежа (5010 вид) от "))
+        .append($("<th>").text(currentDate.toLocaleString('ru-RU', options)));
+var row2 = $("<tr>").append($("<td>").text("Сумма условно-начисленных платежей "))
+        .append($("<td>").text(UNPlatSum));
+var row3 = $("<tr>").append($("<td>").text("Сумма платежа по которому предоставлена отсрочка "))
+        .append($("<td>").text(platSum));
+var row4 = $("<tr>").append($("<td>").text("количество дней отсрочки "))
+        .append($("<td>").text(days));
+var row5 = $("<tr>").append($("<td>").text("Сумма процентов за отсрочку таможенного платежа "))
+        .append($("<td>").text(percentSum));
+
+infoTableHead.append(rowHead1);
+infoTableBody.append(row2)
+              .append(row3)
+              .append(row4)
+              .append(row5);
+}
+
+function getCurrentPeriod(issueDate, applicationDate){
+var currentPeriod = [];
+currentPeriod.push(        {
+                               data: issueDate,
+                               refinancing_rate: getFirstPeriodRefinancingRate(issueDate),
+                               days: getFirstPeriodDays_alternate(issueDate)
+                           });
+
+
+
+alert(currentPeriod[0].refinancing_rate);
+
+
+//currentPeriod.push(        {
+//                               data: applicationDate,
+//                               refinancing_rate: 0.065,
+//                               days: getFirstPeriodDays_alternate(issueDate)
+//                           });
+}
+
+var options = { year: 'numeric', month: 'short', day: 'numeric' };
+
+var infoTableHead = $("#info_table_head");
+var infoTableBody = $("#info_table_body");
+var tableHead = $("#print_table_head");
+var tableBody = $("#print_table_body");
+
+createInfoTable(new Date());
+createTableHead();
+calc(10000);
+getCurrentPeriod(new Date("11/26/2009"), new Date("11/27/2009"));
 
 
 
