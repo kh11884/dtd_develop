@@ -257,17 +257,6 @@ currentPeriod.push(        {
                                refinancing_rate: getFirstPeriodRefinancingRate(issueDate),
                                days: getFirstPeriodDays_alternate(issueDate)
                            });
-
-
-
-alert(currentPeriod[0].refinancing_rate);
-
-
-//currentPeriod.push(        {
-//                               data: applicationDate,
-//                               refinancing_rate: 0.065,
-//                               days: getFirstPeriodDays_alternate(issueDate)
-//                           });
 }
 
 var options = { year: 'numeric', month: 'short', day: 'numeric' };
@@ -280,7 +269,7 @@ var tableBody = $("#print_table_body");
 createInfoTable(new Date());
 createTableHead();
 calc(10000);
-getCurrentPeriod(new Date("11/26/2009"), new Date("11/27/2009"));
+getCurrentPeriod(new Date("11/26/2009"), new Date());
 
 
 
