@@ -5,7 +5,7 @@ $(function () {
 
     function addTask() {
         function showEditField() {
-            taskElement.attr('class', 'list-group-item list-group-item-action list-group-item-dark');
+            taskElement.addClass('list-group-item-warning');
             taskSet.hide();
             editTaskSet.show();
         }
@@ -13,7 +13,7 @@ $(function () {
         function showTaskField() {
             taskSet.show();
             editTaskSet.hide();
-            taskElement.attr('class', 'list-group-item list-group-item-action');
+            taskElement.removeClass('list-group-item-warning');
         }
 
         function changeTaskName() {
@@ -43,14 +43,14 @@ $(function () {
         taskSpan.text(newTaskText);
         taskSpan.addClass("task_field");
 
-        var removeButton = $("<button type='button' class='small_button'>");
+        var removeButton = $("<button type='button' title='удалить' class='btn btn-outline-danger'>");
         var removeIcon = $("<img alt='del' src='icons/remove_icon.png' class='small_button_icon'>");
         removeButton.append(removeIcon);
         removeButton.click(function () {
             showConfirmDialog();
         });
 
-        var editButton = $("<button type='button' class='small_button'>");
+        var editButton = $("<button type='button' title='редактировать' class='btn btn-outline-warning'>");
         var editIcon = $("<img alt='edit' src='icons/editing_icon.png' class='small_button_icon'>");
         editButton.append(editIcon);
         editButton.click(function () {
@@ -58,7 +58,7 @@ $(function () {
             showEditField();
         });
 
-        var editField = $("<input type='text' class='task_field' style='width: 89%'>");
+        var editField = $("<input type='text' class='form-control'>");
         editField.keydown(function (event) {
             if (event.keyCode === 13) {
                 changeTaskName();
@@ -67,13 +67,13 @@ $(function () {
             }
         });
 
-        var okButton = $("<button type='button' class='small_button'>");
-        var okIcon = $("<img alt='edit' src='icons/ok_icon.png' class='small_button_icon'>");
+        var okButton = $("<button type='button' title='сохранить' class='btn btn-outline-success'>");
+        var okIcon = $("<img alt='ok' src='icons/ok_icon.png' class='small_button_icon'>");
         okButton.append(okIcon);
         okButton.click(changeTaskName);
 
-        var cancelButton = $("<button type='button' class='small_button'>");
-        var cancelIcon = $("<img alt='edit' src='icons/cancel_icon.png' class='small_button_icon'>");
+        var cancelButton = $("<button type='button' title='отмена' class='btn btn-outline-danger'>");
+        var cancelIcon = $("<img alt='cancel' src='icons/cancel_icon.png' class='small_button_icon'>");
         cancelButton.append(cancelIcon);
         cancelButton.click(showTaskField);
 
@@ -82,10 +82,13 @@ $(function () {
             .add(removeButton)
             .add(taskSpan);
 
-        var editTaskSet = $()
-            .add(okButton)
-            .add(cancelButton)
-            .add(editField);
+        var editButtonsGroup = $('<span class="input-group-btn">')
+            .append(okButton)
+            .append(cancelButton);
+
+        var editTaskSet = $('<div class="input-group">')
+            .append(editButtonsGroup)
+            .append(editField);
         editTaskSet.hide();
 
         var taskElement = $("<li class='list-group-item  list-group-item-action'>");
@@ -100,7 +103,6 @@ $(function () {
     var newTask = $("#new_task");
     var addButton = $("#add_button");
     var confirmDialog = $("#confirm-dialog");
-
 
     newTask.keydown(function (event) {
         if (event.keyCode === 13) {

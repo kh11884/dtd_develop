@@ -7,18 +7,24 @@
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="css/todoListStyle.css"/>
 </head>
+
 <body>
-<div class="root_div container">
+<div class="container">
     <h1 class="heading">Список дел:</h1>
-    <div>
-        <label>
-            <input id="new_task" type="text">
-        </label>
-        <button id="add_button" type="button">Добавить</button>
+
+    <div class="input-group">
+        <span class="input-group-btn">
+            <button id="add_button" class="btn btn-primary" type="button">Добавить</button>
+        </span>
+        <input id="new_task" class="form-control" type="text">
     </div>
-    <ul id="todo_list" class="list-group">
-    </ul>
+
+    <div>
+        <ul id="todo_list" class="list-group">
+        </ul>
+    </div>
 </div>
+
 <div class="modal fade" id="confirm-dialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -29,9 +35,11 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+
             <div class="modal-body">
                 Вы действительно хотите удалить элемент?
             </div>
+
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
                 <button type="button" id="confirm-dialog-yes-button" class="btn btn-primary" data-dismiss="modal">Да
@@ -40,6 +48,7 @@
         </div>
     </div>
 </div>
+
 <script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script src="js/todoListScript.js"></script>
