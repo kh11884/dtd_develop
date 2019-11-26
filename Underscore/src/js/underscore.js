@@ -56,23 +56,22 @@ var people = [
     }
 ];
 
-var aerageAge = _.reduce(people, function (sum, item) {
-        return sum + item.age;
-    }, 0)
-    / _.size(people);
+var averageAge = _.reduce(people, function (sum, item) {
+    return sum + item.age;
+}, 0) / _.size(people);
 
 var from20To30AgePeople = _.chain(people)
     .filter(function (item) {
         return 20 <= item.age && item.age <= 30
     })
-    .sortBy('age')
+    .sortBy("age")
     .value();
 
 var fullNamePeople = _.each(people, function (item) {
-    _.assign(item, {fullName: item.name + " " + item.lastName})
+    item.fullName = item.name + " " + item.lastName;
 });
 
 console.log(people);
-console.log("Средний возраст - " + aerageAge);
+console.log("Средний возраст - " + averageAge);
 console.log(from20To30AgePeople);
 console.log(fullNamePeople);

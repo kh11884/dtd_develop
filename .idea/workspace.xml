@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="задача TodoList Bootstrap доработана согласно замечаний 1.">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Underscore/src/js/underscore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Underscore/src/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Underscore/src/underscore.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/TodoList Bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList Bootstrap/src/TodoList Bootstrap.html" afterDir="false" />
+    <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="Добавлена задача Underscore">
+      <change afterPath="$PROJECT_DIR$/PercentCalculation/src/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AcademITScoool_ClientWEB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AcademITScoool_ClientWEB.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/js/calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/PercentCalculation/src/js/calc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/PercentCalculation/src/page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Underscore/Underscore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Underscore/Underscore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Underscore/src/js/underscore.js" beforeDir="false" afterPath="$PROJECT_DIR$/Underscore/src/js/underscore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Underscore/src/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Underscore/src/package-lock.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,12 +41,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TodoList Bootstrap/src/icons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Underscore/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.42415315" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -53,11 +57,11 @@
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\icons" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\Underscore\src" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoList Bootstrap\src\icons" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoList Bootstrap\src" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoList JQuery\src\js" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoList JQuery\src\js\icons" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoList JQuery\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -104,7 +108,7 @@
       <workItem from="1574090660268" duration="9229000" />
       <workItem from="1574345448576" duration="7033000" />
       <workItem from="1574423044204" duration="232000" />
-      <workItem from="1574423292462" duration="24232000" />
+      <workItem from="1574423292462" duration="32058000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен файл для задачи Html, необходимо наполнить.">
       <created>1570634746087</created>
@@ -302,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574756700341</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Добавлена задача Underscore">
+      <created>1574780686766</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1574780686766</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +355,7 @@
     <MESSAGE value="Node_module добавлена в gitignore" />
     <MESSAGE value="задача TodoList Bootstrap доработана согласно замечаний 1." />
     <MESSAGE value="Сделан merge  с изменениями на работе." />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделан merge  с изменениями на работе." />
+    <MESSAGE value="Добавлена задача Underscore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена задача Underscore" />
   </component>
 </project>
