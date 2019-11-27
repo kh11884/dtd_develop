@@ -46,7 +46,7 @@ function getRefinancingRateHistory() {
             days: 263
         },
         {
-            data: new Date("09/14/2011"),
+            data: new Date("09/14/2012"),
             refinancing_rate: 0.0825,
             days: 205
         },
