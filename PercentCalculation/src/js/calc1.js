@@ -119,79 +119,34 @@ function getRefinancingRateHistory() {
     ];
 }
 
-function getFullInfoRefinancingRateHistory (){
-var refinancingRateHistory = getRefinancingRateHistory();
+function getFullInfoRefinancingRateHistory() {
+    var refinancingRateHistory = getRefinancingRateHistory();
 
-_.reduce(refinancingRateHistory, function(memo, item){
-    memo.endDate = new Date(item.startDate);
-    memo.endDate.setDate(memo.endDate.getDate() - 1);
-    memo.days = Math.round((item.startDate - memo.startDate) / (1000 * 3600 * 24));
-    return item;
-});
-return refinancingRateHistory;
+    _.reduce(refinancingRateHistory, function (memo, item) {
+        memo.endDate = new Date(item.startDate);
+        memo.endDate.setDate(memo.endDate.getDate() - 1);
+        memo.days = Math.round((item.startDate - memo.startDate) / (1000 * 3600 * 24));
+        return item;
+    });
+    return refinancingRateHistory;
 }
 
 
-function getFilteredHistory(issueDate, applicationDate){
-var filteredHistory = _.filter(getFullInfoRefinancingRateHistory(), function(item){
-return issueDate <= item.endDate && item.startDate <=applicationDate } );
+function getFilteredHistory(issueDate, applicationDate) {
+    var filteredHistory = _.filter(getFullInfoRefinancingRateHistory(), function (item) {
+        return issueDate <= item.endDate && item.startDate <= applicationDate
+    });
 
-filteredHistory[0].startDate = issueDate;
-filteredHistory[0].days = Math.round((filteredHistory[0].endDate - issueDate) / (1000 * 3600 * 24)) + 1;
+    filteredHistory[0].startDate = issueDate;
+    filteredHistory[0].days = Math.round((filteredHistory[0].endDate - issueDate) / (1000 * 3600 * 24)) + 1;
 
-filteredHistory[filteredHistory.length - 1].endDate = applicationDate;
-filteredHistory[filteredHistory.length - 1].days = Math.round((applicationDate - filteredHistory[filteredHistory.length - 1].startDate) / (1000 * 3600 * 24)) + 1;
+    filteredHistory[filteredHistory.length - 1].endDate = applicationDate;
+    filteredHistory[filteredHistory.length - 1].days = Math.round((applicationDate - filteredHistory[filteredHistory.length - 1].startDate) / (1000 * 3600 * 24)) + 1;
 
-console.log(filteredHistory);
+    return filteredHistory;
 }
 
-
-
-//function getFirstPeriodDays(issueData) {
-//    var result = undefined;
-//    getRefinancingRateHistory().reduce(function (previos, item) {
-//        if (previos < issueData && issueData <= item.data) {
-//            result = Math.ceil((item.data - issueData) / (1000 * 3600 * 24));
-//        }
-//        return item.data;
-//    }, null);
-//    return result;
-//}
-//
-//function getLastPeriodDays(applicationDate) {
-//    var refinancingRateHistory = getRefinancingRateHistory();
-//    return Math.ceil((applicationDate - refinancingRateHistory[refinancingRateHistory.length - 1].data) / (1000 * 3600 * 24));
-//}
-//
-//function getLastPeriodRefinancingRate() {
-//    var refinancingRateHistory = getRefinancingRateHistory();
-//    return refinancingRateHistory[refinancingRateHistory.length - 1].refinancing_rate;
-//}
-//
-//function getFirstPeriodDays_alternate(issueData) {
-//    var refinancingRateHistory = getRefinancingRateHistory();
-//    var result = undefined;
-//    for (var i = 0; i < refinancingRateHistory.length - 1; i++) {
-//        result = Math.ceil((refinancingRateHistory[i].data - issueData) / (1000 * 3600 * 24));
-//        if (result > 0) {
-//            return result;
-//        }
-//    }
-//}
-//
-//function getFirstPeriodRefinancingRate(issueDate) {
-//    var refinancingRateHistory = getRefinancingRateHistory();
-//    var days = undefined;
-//    for (var i = 0; i < refinancingRateHistory.length - 1; i++) {
-//        days = Math.ceil((refinancingRateHistory[i].data - issueDate) / (1000 * 3600 * 24));
-//        if (days > 0) {
-//            return refinancingRateHistory[i - 1].refinancing_rate;
-//        }
-//    }
-//}
-
-
-function calc(payment, issueDate, applicationDate) {
+function getCalcTable(payment, issueDate, applicationDate) {
     var period = getFilteredHistory(issueDate, applicationDate);
 
     _.each(period, function (item) {
@@ -213,31 +168,6 @@ function calc(payment, issueDate, applicationDate) {
     })
 }
 
-//function calcFinDate(startDate, days) {
-//    startDate.setDate(startDate.getDate() + days - 1);
-//    return startDate;
-//}
-
-//function getCurrentPeriod(issueDate, applicationDate) {
-//    var allHistory = getRefinancingRateHistory();
-//    var currentPeriod = [];
-//
-//    currentPeriod.push({
-//        data: issueDate,
-//        refinancing_rate: getFirstPeriodRefinancingRate(issueDate),
-//        days: getFirstPeriodDays(issueDate)
-//    });
-//
-//   var filteredPeriod =  _.filter(allHistory, function (item) {
-//        return issueDate <= item.data && item.data <= applicationDate;
-//    });
-//
-//   _.assign(currentPeriod, filteredPeriod);
-//
-//    console.log(filteredPeriod);
-//    return currentPeriod;
-//}
-
 function createTableHead() {
     var rowHead1 = $("<tr>");
     rowHead1.append($("<th rowspan=\"2\">").text("Сп"))
@@ -251,6 +181,30 @@ function createTableHead() {
         .append($("<th>").text("конец"));
 
     tableHead.append(rowHead2);
+}
+
+function getSumDays(issueDate, applicationDate) {
+    var period = getFilteredHistory(issueDate, applicationDate);
+
+    return _.reduce(period, function (memo, item) {
+        return memo += item.days;
+    }, 0)
+}
+
+
+//TODO: проверить округление для каждой строки
+function getSumPercent(payment, issueDate, applicationDate) {
+    var period = getFilteredHistory(issueDate, applicationDate);
+
+   var finResult = _.reduce(period, function (memo, item) {
+        // var result = Number(Math.round((payment * item.days * item.refinancing_rate / 360) + 'e' + 2) + 'e-' + 2);
+       var result = (payment * item.days * item.refinancing_rate / 360).toFixed(2);
+        console.log(result);
+        return memo += parseFloat(result);
+    }, 0);
+
+    console.log(finResult);
+   return finResult.toFixed(2);
 }
 
 function createInfoTable(currentDate, UNPlatSum, platSum, days, percentSum) {
@@ -272,7 +226,6 @@ function createInfoTable(currentDate, UNPlatSum, platSum, days, percentSum) {
         .append(row5);
 }
 
-
 var options = {year: 'numeric', month: 'short', day: 'numeric'};
 
 var infoTableHead = $("#info_table_head");
@@ -280,10 +233,21 @@ var infoTableBody = $("#info_table_body");
 var tableHead = $("#print_table_head");
 var tableBody = $("#print_table_body");
 
-createInfoTable(new Date());
+//---Входные данные---//
+var issueDate = new Date("05/31/2010");
+var applicationDate = new Date("09/18/2017");
+var payment = 10000;
+
+//---вычисления для верхней таблицы---//
+var days = getSumDays(issueDate, applicationDate);
+var percentSum = getSumPercent(payment, issueDate, applicationDate);
+
+
+createInfoTable(applicationDate, payment, 0, days, percentSum);
 createTableHead();
-getFilteredHistory(new Date("05/31/2010"), new Date("09/18/2017"));
-calc(10000, new Date("05/31/2010"), new Date("09/18/2017"));
+getCalcTable(payment, issueDate, applicationDate);
+
+
 
 
 
