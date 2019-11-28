@@ -128,14 +128,24 @@ function getFullInfoRefinancingRateHistory() {
         memo.days = Math.round((item.startDate - memo.startDate) / (1000 * 3600 * 24));
         return item;
     });
+
+    //-- добавим в последний элемент конечную дату и число дней для нее, для стандартизированного подхода к дальнейшим рассчетам от элемента
+    //-- можно добавить в кол-во дней 1, а в конечную дату текущую дату, чтобы не было лишних рассчетов.
+    var endDate = new Date("12/31/2025"); //-- Дата до которой будет работает таблица
+    var lastElement = refinancingRateHistory[refinancingRateHistory.length -1 ];
+    lastElement.endDate = endDate;
+    lastElement.days =  Math.round((lastElement.endDate - lastElement.startDate) / (1000 * 3600 * 24));
+
     return refinancingRateHistory;
 }
 
 
 function getFilteredHistory(issueDate, applicationDate) {
     var filteredHistory = _.filter(getFullInfoRefinancingRateHistory(), function (item) {
+            console.log(item);
         return issueDate <= item.endDate && item.startDate <= applicationDate
     });
+
 
     filteredHistory[0].startDate = issueDate;
     filteredHistory[0].days = Math.round((filteredHistory[0].endDate - issueDate) / (1000 * 3600 * 24)) + 1;
@@ -199,11 +209,11 @@ function getSumPercent(payment, issueDate, applicationDate) {
    var finResult = _.reduce(period, function (memo, item) {
         // var result = Number(Math.round((payment * item.days * item.refinancing_rate / 360) + 'e' + 2) + 'e-' + 2);
        var result = (payment * item.days * item.refinancing_rate / 360).toFixed(2);
-        console.log(result);
+//        console.log(result);
         return memo += parseFloat(result);
     }, 0);
 
-    console.log(finResult);
+//    console.log(finResult);
    return finResult.toFixed(2);
 }
 
@@ -234,8 +244,8 @@ var tableHead = $("#print_table_head");
 var tableBody = $("#print_table_body");
 
 //---Входные данные---//
-var issueDate = new Date("05/31/2010");
-var applicationDate = new Date("09/18/2017");
+var issueDate = new Date("01/01/2011");
+var applicationDate = new Date("10/29/2019");
 var payment = 10000;
 
 //---вычисления для верхней таблицы---//
