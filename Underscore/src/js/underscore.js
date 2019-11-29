@@ -67,11 +67,11 @@ var from20To30AgePeople = _.chain(people)
     .sortBy("age")
     .value();
 
-var fullNamePeople = _.each(people, function (item) {
+_.each(people, function (item) {
     item.fullName = item.name + " " + item.lastName;
 });
 
 console.log(people);
 console.log("Средний возраст - " + averageAge);
 console.log(from20To30AgePeople);
-console.log(fullNamePeople);
+console.log(people);
