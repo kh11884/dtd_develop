@@ -4,7 +4,6 @@ $(function () {
     }
 
     function addTask() {
-        alert(1);
         function showEditField() {
             taskElement.addClass('list-group-item-warning');
             taskSet.hide();
