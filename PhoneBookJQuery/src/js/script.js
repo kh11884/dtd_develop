@@ -1,20 +1,55 @@
 $(function () {
-
     function clearNewEntryFields() {
         newFirstName.val("");
         newLastName.val("");
         newPhoneNumber.val("");
     }
 
-
     function addNewEntry() {
         var newFirstNameText = newFirstName.val().trim();
         var newLastNameText = newLastName.val().trim();
         var newPhoneNumberText = newPhoneNumber.val().trim();
 
-        // if (newFirstNameText === "") {
-        //     return;
-        // }
+        var isValidation = false;
+        if (newFirstNameText !== "") {
+            newFirstName.removeClass("border-danger");
+            newFirstName.attr("placeholder", "Имя");
+            newFirstName.removeClass("red_placeholder");
+            isValidation = true;
+        }
+        if (newLastNameText !== "") {
+            newLastName.removeClass("border-danger");
+            newLastName.attr("placeholder", "Фамилия");
+            newLastName.removeClass("red_placeholder");
+            isValidation = true;
+        }
+        if (newPhoneNumberText !== "") {
+            newPhoneNumber.removeClass("border-danger");
+            newPhoneNumber.attr("placeholder", "Номер телефона");
+            newPhoneNumber.removeClass("red_placeholder");
+            isValidation = true;
+        }
+        if (newFirstNameText === "") {
+            newFirstName.addClass("border-danger");
+            newFirstName.attr("placeholder", "Введите имя");
+            newFirstName.addClass("red_placeholder");
+            isValidation = false;
+        }
+        if (newLastNameText === "") {
+            newLastName.addClass("border-danger");
+            newLastName.attr("placeholder", "Введите фамилию");
+            newLastName.addClass("red_placeholder");
+            isValidation = false;
+        }
+        if (newPhoneNumberText === "") {
+            newPhoneNumber.addClass("border-danger");
+            newPhoneNumber.attr("placeholder", "Укажите номер телефона");
+            newPhoneNumber.addClass("red_placeholder");
+            isValidation = false;
+        }
+        if (!isValidation) {
+            return;
+        }
 
         var rowNumber = $("<td>");
         var firstName = $("<td>");
@@ -50,7 +85,8 @@ $(function () {
                                 $('#phoneBook_table_body tr').each(function (i) {
                                     $(this).find('td:first').text(++i);
                                 });
-                            }))
+                            })
+                        )
                     )
                 )
             );
@@ -61,11 +97,11 @@ $(function () {
             .append(lastName)
             .append(phoneNumber)
             .append(entryCheckBox)
-            .append(removeButton)
-        ;
+            .append(removeButton);
 
         phoneBookTableBody.append(entryRow);
         rowNumber.text(entryRow.index() + 1);
+        clearNewEntryFields();
     }
 
     var phoneBookTableBody = $("#phoneBook_table_body");
@@ -73,7 +109,6 @@ $(function () {
     var newLastName = $("#last_name");
     var newPhoneNumber = $("#phone_number");
     var addButton = $("#add_button");
-
 
     addButton.click(addNewEntry);
 });
