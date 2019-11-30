@@ -110,7 +110,7 @@
       <workItem from="1574345448576" duration="7033000" />
       <workItem from="1574423044204" duration="232000" />
       <workItem from="1574423292462" duration="32058000" />
-      <workItem from="1575010511585" duration="24272000" />
+      <workItem from="1575010511585" duration="30659000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен файл для задачи Html, необходимо наполнить.">
       <created>1570634746087</created>
@@ -336,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575046200817</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Для вопроса про ширину элемента Bootstrap">
+      <created>1575102344563</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1575102344563</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,6 +404,7 @@
     <MESSAGE value="Добавлена задача Underscore" />
     <MESSAGE value="Немного даработан и отформатирован калькулятор.&#10;Добавить заполнение таблицы-шапки&#10;Добавить заполенение из формы." />
     <MESSAGE value="Частично добавлена задача PhoneBook" />
-    <option name="LAST_COMMIT_MESSAGE" value="Частично добавлена задача PhoneBook" />
+    <MESSAGE value="Для вопроса про ширину элемента Bootstrap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Для вопроса про ширину элемента Bootstrap" />
   </component>
 </project>
