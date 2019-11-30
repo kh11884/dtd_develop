@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookJQuery/src/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/TodoList Bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList Bootstrap/src/TodoList Bootstrap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/css/todoListStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList Bootstrap/src/css/todoListStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/js/todoListScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList Bootstrap/src/js/todoListScript.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,7 +110,7 @@
       <workItem from="1574345448576" duration="7033000" />
       <workItem from="1574423044204" duration="232000" />
       <workItem from="1574423292462" duration="32058000" />
-      <workItem from="1575010511585" duration="17933000" />
+      <workItem from="1575010511585" duration="24272000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен файл для задачи Html, необходимо наполнить.">
       <created>1570634746087</created>
@@ -328,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575044684740</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Частично добавлена задача PhoneBook">
+      <created>1575046200817</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1575046200817</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

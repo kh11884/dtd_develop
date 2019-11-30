@@ -32,6 +32,10 @@ $(function () {
             $("#confirm-dialog-yes-button").click(function () {
                 taskElement.remove();
             });
+            $("#confirm-dialog-cancel-button").click(function () {
+                $("#confirm-dialog-yes-button").unbind('click');
+            });
+
         }
 
         var newTaskText = newTask.val().trim();
@@ -43,14 +47,14 @@ $(function () {
         taskSpan.text(newTaskText);
         taskSpan.addClass("task_field");
 
-        var removeButton = $("<button type='button' title='удалить' class='btn btn-outline-danger'>");
+        var removeButton = $("<button type='button' title='Удалить' class='btn btn-outline-danger'>");
         var removeIcon = $("<img alt='del' src='icons/remove_icon.png' class='small_button_icon'>");
         removeButton.append(removeIcon);
         removeButton.click(function () {
             showConfirmDialog();
         });
 
-        var editButton = $("<button type='button' title='редактировать' class='btn btn-outline-warning'>");
+        var editButton = $("<button type='button' title='Редактировать' class='btn btn-outline-warning'>");
         var editIcon = $("<img alt='edit' src='icons/editing_icon.png' class='small_button_icon'>");
         editButton.append(editIcon);
         editButton.click(function () {
@@ -67,12 +71,12 @@ $(function () {
             }
         });
 
-        var okButton = $("<button type='button' title='сохранить' class='btn btn-outline-success'>");
+        var okButton = $("<button type='button' title='Сохранить' class='btn btn-outline-success'>");
         var okIcon = $("<img alt='ok' src='icons/ok_icon.png' class='small_button_icon'>");
         okButton.append(okIcon);
         okButton.click(changeTaskName);
 
-        var cancelButton = $("<button type='button' title='отмена' class='btn btn-outline-danger'>");
+        var cancelButton = $("<button type='button' title='Отмена' class='btn btn-outline-danger'>");
         var cancelIcon = $("<img alt='cancel' src='icons/cancel_icon.png' class='small_button_icon'>");
         cancelButton.append(cancelIcon);
         cancelButton.click(showTaskField);

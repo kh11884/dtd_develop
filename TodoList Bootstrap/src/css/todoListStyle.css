@@ -1,16 +1,12 @@
-.container {
-    padding-right: 0;
-    padding-left: 0;
+.container_fluid {
+    padding-right: 2%;
+    padding-left: 2%;
     margin-top: 2%;
 }
 
 .heading {
     font-weight: bold;
     font-size: 18px;
-}
-
-.form-control {
-    margin-left: 3px;
 }
 
 .btn {
@@ -32,4 +28,27 @@
 
 #add_button {
     width: 103px;
+    margin-bottom: 2%;
+    margin-right: 3px;
 }
+
+#new_task {
+    min-width: 80%;
+}
+
+.col {
+    flex-grow: 0;
+    margin: 2px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.col-sm{
+    min-width: 80%;
+}
+
+.order-sm-1 {
+    width: 103px;
+}
+
+

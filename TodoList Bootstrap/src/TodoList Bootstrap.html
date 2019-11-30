@@ -13,10 +13,15 @@
     <h1 class="heading">Список дел:</h1>
 
     <div class="input-group">
+        <div class="col order-sm-2 col-sm">
+            <input id="new_task" class="form-control" type="text">
+        </div>
+        <div class="col order-sm-1">
         <span class="input-group-btn">
             <button id="add_button" class="btn btn-primary" type="button">Добавить</button>
         </span>
-        <input id="new_task" class="form-control" type="text">
+        </div>
+
     </div>
 
     <div>
@@ -41,7 +46,7 @@
             </div>
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                <button type="button" id="confirm-dialog-cancel-button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
                 <button type="button" id="confirm-dialog-yes-button" class="btn btn-primary" data-dismiss="modal">Да
                 </button>
             </div>
