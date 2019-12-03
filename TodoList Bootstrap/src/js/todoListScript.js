@@ -5,7 +5,7 @@ $(function () {
 
     function addTask() {
         function showEditField() {
-            taskElement.addClass('list-group-item-warning');
+            taskElement.addClass("list-group-item-warning");
             taskSet.hide();
             editTaskSet.show();
         }
@@ -13,7 +13,7 @@ $(function () {
         function showTaskField() {
             taskSet.show();
             editTaskSet.hide();
-            taskElement.removeClass('list-group-item-warning');
+            taskElement.removeClass("list-group-item-warning");
         }
 
         function changeTaskName() {
@@ -28,14 +28,13 @@ $(function () {
 
         function showConfirmDialog() {
             $("#dialog-text").show();
-            confirmDialog.modal('show');
+            confirmDialog.modal("show");
             $("#confirm-dialog-yes-button").click(function () {
                 taskElement.remove();
             });
             $("#confirm-dialog-cancel-button").click(function () {
-                $("#confirm-dialog-yes-button").off('click');
+                $("#confirm-dialog-yes-button").off("click");
             });
-
         }
 
         var newTaskText = newTask.val().trim();
