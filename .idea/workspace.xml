@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/TodoList Bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList Bootstrap/src/TodoList Bootstrap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/js/todoListScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList Bootstrap/src/js/todoListScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/PhoneBook_ jQuery.html" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookJQuery/src/PhoneBook_ jQuery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookJQuery/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookJQuery/src/js/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +111,8 @@
       <workItem from="1574423044204" duration="232000" />
       <workItem from="1574423292462" duration="32058000" />
       <workItem from="1575010511585" duration="36700000" />
-      <workItem from="1575363844429" duration="942000" />
+      <workItem from="1575363844429" duration="8536000" />
+      <workItem from="1575443557311" duration="4043000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен файл для задачи Html, необходимо наполнить.">
       <created>1570634746087</created>
@@ -357,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575131455404</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="добработана задача Bootstrap согласно замечаний 5">
+      <created>1575364963544</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1575364963544</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +403,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Задача Html доработана согласно замечаниям 1." />
     <MESSAGE value="Добавлена задача CSS Форма" />
     <MESSAGE value="Задачи CSS Text и CSS Table скорректированы согласно замечаний 1" />
     <MESSAGE value="Задача CSS Form скорректирована согласно замечаний 1" />
@@ -419,6 +427,7 @@
     <MESSAGE value="Для вопроса про ширину элемента Bootstrap" />
     <MESSAGE value="добработана задача Bootstrap согласно замечаний 4" />
     <MESSAGE value="Добавлена задача PhoneBook без усложнений." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена задача PhoneBook без усложнений." />
+    <MESSAGE value="добработана задача Bootstrap согласно замечаний 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="добработана задача Bootstrap согласно замечаний 5" />
   </component>
 </project>

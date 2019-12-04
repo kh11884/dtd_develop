@@ -10,58 +10,54 @@ $(function () {
         var newLastNameText = newLastName.val().trim();
         var newPhoneNumberText = newPhoneNumber.val().trim();
 
-        var isValidation = false;
+        var isValid = true;
         if (newFirstNameText !== "") {
             newFirstName.removeClass("border-danger");
             newFirstName.attr("placeholder", "Имя");
             newFirstName.removeClass("red_placeholder");
-            isValidation = true;
         }
         if (newLastNameText !== "") {
             newLastName.removeClass("border-danger");
             newLastName.attr("placeholder", "Фамилия");
             newLastName.removeClass("red_placeholder");
-            isValidation = true;
         }
         if (newPhoneNumberText !== "") {
             newPhoneNumber.removeClass("border-danger");
             newPhoneNumber.attr("placeholder", "Номер телефона");
             newPhoneNumber.removeClass("red_placeholder");
-            isValidation = true;
         }
         if (newFirstNameText === "") {
             newFirstName.addClass("border-danger");
             newFirstName.attr("placeholder", "Введите имя");
             newFirstName.addClass("red_placeholder");
-            isValidation = false;
+            isValid = false;
         }
         if (newLastNameText === "") {
             newLastName.addClass("border-danger");
             newLastName.attr("placeholder", "Введите фамилию");
             newLastName.addClass("red_placeholder");
-            isValidation = false;
+            isValid = false;
         }
         if (newPhoneNumberText === "") {
             newPhoneNumber.addClass("border-danger");
             newPhoneNumber.attr("placeholder", "Укажите номер телефона");
             newPhoneNumber.addClass("red_placeholder");
-            isValidation = false;
+            isValid = false;
         }
-        if (!isValidation) {
+        if (!isValid) {
             return;
         }
 
         var rowNumber = $("<td>");
-        var firstName = $("<td>");
-        firstName.text(newFirstNameText);
+        var firstName = $("<td>").text(newFirstNameText);
         var lastName = $("<td>");
         lastName.text(newLastNameText);
         var phoneNumber = $("<td>");
         phoneNumber.text(newPhoneNumberText);
         var entryCheckBox = $("<td>")
-            .append($("<div class=\"form-check\">")
-                .append($("<label class=\"form-check-label\">")
-                    .append($("<input id=\"checkbox_all\" type=\"checkbox\" class=\"form-check-input\">"))));
+            .append($("<div class='form-check'>")
+                .append($("<label class='form-check-label align-middle'>")
+                    .append($("<input id='checkbox_all' type='checkbox' class='form-check-input align-middle'>"))));
         var removeButton = $("<td>")
             .append($("<button type='button' title='удалить' class='btn btn-outline-danger'>")
                 .append($("<img alt='del' src='icons/remove_icon.png' class='small_button_icon'>"))
@@ -83,7 +79,7 @@ $(function () {
                             .click(function () {
                                 entryRow.remove();
                                 $('#phoneBook_table_body tr').each(function (i) {
-                                    $(this).find('td:first').text(++i);
+                                    $(this).find('td:first').text(i + 1);
                                 });
                             })
                         )
