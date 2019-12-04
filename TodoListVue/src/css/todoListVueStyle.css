@@ -1,0 +1,14 @@
+.heading {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.small_button_icon {
+    width: 20px;
+}
+
+.error-message{
+    color: red;
+}
+
+
