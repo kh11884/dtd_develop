@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DodoListVue/DodoListVue.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoListVue/TodoListVue.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoListVue/src/TodoListVue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoListVue/src/css/todoListVueStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoListVue/src/icons/cancel_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoListVue/src/icons/editing_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoListVue/src/icons/ok_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoListVue/src/icons/remove_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoListVue/src/js/todoListScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/PhoneBook_ jQuery.html" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookJQuery/src/PhoneBook_ jQuery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_forTest/src/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/1_forTest/src/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/css/todoListStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList Bootstrap/src/css/todoListStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/js/todoListScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList Bootstrap/src/js/todoListScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/src/TodoListVue.html" beforeDir="false" afterPath="$PROJECT_DIR$/TodoListVue/src/TodoListVue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/src/css/todoListVueStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/TodoListVue/src/css/todoListVueStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/src/js/todoListScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/TodoListVue/src/js/todoListScript.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,6 +117,8 @@
       <workItem from="1575363844429" duration="8536000" />
       <workItem from="1575443557311" duration="11878000" />
       <workItem from="1575456212692" duration="1852000" />
+      <workItem from="1575502867105" duration="295000" />
+      <workItem from="1575686934627" duration="14106000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен файл для задачи Html, необходимо наполнить.">
       <created>1570634746087</created>
@@ -383,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575447707955</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Добавлен модуль TodoListVue.&#10;Частично начата задача.">
+      <created>1575503080618</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1575503080618</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,7 +423,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Задачи CSS Text и CSS Table скорректированы согласно замечаний 1" />
     <MESSAGE value="Задача CSS Form скорректирована согласно замечаний 1" />
     <MESSAGE value="Задача CSS Text скорректирована согласно замечаний 2" />
     <MESSAGE value="Задача CSS Таблица и Форма скорректированы согласно замечаний 2" />
@@ -445,6 +447,7 @@
     <MESSAGE value="Добавлена задача PhoneBook без усложнений." />
     <MESSAGE value="добработана задача Bootstrap согласно замечаний 5" />
     <MESSAGE value="добработана задачаPhoneBook  согласно замечаний 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="добработана задачаPhoneBook  согласно замечаний 1" />
+    <MESSAGE value="Добавлен модуль TodoListVue.&#10;Частично начата задача." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен модуль TodoListVue.&#10;Частично начата задача." />
   </component>
 </project>

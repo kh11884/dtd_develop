@@ -9,57 +9,117 @@
 </head>
 
 <body>
-
-<div id="app" class="container mt-2">
+<div v-cloak id="app" class="container mt-2">
     <h1 class="heading">Список дел:</h1>
 
     <div class="row no-gutters">
         <div class="col-12 order-sm-2 col-sm">
             <input :class="{invalid: isInvalid}" id="new_task" class="form-control" v-model="newTodoText" type="text">
         </div>
-        <div class="error-message col-12 order-sm-3" v-if="isInvalid">Необходимо вввести тект заметки</div>
+        <div class="error-message col-12 order-sm-3"  v-if="isInvalid">Необходимо вввести тект заметки</div>
         <div class="col-auto pt-1 order-sm-1 pt-sm-0">
             <button id="add_button" class="btn mr-1 btn-primary" type="button" @click="addTodo">Добавить</button>
         </div>
     </div>
 
     <div>
-        <ul id="todo_list"  class="list-group">
+        <ul id="todo_list" class="list-group">
             <li class="pt-1" v-for="item in items">
-                <button type='button' title='Удалить' class='btn mr-1 btn-outline-danger' @click="removeTodo(item)">
-                    <img alt='del' src='icons/remove_icon.png' class='small_button_icon'>
-                </button>
-            <span v-text="item.text"></span>
+
+                <div v-show="!item.isEditable">
+                    <button type='button' title='Удалить' class='btn mr-1 btn-outline-danger'
+                            @click="showModal=true">
+                        <img alt='del' src='icons/remove_icon.png' class='small_button_icon'>
+                    </button>
+                    <button type='button' title='Редактировать' class='btn mr-1 btn-outline-warning'
+                            @click="editTodo(item)">
+                        <img alt='edit' src='icons/editing_icon.png' class='small_button_icon'>
+                    </button>
+
+                    <span v-text="item.text"></span>
+                </div>
+
+                <div v-show="item.isEditable">
+                    <button type='button' title='Сохранить' class='btn mr-1 btn-outline-success' @click="changeTodo(item)">
+                        <img alt='ok' src='icons/ok_icon.png' class='small_button_icon'>
+                    </button>
+                    <button type='button' title='Отмена' class='btn mr-1 btn-outline-danger'
+                            @click="item.isEditable = false">
+                        <img alt='cancel' src='icons/cancel_icon.png' class='small_button_icon'>
+                    </button>
+                    <input id="edit_task" class="form-control" v-model="item.editTodoText" type="text">
+                </div>
+
             </li>
         </ul>
     </div>
+
+    <modal v-if="showModal">
+    </modal>
 </div>
 
-<div class="modal fade" id="confirm-dialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Удаление элемента</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
+<script type="text/x-template" id="modal-template">
+    <transition name="modal">
+        <div class="modal-mask">
+            <div class="modal-wrapper">
+                <div class="modal-container">
 
-            <div class="modal-body">
-                Вы действительно хотите удалить элемент?
-            </div>
+                    <div class="modal-header">
+                        <slot name="header">
+                            Удаление элемента
+                        </slot>
+                    </div>
 
-            <div class="modal-footer">
-                <button type="button" id="confirm-dialog-cancel-button" class="btn btn-secondary" data-dismiss="modal">
-                    Отмена
-                </button>
-                <button type="button" id="confirm-dialog-yes-button" class="btn btn-primary" data-dismiss="modal">Да
-                </button>
+                    <div class="modal-body">
+                        <slot name="body">
+                            Вы действительно хотите удалить элемент?
+                        </slot>
+                    </div>
+
+                    <div class="modal-footer">
+                        <slot name="footer">
+
+                            <button class="modal-default-button" @click="$emit('close')">
+                                Отмена
+                            </button>
+                            <button class="modal-default-button" @click="removeTodo(item)">
+                                Да
+                            </button>
+                        </slot>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </transition>
+</script>
+
+
+<!---- диалоговое окно JQuery-->
+<!--<div class="modal fade" id="confirm-dialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"-->
+<!--     aria-hidden="true">-->
+<!--    <div class="modal-dialog" role="document">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <h5 class="modal-title" id="exampleModalLabel">Удаление элемента</h5>-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--            </div>-->
+
+<!--            <div class="modal-body">-->
+<!--                Вы действительно хотите удалить элемент?-->
+<!--            </div>-->
+
+<!--            <div class="modal-footer">-->
+<!--                <button type="button" id="confirm-dialog-cancel-button" class="btn btn-secondary" data-dismiss="modal">-->
+<!--                    Отмена-->
+<!--                </button>-->
+<!--                <button type="button" id="confirm-dialog-yes-button" class="btn btn-primary" data-dismiss="modal" @click="removeTodo(item)">Да-->
+<!--                </button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 <script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>

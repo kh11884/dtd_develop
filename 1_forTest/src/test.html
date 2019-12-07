@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<script src="js/jquery-3.4.1.js"></script>
-<script src="js/test.js"></script>
-</body>
-</html>
+<template>
+    <button @click="visible = true">Show modal</button>
+    <modal :show="visible">
+        <div>какой то контент</div>
+    </modal>
+</template>
+
+<script>
+    export default {
+        data() {
+            return {
+                visible: false
+            }
+        }
+</script>

@@ -27,7 +27,7 @@ $(function () {
         }
 
         function showConfirmDialog() {
-            $("#dialog-text").show();
+            // $("#dialog-text").show();
             confirmDialog.modal("show");
             $("#confirm-dialog-yes-button").click(function () {
                 taskElement.remove();
