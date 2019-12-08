@@ -5,22 +5,36 @@ new Vue({
         newFirstName: "",
         newLastName: "",
         newPhoneNumber: "",
-        isInvalid: false,
+        isInvalidFirstName: false,
+        isInvalidLastName: false,
+        isInvalidPhoneNumber: false,
+        haveNumber: false
     },
     methods: {
         addItem: function () {
-
-            if (this.newFirstName === "") {
-                this.isInvalid = true;
+            this.isInvalidFirstName = this.newFirstName === "";
+            this.isInvalidLastName = this.newLastName === "";
+            this.isInvalidPhoneNumber = this.newPhoneNumber === "";
+            if(this.isInvalidFirstName || this.isInvalidLastName || this.isInvalidPhoneNumber){
                 return;
             }
-            this.isInvalid = false;
+
+            var newPhoneNumber = this.newPhoneNumber;
+            var haveNumber = false;
+            this.items.forEach(function (item) {
+                if(item.phoneNumber === newPhoneNumber){
+                    haveNumber = true;
+                }
+            });
+            this.haveNumber = haveNumber;
+            if(this.haveNumber){
+                return;
+            }
 
             this.items.push({
                 firstName: this.newFirstName,
                 lastName: this.newLastName,
                 phoneNumber: this.newPhoneNumber,
-                isEditable: false,
                 needShowModal: false
             });
             this.newFirstName = "";
@@ -37,20 +51,8 @@ new Vue({
             item.needShowModal = true;
         },
         unShowModal: function (item) {
-            item.isEditable = false;
             item.needShowModal = false;
-        },
-        editTodo: function (item) {
-            item.editTodoText = item.text;
-            item.isEditable = true;
-        },
-        changeTodo: function (item) {
-            if(item.editTodoText === ""){
-                this.showModal(item);
-                return;
-            }
-            item.text = item.editTodoText;
-            item.isEditable = false;
         }
     }
 });
+
