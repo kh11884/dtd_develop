@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoListVue/src/TodoListVue.html" beforeDir="false" afterPath="$PROJECT_DIR$/TodoListVue/src/TodoListVue.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoListVue/src/js/todoListScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/TodoListVue/src/js/todoListScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/PhoneBook_ jQuery.html" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookJQuery/src/PhoneBook_ jQuery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookJQuery/src/js/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,19 +44,19 @@
     <property name="project.structure.side.proportion" value="0.42415315" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoList JQuery\src\js\libs\jquery-ui-1.12.1" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\js" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\css" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\icons" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoListVue\src" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookJQuery\src\icons" />
       <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src\js" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\Underscore\src" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoList Bootstrap\src\icons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoList JQuery\src\js\libs\jquery-ui-1.12.1" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\js" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\css" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\icons" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -114,7 +114,7 @@
       <workItem from="1575443557311" duration="11878000" />
       <workItem from="1575456212692" duration="1852000" />
       <workItem from="1575502867105" duration="295000" />
-      <workItem from="1575686934627" duration="20122000" />
+      <workItem from="1575686934627" duration="21493000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен файл для задачи Html, необходимо наполнить.">
       <created>1570634746087</created>
@@ -389,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575703299626</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Добавлена задача TodoListVue.">
+      <created>1575775653247</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1575775653247</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +433,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Задача CSS Text скорректирована согласно замечаний 2" />
     <MESSAGE value="Задача CSS Таблица и Форма скорректированы согласно замечаний 2" />
     <MESSAGE value="Добавлена задача &quot;Работа с массивами&quot;" />
     <MESSAGE value="Задача CSS Table доработана согласно замечаний 3" />
@@ -451,6 +457,7 @@
     <MESSAGE value="добработана задачаPhoneBook  согласно замечаний 1" />
     <MESSAGE value="Добавлен модуль TodoListVue.&#10;Частично начата задача." />
     <MESSAGE value="Добавлен модуль TodoListVue.&#10;Для вопроса" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен модуль TodoListVue.&#10;Для вопроса" />
+    <MESSAGE value="Добавлена задача TodoListVue." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена задача TodoListVue." />
   </component>
 </project>

@@ -48,12 +48,10 @@ $(function () {
             return;
         }
 
-        var rowNumber = $("<td>");
+        var rowNumber = $("<td>").text(entryRow.index() + 1);
         var firstName = $("<td>").text(newFirstNameText);
-        var lastName = $("<td>");
-        lastName.text(newLastNameText);
-        var phoneNumber = $("<td>");
-        phoneNumber.text(newPhoneNumberText);
+        var lastName = $("<td>").text(newLastNameText);
+        var phoneNumber = $("<td>").text(newPhoneNumberText);
         var entryCheckBox = $("<td>")
             .append($("<div class='form-check'>")
                 .append($("<label class='form-check-label align-middle'>")
@@ -87,8 +85,8 @@ $(function () {
                 )
             );
 
-        var entryRow = $("<tr>");
-        entryRow.append(rowNumber)
+        var entryRow = $("<tr>")
+            .append(rowNumber)
             .append(firstName)
             .append(lastName)
             .append(phoneNumber)
@@ -96,7 +94,6 @@ $(function () {
             .append(removeButton);
 
         phoneBookTableBody.append(entryRow);
-        rowNumber.text(entryRow.index() + 1);
         clearNewEntryFields();
     }
 
