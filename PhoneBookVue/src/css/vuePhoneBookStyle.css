@@ -1,0 +1,14 @@
+.form-check-input {
+    position: inherit;
+    width: 20px;
+    height: 20px;
+}
+
+.small_button_icon {
+    width: 16px;
+}
+
+.red_placeholder::-webkit-input-placeholder {
+    color: red
+}
+

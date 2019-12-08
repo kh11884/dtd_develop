@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Телефонная книга</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/vuePhoneBookStyle.css"/>
+</head>
+<body>
+<div id="app">
+    <form>
+        <div class="form-row my-1">
+            <div class="col-12 col-sm mt-1">
+                <input id="first_name" class="form-control" type="text" placeholder="Имя" v-model="newFirstName">
+            </div>
+            <div class="col-12 col-sm mt-1">
+                <input id="last_name" class="form-control" type="text" placeholder="Фамилия" v-model="newLastName">
+            </div>
+            <div class="col-12 col-sm mt-1">
+                <input id="phone_number" class="form-control" type="number" placeholder="Номер телефона" pattern=""
+                       v-model="newPhoneNumber">
+            </div>
+            <div class="col-12 col-sm mt-1">
+                <span class="input-group-btn">
+                    <button id="add_button" class="btn btn-primary" type="button" @click="addItem">Добавить</button>
+                </span>
+            </div>
+        </div>
+    </form>
+
+    <div class=" min-width-860 table-responsive-sm">
+        <table id="phoneBook_table" class="table table-striped table-hover">
+            <thead class="table-primary">
+            <tr>
+                <th class="align-middle">№</th>
+                <th class="align-middle">Имя</th>
+                <th class="align-middle">Фамилия</th>
+                <th class="align-middle text-nowrap">Номер телефона</th>
+                <th class="align-middle">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input id="checkbox_all" type="checkbox" class="form-check-input">
+                        </label>
+                    </div>
+                </th>
+                <th class="align-middle text-nowrap">Выбрать все</th>
+            </tr>
+            </thead>
+            <tbody id="phoneBook_table_body">
+            <tr v-for="(item, index) in items">
+                <td>{{index + 1}}</td>
+                <td>{{item.firstName}}</td>
+                <td>{{item.lastName}}</td>
+                <td>{{item.phoneNumber}}</td>
+                <td>
+                    <div class='form-check'>
+                        <label class='form-check-label align-middle'>
+                            <input id='checkbox_item' type='checkbox' class='form-check-input align-middle'>
+                        </label>
+                    </div>
+                </td>
+                <td>
+                    <button type='button' title='удалить' class='btn btn-outline-danger' @click="removeItem(item)">
+                        <img alt='del' src='icons/remove_icon.png' class='small_button_icon'>
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="js/vuePhoneBookScript.js"></script>
+</body>
+</html>

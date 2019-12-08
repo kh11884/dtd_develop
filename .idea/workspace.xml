@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/PhoneBook_ jQuery.html" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookJQuery/src/PhoneBook_ jQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookVue/PhoneBookVue.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookVue/src/PhoneBookVue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookVue/src/css/vuePhoneBookStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookVue/src/icons/remove_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookVue/src/js/vuePhoneBookScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +40,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574833282855" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TodoListVue/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PhoneBookVue/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -43,11 +49,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookVue\src" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoListVue\src" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookJQuery\src\icons" />
       <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src\js" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\Underscore\src" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoList Bootstrap\src\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
@@ -112,7 +118,7 @@
       <workItem from="1575443557311" duration="11878000" />
       <workItem from="1575456212692" duration="1852000" />
       <workItem from="1575502867105" duration="295000" />
-      <workItem from="1575686934627" duration="21739000" />
+      <workItem from="1575686934627" duration="26584000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен файл для задачи Html, необходимо наполнить.">
       <created>1570634746087</created>
@@ -401,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575777711959</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="добработана задача PhoneBookJJQuery согласно замечаний 2.">
+      <created>1575777898734</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1575777898734</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
