@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/PhoneBook_ jQuery.html" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookJQuery/src/PhoneBook_ jQuery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookJQuery/src/js/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +112,7 @@
       <workItem from="1575443557311" duration="11878000" />
       <workItem from="1575456212692" duration="1852000" />
       <workItem from="1575502867105" duration="295000" />
-      <workItem from="1575686934627" duration="21493000" />
+      <workItem from="1575686934627" duration="21739000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен файл для задачи Html, необходимо наполнить.">
       <created>1570634746087</created>
@@ -396,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575775653247</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="добработана задача PhoneBookJJQuery согласно замечаний 2.">
+      <created>1575777711959</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1575777711959</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,7 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Задача CSS Таблица и Форма скорректированы согласно замечаний 2" />
     <MESSAGE value="Добавлена задача &quot;Работа с массивами&quot;" />
     <MESSAGE value="Задача CSS Table доработана согласно замечаний 3" />
     <MESSAGE value="Задача JCObject добавил массив объектов-стран" />
@@ -458,6 +462,7 @@
     <MESSAGE value="Добавлен модуль TodoListVue.&#10;Частично начата задача." />
     <MESSAGE value="Добавлен модуль TodoListVue.&#10;Для вопроса" />
     <MESSAGE value="Добавлена задача TodoListVue." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена задача TodoListVue." />
+    <MESSAGE value="добработана задача PhoneBookJJQuery согласно замечаний 2." />
+    <option name="LAST_COMMIT_MESSAGE" value="добработана задача PhoneBookJJQuery согласно замечаний 2." />
   </component>
 </project>
