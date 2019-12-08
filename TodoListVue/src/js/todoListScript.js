@@ -3,9 +3,7 @@ new Vue({
     data: {
         items: [],
         newTodoText: "",
-        editTodoText: "",
         isInvalid: false,
-        showModal: false,
     },
     methods: {
         addTodo: function () {
@@ -18,32 +16,37 @@ new Vue({
 
             this.items.push({
                 text: this.newTodoText,
+                editTodoText: "",
+                isEditable: false,
+                needShowModal: false
             });
             this.newTodoText = "";
         },
         removeTodo: function (item) {
+            item.needShowModal = false;
             this.items = this.items.filter(function (x) {
                 return x !== item;
-            })
+            });
         },
         showModal: function (item) {
-            this.showModal = true;
+            item.needShowModal = true;
         },
-        unShowModal: function () {
-            this.showModal = false;
+        unShowModal: function (item) {
+            item.isEditable = false;
+            item.needShowModal = false;
         },
         editTodo: function (item) {
             item.editTodoText = item.text;
             item.isEditable = true;
         },
         changeTodo: function (item) {
+            if(item.editTodoText === ""){
+                this.showModal(item);
+                return;
+            }
             item.text = item.editTodoText;
             item.isEditable = false;
         }
     }
-});
-
-Vue.component('modal', {
-    template: '#modal-template'
 });
 
