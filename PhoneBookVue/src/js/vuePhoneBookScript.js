@@ -15,19 +15,19 @@ new Vue({
             this.isInvalidFirstName = this.newFirstName === "";
             this.isInvalidLastName = this.newLastName === "";
             this.isInvalidPhoneNumber = this.newPhoneNumber === "";
-            if(this.isInvalidFirstName || this.isInvalidLastName || this.isInvalidPhoneNumber){
+            if (this.isInvalidFirstName || this.isInvalidLastName || this.isInvalidPhoneNumber) {
                 return;
             }
 
             var newPhoneNumber = this.newPhoneNumber;
             var haveNumber = false;
             this.items.forEach(function (item) {
-                if(item.phoneNumber === newPhoneNumber){
+                if (item.phoneNumber === newPhoneNumber) {
                     haveNumber = true;
                 }
             });
             this.haveNumber = haveNumber;
-            if(this.haveNumber){
+            if (this.haveNumber) {
                 return;
             }
 
@@ -50,7 +50,7 @@ new Vue({
         showModal: function (item) {
             item.needShowModal = true;
         },
-        unShowModal: function (item) {
+        hideModal: function (item) {
             item.needShowModal = false;
         }
     }
