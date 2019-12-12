@@ -7,7 +7,6 @@ new Vue({
     },
     methods: {
         addTodo: function () {
-
             if (this.newTodoText === "") {
                 this.isInvalid = true;
                 return;
@@ -31,7 +30,7 @@ new Vue({
         showModal: function (item) {
             item.needShowModal = true;
         },
-        unShowModal: function (item) {
+        hideModal: function (item) {
             item.isEditable = false;
             item.needShowModal = false;
         },
@@ -40,7 +39,7 @@ new Vue({
             item.isEditable = true;
         },
         changeTodo: function (item) {
-            if(item.editTodoText === ""){
+            if (item.editTodoText === "") {
                 this.showModal(item);
                 return;
             }

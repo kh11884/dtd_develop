@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="Добавлен модуль PhoneBookVue">
+    <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/PhoneBook_ jQuery.html" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookJQuery/src/PhoneBook_ jQuery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookJQuery/src/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/src/TodoListVue.html" beforeDir="false" afterPath="$PROJECT_DIR$/TodoListVue/src/TodoListVue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/src/css/todoListVueStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/TodoListVue/src/css/todoListVueStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/src/js/todoListScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/TodoListVue/src/js/todoListScript.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +116,7 @@
       <workItem from="1575456212692" duration="1852000" />
       <workItem from="1575502867105" duration="295000" />
       <workItem from="1575686934627" duration="35562000" />
-      <workItem from="1576168078357" duration="1669000" />
+      <workItem from="1576168078357" duration="2744000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен файл для задачи Html, необходимо наполнить.">
       <created>1570634746087</created>
@@ -418,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575790309403</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="добработана задача PhoneBookJJQuery согласно замечаний 3">
+      <created>1576169779431</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1576169779431</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Задача CSS Table доработана согласно замечаний 3" />
     <MESSAGE value="Задача JCObject добавил массив объектов-стран" />
     <MESSAGE value="Добавлена задача JCObject." />
     <MESSAGE value="Добавлена задача Перевод Температур" />
@@ -480,6 +487,7 @@
     <MESSAGE value="Добавлена задача TodoListVue." />
     <MESSAGE value="добработана задача PhoneBookJJQuery согласно замечаний 2." />
     <MESSAGE value="Добавлен модуль PhoneBookVue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен модуль PhoneBookVue" />
+    <MESSAGE value="добработана задача PhoneBookJJQuery согласно замечаний 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="добработана задача PhoneBookJJQuery согласно замечаний 3" />
   </component>
 </project>

@@ -17,7 +17,7 @@
             <input :class="{invalid: isInvalid}" id="new_task" class="form-control" v-model="newTodoText" type="text"
                    @keydown.enter="addTodo" @keydown.esc="newTodoText = ''">
         </div>
-        <div class="error-message col-12 order-sm-3" v-if="isInvalid">Необходимо вввести тект заметки</div>
+        <div class="error-message col-12 order-sm-3" v-if="isInvalid">Необходимо ввести тект заметки</div>
         <div class="col-auto pt-1 order-sm-1 pt-sm-0">
             <button id="add_button" class="btn mr-1 btn-primary" type="button" @click="addTodo">Добавить</button>
         </div>
@@ -25,10 +25,10 @@
 
     <div>
         <ul id="todo_list" class="list-group">
-            <li class="list-group-item px-0 py-1 border-0 list-group-item-action" v-for="item in items">
+            <li class="list-group-item px-0  py-1 border-0 list-group-item-action" v-for="item in items">
 
                 <div v-show="!item.isEditable" class="row no-gutters">
-                    <div class="col-12 order-sm-2 col-sm">
+                    <div class="col-12 order-sm-2 col-sm pb-1 pb-sm-0">
                         <span class="form-control border-0" v-text="item.text"></span>
                     </div>
 
@@ -45,7 +45,7 @@
                 </div>
 
                 <div v-show="item.isEditable" class="row no-gutters">
-                    <div class="col-12 order-sm-2 col-sm">
+                    <div class="col-12 order-sm-2 col-sm pb-1 pb-sm-0">
                         <input id="edit_task" class="form-control" v-model="item.editTodoText" type="text"
                                @keydown.enter="changeTodo(item)" @keydown.esc="item.isEditable = false">
                     </div>
@@ -81,7 +81,7 @@
 
                                 <div class="modal-footer">
                                     <slot name="footer">
-                                        <button class="modal-default-button" @click="unShowModal(item)">
+                                        <button class="modal-default-button" @click="hideModal(item)">
                                             Отмена
                                         </button>
                                         <button class="modal-default-button" @click="removeTodo(item)">
