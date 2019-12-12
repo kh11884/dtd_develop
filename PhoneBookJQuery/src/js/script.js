@@ -48,7 +48,7 @@ $(function () {
             return;
         }
 
-        var rowNumber = $("<td>").text(entryRow.index() + 1);
+        var rowNumber = $("<td>");
         var firstName = $("<td>").text(newFirstNameText);
         var lastName = $("<td>").text(newLastNameText);
         var phoneNumber = $("<td>").text(newPhoneNumberText);
@@ -94,6 +94,7 @@ $(function () {
             .append(removeButton);
 
         phoneBookTableBody.append(entryRow);
+        rowNumber.text(entryRow.index() + 1);
         clearNewEntryFields();
     }
 

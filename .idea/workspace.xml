@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PhoneBookVue/src/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookVue/src/package.json" afterDir="false" />
+    <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="Добавлен модуль PhoneBookVue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookVue/src/PhoneBookVue.html" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookVue/src/PhoneBookVue.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookVue/src/css/vuePhoneBookStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookVue/src/css/vuePhoneBookStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookVue/src/js/vuePhoneBookScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookVue/src/js/vuePhoneBookScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/PhoneBook_ jQuery.html" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookJQuery/src/PhoneBook_ jQuery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookJQuery/src/js/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,6 +115,7 @@
       <workItem from="1575456212692" duration="1852000" />
       <workItem from="1575502867105" duration="295000" />
       <workItem from="1575686934627" duration="35562000" />
+      <workItem from="1576168078357" duration="1669000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен файл для задачи Html, необходимо наполнить.">
       <created>1570634746087</created>
