@@ -12,6 +12,10 @@
   color: red
 }
 
+.form-control.red_placeholder:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}
+
 .errorMessage {
   color: red
 }

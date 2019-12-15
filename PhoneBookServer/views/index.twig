@@ -34,7 +34,7 @@
                 </div>
             </div>
 
-            <span class="errorMessage" v-show="haveNumber">Такой номер телефона уже добавлен. Проверьте записи.</span>
+            <span class="errorMessage" v-if="haveNumber">Такой номер телефона уже добавлен. Проверьте записи.</span>
         </form>
 
         <form class="form-inline mb-4">
@@ -84,12 +84,12 @@
                         </div>
                     </td>
                     <td>
-                        <button type='button' title='удалить' class='btn btn-outline-danger'
+                        <button type='button' title='Удалить' class='btn btn-outline-danger'
                                 @click="showModal(contact)">
                             <img alt='del' src='/images/remove_icon.png' class='small_button_icon'>
                         </button>
 
-                        <div v-show="contact.needShowModal">
+                        <div v-if="contact.needShowModal">
                             <div class="modal-mask">
                                 <div class="modal-wrapper">
                                     <div class="modal-container">
@@ -125,7 +125,7 @@
                 </tbody>
             </table>
 
-            <div v-show="mustBeDeleted.needShowModal">
+            <div v-if="mustBeDeleted.needShowModal">
                 <div class="modal-mask">
                     <div class="modal-wrapper">
                         <div class="modal-container">

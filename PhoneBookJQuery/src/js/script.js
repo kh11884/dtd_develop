@@ -57,7 +57,7 @@ $(function () {
                 .append($("<label class='form-check-label align-middle'>")
                     .append($("<input id='checkbox_all' type='checkbox' class='form-check-input align-middle'>"))));
         var removeButton = $("<td>")
-            .append($("<button type='button' title='удалить' class='btn btn-outline-danger'>")
+            .append($("<button type='button' title='Удалить' class='btn btn-outline-danger'>")
                 .append($("<img alt='del' src='icons/remove_icon.png' class='small_button_icon'>"))
                 .click(function () {
                     confirmDialog.modal('show');
