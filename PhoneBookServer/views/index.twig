@@ -38,9 +38,10 @@
         </form>
 
         <form class="form-inline mb-4">
-            <label class="mr-2 mt-1">Поиск</label>
-            <input class="form-control mr-2 mt-1" v-model="term">
-            <button class="btn btn-primary mt-1" type="button" @click="search">Поиск</button>
+            <label class="mr-1 mt-1">Поиск</label>
+            <input class="form-control mr-1 mt-1" v-model="term">
+            <button class="btn btn-primary mr-1 mt-1" type="button" @click="search">Поиск</button>
+            <button class="btn btn-secondary mt-1" type="button" @click="cancelSearch">Отмена</button>
         </form>
 
         <div class=" min-width-860 table-responsive-sm">
@@ -78,7 +79,7 @@
                         <div class='form-check'>
                             <label class='form-check-label align-middle'>
                                 <input type='checkbox' class='form-check-input align-middle contact_checkbox'
-                                       :value="contact.id" v-model="mustBeDeleted.iDsToDelete">
+                                       :value="contact.id" v-model="mustBeDeleted.iDs">
                             </label>
                         </div>
                     </td>

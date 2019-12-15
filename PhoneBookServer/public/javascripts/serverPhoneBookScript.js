@@ -24,7 +24,7 @@ new Vue({
         haveNumber: false,
         mustBeDeleted: {
             needShowModal: false,
-            iDsToDelete: []
+            iDs: []
         },
         checkAll: false
     },
@@ -108,23 +108,27 @@ new Vue({
                     return;
                 }
                 self.loadContacts();
-                self.mustBeDeleted.iDsToDelete = [];
+                self.mustBeDeleted.iDs = [];
             });
         },
         checkedAllContacts: function () {
-            var iDsToDeleteArray = this.mustBeDeleted.iDsToDelete;
+            var mustBeDeletedIDs = this.mustBeDeleted.iDs;
 
-            if ($("#root-checkbox").prop("checked")) {
+            if (this.checkAll) {
                 this.contacts.forEach(function (contact) {
-                    if (iDsToDeleteArray.indexOf(contact.id) < 0) {
-                        iDsToDeleteArray.push(contact.id);
+                    if (mustBeDeletedIDs.indexOf(contact.id) < 0) {
+                        mustBeDeletedIDs.push(contact.id);
                     }
                 });
             } else {
-                this.mustBeDeleted.iDsToDelete = [];
+                this.mustBeDeleted.iDs = [];
             }
         },
         search: function () {
+            this.loadContacts();
+        },
+        cancelSearch: function () {
+            this.term = "";
             this.loadContacts();
         },
         showModal: function (item) {
@@ -134,7 +138,7 @@ new Vue({
             item.needShowModal = false;
         },
         showDialogToCheckedDelete: function () {
-            if (this.mustBeDeleted.iDsToDelete.length === 0) {
+            if (this.mustBeDeleted.iDs.length === 0) {
                 return;
             }
             this.mustBeDeleted.needShowModal = true;
