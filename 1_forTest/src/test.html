@@ -1,15 +1,27 @@
-<template>
-    <button @click="visible = true">Show modal</button>
-    <modal :show="visible">
-        <div>какой то контент</div>
-    </modal>
-</template>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Телефонная книга</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+</head>
+<body>
+<div v-cloak id="app" class="m-1">
+    <div id="my-form">
+        <div>
+            <div>Ваш возраст: <span v-text="age">23</span></div>
+        </div>
+        <label> Введите ваш возраст: <input v-model="age" type="text"/>
+        </label>
+    </div>
 
-<script>
-    export default {
-        data() {
-            return {
-                visible: false
-            }
-        }
-</script>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="js/test_1.js"></script>
+
+</body>
+</html>
