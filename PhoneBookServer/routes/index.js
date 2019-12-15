@@ -16,6 +16,22 @@ router.get("/getContacts", function(req, res) {
 
 router.post("/addContact", function(req, res) {
   var contact = req.body;
+
+  var haveNumber = false;
+  contacts.forEach(function (c) {
+    if(c.phoneNumber === contact.phoneNumber){
+      haveNumber = true;
+    }
+  });
+
+  if(haveNumber){
+    res.send({
+      success: false,
+      message: "Такой номер уже есть в базе"
+    });
+    return;
+  }
+
   contact.id = id;
   id++;
 
@@ -31,6 +47,19 @@ router.post("/deleteContact", function(req, res) {
 
   contacts = contacts.filter(function (contact) {
     return contact.id !== id;
+  });
+
+  res.send({
+    success: true,
+    message: null
+  });
+});
+
+router.post("/deleteCheckedContacts", function(req, res) {
+  var mustBeDeleted = req.body.iDsToDelete;
+
+  contacts = contacts.filter(function (contact) {
+    return mustBeDeleted.indexOf(contact.id) < 0
   });
 
   res.send({

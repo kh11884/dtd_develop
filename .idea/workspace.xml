@@ -2,28 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1_forTest/src/js/test_1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_forTest/src/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1_forTest/src/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/bin/www" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/public/images/remove_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/public/javascripts/serverPhoneBookScript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/public/libs/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/public/libs/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/public/libs/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/public/libs/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/public/stylesheets/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/routes/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/views/error.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/views/index.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookServer/views/layout.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_forTest/src/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/1_forTest/src/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/public/javascripts/serverPhoneBookScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/public/javascripts/serverPhoneBookScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/views/index.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +123,7 @@
       <workItem from="1575686934627" duration="35562000" />
       <workItem from="1576168078357" duration="4228000" />
       <workItem from="1576334650474" duration="4621000" />
-      <workItem from="1576379211125" duration="10620000" />
+      <workItem from="1576379211125" duration="25108000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен файл для задачи Html, необходимо наполнить.">
       <created>1570634746087</created>
@@ -465,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576171860423</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Добавлен черновик задачи PhoneBookServer">
+      <created>1576395252947</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1576395252947</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлена задача Перевод Температур" />
     <MESSAGE value="Добавлена задача Todo List" />
     <MESSAGE value="Добработаны задачи JSObject, Перевод температур, Todo List согласно замечаний 1" />
     <MESSAGE value="Добработаны задачи JSObject, Перевод температур, Todo List согласно замечаний 2" />
@@ -527,6 +515,7 @@
     <MESSAGE value="добработана задача PhoneBookJJQuery согласно замечаний 3" />
     <MESSAGE value="добработана задача TodoListVue согласно замечаний 1" />
     <MESSAGE value="добработана задача PhoneBookVue согласно замечаний 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="добработана задача PhoneBookVue согласно замечаний 1" />
+    <MESSAGE value="Добавлен черновик задачи PhoneBookServer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен черновик задачи PhoneBookServer" />
   </component>
 </project>

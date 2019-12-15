@@ -21,7 +21,12 @@ new Vue({
         isInvalidFirstName: false,
         isInvalidLastName: false,
         isInvalidPhoneNumber: false,
-        haveNumber: false
+        haveNumber: false,
+        mustBeDeleted: {
+            needShowModal: false,
+            iDsToDelete: []
+        },
+        checkAll: false
     },
     created: function () {
         this.loadContacts();
@@ -37,11 +42,11 @@ new Vue({
 
             var newPhoneNumber = this.newPhoneNumber;
             var haveNumber = false;
-            // this.items.forEach(function (item) {
-            //     if (item.phoneNumber === newPhoneNumber) {
-            //         haveNumber = true;
-            //     }
-            // });
+            this.contacts.forEach(function (contact) {
+                if (contact.phoneNumber === newPhoneNumber) {
+                    haveNumber = true;
+                }
+            });
             this.haveNumber = haveNumber;
             if (this.haveNumber) {
                 return;
@@ -51,7 +56,7 @@ new Vue({
                 firstName: this.newFirstName,
                 lastName: this.newLastName,
                 phoneNumber: this.newPhoneNumber,
-                mustBeDeleted: false,
+                // mustBeDeleted: false,
                 needShowModal: false
             };
 
@@ -92,7 +97,34 @@ new Vue({
                 self.loadContacts();
             });
         },
-        search: function(){
+        deleteCheckedContacts: function () {
+            var self = this;
+            self.mustBeDeleted.needShowModal = false;
+            self.checkAll = false;
+
+            post("/deleteCheckedContacts", self.mustBeDeleted).done(function (responce) {
+                if (!responce.success) {
+                    alert(responce.message);
+                    return;
+                }
+                self.loadContacts();
+                self.mustBeDeleted.iDsToDelete = [];
+            });
+        },
+        checkedAllContacts: function () {
+            var iDsToDeleteArray = this.mustBeDeleted.iDsToDelete;
+
+            if ($("#root-checkbox").prop("checked")) {
+                this.contacts.forEach(function (contact) {
+                    if (iDsToDeleteArray.indexOf(contact.id) < 0) {
+                        iDsToDeleteArray.push(contact.id);
+                    }
+                });
+            } else {
+                this.mustBeDeleted.iDsToDelete = [];
+            }
+        },
+        search: function () {
             this.loadContacts();
         },
         showModal: function (item) {
@@ -100,6 +132,15 @@ new Vue({
         },
         hideModal: function (item) {
             item.needShowModal = false;
+        },
+        showDialogToCheckedDelete: function () {
+            if (this.mustBeDeleted.iDsToDelete.length === 0) {
+                return;
+            }
+            this.mustBeDeleted.needShowModal = true;
+        },
+        hideDialogToCheckedDelete: function () {
+            this.mustBeDeleted.needShowModal = false;
         }
     }
 });
