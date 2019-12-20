@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="" />
+    <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/1_forTest/src/js/jquery.rest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_forTest/src/js/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/1_forTest/src/js/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_forTest/src/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/1_forTest/src/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/js/refinancingRateHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/PercentCalculation/src/js/refinancingRateHistory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookVue/src/PhoneBookVue.html" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookVue/src/PhoneBookVue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookVue/src/js/vuePhoneBookScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookVue/src/js/vuePhoneBookScript.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +45,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574833282855" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PhoneBookServer/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/1_forTest/src/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -45,19 +53,19 @@
     <property name="project.structure.side.proportion" value="0.42415315" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\1_forTest\src\js" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookServer\public\images" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookVue\src" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoListVue\src" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookJQuery\src\icons" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoList JQuery\src\js\libs\jquery-ui-1.12.1" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\js" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\css" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\icons" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookServer\public\images" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookVue\src" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoListVue\src" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookJQuery\src\icons" />
-      <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -118,14 +126,9 @@
       <workItem from="1575686934627" duration="35562000" />
       <workItem from="1576168078357" duration="4228000" />
       <workItem from="1576334650474" duration="4621000" />
-      <workItem from="1576379211125" duration="30292000" />
-    </task>
-    <task id="LOCAL-00002" summary="Добавлена задача html.">
-      <created>1571212968266</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1571212968266</updated>
+      <workItem from="1576379211125" duration="30778000" />
+      <workItem from="1576467399558" duration="3371000" />
+      <workItem from="1576750972712" duration="3528000" />
     </task>
     <task id="LOCAL-00003" summary="Задача Html доработана согласно замечаниям 1.">
       <created>1571282657816</created>
@@ -463,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576435463008</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Подправлены небольшие замечания:&#10;добавлена красная тень вокруг input при валидации.&#10;исправлены опечатки&#10;v-show заменен на v-if">
+      <created>1576435913754</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1576435913754</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

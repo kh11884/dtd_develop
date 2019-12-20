@@ -16,18 +16,18 @@ $(function () {
         }
     };
 
-
     var jqxhr = $.ajax("https://smi-new.s7.aero/rest/init/activities_chart", {
         method: "post",
         contentType: "application/json;charset=utf-8",
-        dataType: "application/json; charset=UTF-8",
+        // dataType: "application/json; charset=UTF-8",
         data: JSON.stringify(jsonData),
+        // Origin: "https://fis.s7.aero",
 
         success: function (response) {
             alert(response.status);
         },
         error: function () {
-            alert("error");
+            alert("error ");
         }
     });
     console.log(jqxhr);

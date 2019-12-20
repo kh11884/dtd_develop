@@ -8,7 +8,8 @@ new Vue({
         isInvalidFirstName: false,
         isInvalidLastName: false,
         isInvalidPhoneNumber: false,
-        haveNumber: false
+        haveNumber: false,
+        itemId: 1
     },
     methods: {
         addItem: function () {
@@ -20,13 +21,9 @@ new Vue({
             }
 
             var newPhoneNumber = this.newPhoneNumber;
-            var haveNumber = false;
-            this.items.forEach(function (item) {
-                if (item.phoneNumber === newPhoneNumber) {
-                    haveNumber = true;
-                }
+            this.haveNumber = this.items.some(function (item) {
+                return item.phoneNumber === newPhoneNumber;
             });
-            this.haveNumber = haveNumber;
             if (this.haveNumber) {
                 return;
             }
@@ -35,11 +32,13 @@ new Vue({
                 firstName: this.newFirstName,
                 lastName: this.newLastName,
                 phoneNumber: this.newPhoneNumber,
-                needShowModal: false
+                needShowModal: false,
+                id: this.itemId
             });
             this.newFirstName = "";
             this.newLastName = "";
             this.newPhoneNumber = "";
+            this.itemId++;
         },
         removeItem: function (item) {
             item.needShowModal = false;

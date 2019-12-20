@@ -25,7 +25,7 @@
                 <div class="col-12 col-sm mt-1">
                     <input id="phone_number" class="form-control" type="number" placeholder="Номер телефона" pattern=""
                            v-model="newPhoneNumber"
-                           :class="{red_placeholder : isInvalidPhoneNumber, 'border-danger': isInvalidPhoneNumber || haveNumber,
+                           :class="{red_placeholder : isInvalidPhoneNumber || haveNumber, 'border-danger': isInvalidPhoneNumber || haveNumber,
                        errorMessage : haveNumber}"
                            :placeholder="isInvalidPhoneNumber ? 'Введите телефон' : 'Телефон'">
                 </div>
@@ -58,7 +58,7 @@
                 </tr>
                 </thead>
                 <tbody id="phoneBook_table_body">
-                <tr v-for="(item, index) in items">
+                <tr v-for="(item, index) in items" v-bind:key="item.id">
                     <td>{{index + 1}}</td>
                     <td>{{item.firstName}}</td>
                     <td>{{item.lastName}}</td>
