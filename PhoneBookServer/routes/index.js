@@ -7,9 +7,9 @@ var id = 1;
 router.get("/getContacts", function (req, res) {
     var term = (req.query.term || "").toUpperCase();
     var result = term === "" ? contacts : contacts.filter(function (contact) {
-        return contact.firstName.toUpperCase().indexOf(term) >= 0 ||
-            contact.lastName.toUpperCase().indexOf(term) >= 0 ||
-            contact.phoneNumber.toUpperCase().indexOf(term) >= 0
+        return contact.firstName.toUpperCase().includes(term)||
+            contact.lastName.toUpperCase().includes(term)||
+            contact.phoneNumber.toUpperCase().includes(term)
     });
     res.send(result);
 });
@@ -17,11 +17,8 @@ router.get("/getContacts", function (req, res) {
 router.post("/addContact", function (req, res) {
     var contact = req.body;
 
-    var haveNumber = false;
-    contacts.forEach(function (c) {
-        if (c.phoneNumber === contact.phoneNumber) {
-            haveNumber = true;
-        }
+    var haveNumber = contacts.some(function (c) {
+        return c.phoneNumber === contact.phoneNumber;
     });
 
     if (haveNumber) {
@@ -56,11 +53,11 @@ router.post("/deleteContact", function (req, res) {
 });
 
 router.post("/deleteCheckedContacts", function (req, res) {
-    var mustBeDeleted = req.body.iDs;
+    var mustBeDeleted = req.body.mustDeleted;
     var wasChanged = false;
 
     contacts = contacts.filter(function (contact) {
-        if (mustBeDeleted.indexOf(contact.id) < 0) {
+        if (!mustBeDeleted.includes(contact.id)) {
             return true;
         } else {
             wasChanged = true;

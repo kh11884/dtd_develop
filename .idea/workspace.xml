@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1_forTest/src/js/jquery.rest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_forTest/src/js/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/1_forTest/src/js/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_forTest/src/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/1_forTest/src/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/js/refinancingRateHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/PercentCalculation/src/js/refinancingRateHistory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookVue/src/PhoneBookVue.html" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookVue/src/PhoneBookVue.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookVue/src/js/vuePhoneBookScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookVue/src/js/vuePhoneBookScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/public/javascripts/serverPhoneBookScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/public/javascripts/serverPhoneBookScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/views/index.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,14 +125,8 @@
       <workItem from="1576334650474" duration="4621000" />
       <workItem from="1576379211125" duration="30778000" />
       <workItem from="1576467399558" duration="3371000" />
-      <workItem from="1576750972712" duration="3528000" />
-    </task>
-    <task id="LOCAL-00003" summary="Задача Html доработана согласно замечаниям 1.">
-      <created>1571282657816</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1571282657816</updated>
+      <workItem from="1576750972712" duration="9758000" />
+      <workItem from="1576937641097" duration="5180000" />
     </task>
     <task id="LOCAL-00004" summary="Добавлена задача CSS Форма">
       <created>1571555626253</created>
@@ -473,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576435913754</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="добработана задача PhoneBookVue согласно замечаний 2">
+      <created>1576818198204</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1576818198205</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,7 +508,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлена задача TodoList JQuery." />
     <MESSAGE value="Доработана задача TodoList JQuery согласно замечаний 1.&#10;Доработана задача TodoList согласно замечаний 3." />
     <MESSAGE value="Node_module добавлена в gitignore" />
     <MESSAGE value="задача TodoList Bootstrap доработана согласно замечаний 1." />
@@ -535,6 +532,7 @@
     <MESSAGE value="Добавлена задача PhoneBookServer, надо причесать" />
     <MESSAGE value="Добавлена задача PhoneBookServer." />
     <MESSAGE value="Подправлены небольшие замечания:&#10;добавлена красная тень вокруг input при валидации.&#10;исправлены опечатки&#10;v-show заменен на v-if" />
-    <option name="LAST_COMMIT_MESSAGE" value="Подправлены небольшие замечания:&#10;добавлена красная тень вокруг input при валидации.&#10;исправлены опечатки&#10;v-show заменен на v-if" />
+    <MESSAGE value="добработана задача PhoneBookVue согласно замечаний 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="добработана задача PhoneBookVue согласно замечаний 2" />
   </component>
 </project>

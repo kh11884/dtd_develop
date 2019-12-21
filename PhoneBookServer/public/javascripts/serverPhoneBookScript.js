@@ -22,10 +22,7 @@ new Vue({
         isInvalidLastName: false,
         isInvalidPhoneNumber: false,
         haveNumber: false,
-        mustBeDeleted: {
-            needShowModal: false,
-            iDs: []
-        },
+        needShowModalForDeleteChecked: false,
         checkAll: false
     },
     created: function () {
@@ -41,13 +38,9 @@ new Vue({
             }
 
             var newPhoneNumber = this.newPhoneNumber;
-            var haveNumber = false;
-            this.contacts.forEach(function (contact) {
-                if (contact.phoneNumber === newPhoneNumber) {
-                    haveNumber = true;
-                }
+            this.haveNumber = this.contacts.some(function (c) {
+                return c.phoneNumber === newPhoneNumber;
             });
-            this.haveNumber = haveNumber;
             if (this.haveNumber) {
                 return;
             }
@@ -56,7 +49,7 @@ new Vue({
                 firstName: this.newFirstName,
                 lastName: this.newLastName,
                 phoneNumber: this.newPhoneNumber,
-                // mustBeDeleted: false,
+                mustBeDeleted: false,
                 needShowModal: false
             };
 
@@ -99,37 +92,42 @@ new Vue({
         },
         deleteCheckedContacts: function () {
             var self = this;
-            self.mustBeDeleted.needShowModal = false;
+            self.needShowModalForDeleteChecked = false;
             self.checkAll = false;
 
-            post("/deleteCheckedContacts", self.mustBeDeleted).done(function (responce) {
+            var mustDeleted = self.contacts.filter(function (contact) {
+                return contact.mustBeDeleted;
+            }).map(function (contact) {
+                return contact.id;
+            });
+
+            var data = {
+                mustDeleted: mustDeleted
+            };
+
+            post("/deleteCheckedContacts", data).done(function (responce) {
                 if (!responce.success) {
                     alert(responce.message);
                     return;
                 }
                 self.loadContacts();
-                self.mustBeDeleted.iDs = [];
             });
         },
         checkedAllContacts: function () {
-            var mustBeDeletedIDs = this.mustBeDeleted.iDs;
+            var self = this;
+            this.contacts.map(function (contact) {
+                contact.mustBeDeleted = self.checkAll;
+            });
 
-            if (this.checkAll) {
-                this.contacts.forEach(function (contact) {
-                    if (mustBeDeletedIDs.indexOf(contact.id) < 0) {
-                        mustBeDeletedIDs.push(contact.id);
-                    }
-                });
-            } else {
-                this.mustBeDeleted.iDs = [];
-            }
         },
         search: function () {
             this.loadContacts();
+            this.checkAll = false;
         },
         cancelSearch: function () {
             this.term = "";
             this.loadContacts();
+            this.checkAll = false;
         },
         showModal: function (item) {
             item.needShowModal = true;
@@ -138,13 +136,15 @@ new Vue({
             item.needShowModal = false;
         },
         showDialogToCheckedDelete: function () {
-            if (this.mustBeDeleted.iDs.length === 0) {
+            if (this.contacts.every(function (c) {
+                return c.mustBeDeleted === false;
+            })) {
                 return;
             }
-            this.mustBeDeleted.needShowModal = true;
+            this.needShowModalForDeleteChecked = true;
         },
         hideDialogToCheckedDelete: function () {
-            this.mustBeDeleted.needShowModal = false;
+            this.needShowModalForDeleteChecked = false;
         }
     }
 });
