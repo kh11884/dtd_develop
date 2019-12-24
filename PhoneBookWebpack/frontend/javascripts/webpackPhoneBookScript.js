@@ -1,3 +1,6 @@
+import "bootstrap/dist/css/bootstrap.css"
+import "../stylesheets/style.css";
+
 import $ from "jquery";
 import Vue from "vue";
 import "bootstrap";
