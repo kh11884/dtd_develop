@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/bin/www" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/frontend/images/remove_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/phoneBookServices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/webpackPhoneBookScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/frontend/stylesheets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/routes/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/views/error.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/views/index.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/views/layout.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookServer/public/javascripts/serverPhoneBookScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/public/javascripts/serverPhoneBookScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookServer/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookServer/views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/views/index.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +54,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574833282855" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/1_forTest/src/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PhoneBookWebpack/public/libs" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -50,19 +64,19 @@
     <property name="project.structure.side.proportion" value="0.42415315" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\1_forTest\src\js" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookServer\public\images" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookVue\src" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoListVue\src" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookJQuery\src\icons" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\frontend" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoList JQuery\src\js\libs\jquery-ui-1.12.1" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\js" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\css" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\icons" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public\libs" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\1_forTest\src\js" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookServer\public\images" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookVue\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -77,10 +91,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.build">
     <configuration name="page2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AcademITScoool_ClientWEB/Html/page2.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/PhoneBookWebpack/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
@@ -126,21 +155,7 @@
       <workItem from="1576379211125" duration="30778000" />
       <workItem from="1576467399558" duration="3371000" />
       <workItem from="1576750972712" duration="9758000" />
-      <workItem from="1576937641097" duration="5180000" />
-    </task>
-    <task id="LOCAL-00004" summary="Добавлена задача CSS Форма">
-      <created>1571555626253</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1571555626253</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Задачи CSS Text и CSS Table скорректированы согласно замечаний 1">
-      <created>1571952430898</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1571952430898</updated>
+      <workItem from="1576937641097" duration="15009000" />
     </task>
     <task id="LOCAL-00006" summary="Задачи CSS Text и CSS Table скорректированы согласно замечаний 1">
       <created>1571952490033</created>
@@ -471,7 +486,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576818198205</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="добработана задача PhoneBookServer согласно замечаний 1">
+      <created>1576942968678</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1576942968679</updated>
+    </task>
+    <task id="LOCAL-00054" summary="добработана задача PhoneBookServer согласно замечаний 1">
+      <created>1576943055622</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1576943055623</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +537,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Доработана задача TodoList JQuery согласно замечаний 1.&#10;Доработана задача TodoList согласно замечаний 3." />
     <MESSAGE value="Node_module добавлена в gitignore" />
     <MESSAGE value="задача TodoList Bootstrap доработана согласно замечаний 1." />
     <MESSAGE value="Сделан merge  с изменениями на работе." />
@@ -533,6 +561,7 @@
     <MESSAGE value="Добавлена задача PhoneBookServer." />
     <MESSAGE value="Подправлены небольшие замечания:&#10;добавлена красная тень вокруг input при валидации.&#10;исправлены опечатки&#10;v-show заменен на v-if" />
     <MESSAGE value="добработана задача PhoneBookVue согласно замечаний 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="добработана задача PhoneBookVue согласно замечаний 2" />
+    <MESSAGE value="добработана задача PhoneBookServer согласно замечаний 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="добработана задача PhoneBookServer согласно замечаний 1" />
   </component>
 </project>
