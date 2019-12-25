@@ -10,6 +10,21 @@ function get(url, data) {
     return $.get(url, data);
 }
 
+function getMustBeDeletedIds(self) {
+    return self.contacts.filter(function (contact) {
+        return contact.mustBeDeleted;
+    }).map(function (contact) {
+        return contact.id;
+    });
+}
+
+function markSelected(self, mustBeSelected) {
+    self.contacts.forEach(function (contact) {
+        contact.mustBeDeleted = mustBeSelected.includes(contact.id);
+    });
+
+}
+
 new Vue({
     el: "#app",
     data: {
@@ -25,6 +40,16 @@ new Vue({
         needShowModalForDeleteChecked: false,
         checkAll: false
     },
+    // computed: {
+    //     filteredContacts: function () {
+    //         var term = this.term.toUpperCase();
+    //         return this.contacts.filter(function (c) {
+    //             return c.firstName.toUpperCase().includes(term) ||
+    //                 c.lastName.toUpperCase().includes(term) ||
+    //                 c.phoneNumber.toUpperCase().includes(term)
+    //         });
+    //     }
+    // },
     created: function () {
         this.loadContacts();
     },
@@ -95,11 +120,7 @@ new Vue({
             self.needShowModalForDeleteChecked = false;
             self.checkAll = false;
 
-            var mustDeleted = self.contacts.filter(function (contact) {
-                return contact.mustBeDeleted;
-            }).map(function (contact) {
-                return contact.id;
-            });
+            var mustDeleted = getMustBeDeletedIds(this);
 
             var data = {
                 mustDeleted: mustDeleted
@@ -113,21 +134,28 @@ new Vue({
                 self.loadContacts();
             });
         },
+        checkWasAllMarked: function () {
+            this.checkAll = this.contacts.every(function (contact) {
+                return contact.mustBeDeleted;
+            });
+        },
         checkedAllContacts: function () {
             var self = this;
-            this.contacts.map(function (contact) {
+            this.contacts.forEach(function (contact) {
                 contact.mustBeDeleted = self.checkAll;
             });
 
         },
         search: function () {
+            var mustDeleted = getMustBeDeletedIds(this);
             this.loadContacts();
-            this.checkAll = false;
+            this.checkWasAllMarked();
         },
         cancelSearch: function () {
             this.term = "";
             this.loadContacts();
-            this.checkAll = false;
+            // this.checkAll = false;
+            this.checkWasAllMarked();
         },
         showModal: function (item) {
             item.needShowModal = true;

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/public/images/remove_icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/public/javascripts/serverPhoneBookScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/public/javascripts/serverPhoneBookScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/views/index.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookVue/src/PhoneBookVue.html" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookVue/src/PhoneBookVue.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,14 +144,8 @@
       <workItem from="1576467399558" duration="3371000" />
       <workItem from="1576750972712" duration="9758000" />
       <workItem from="1576937641097" duration="20925000" />
-      <workItem from="1577184995998" duration="241000" />
-    </task>
-    <task id="LOCAL-00008" summary="Задача CSS Form скорректирована согласно замечаний 1">
-      <created>1572022899450</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1572022899450</updated>
+      <workItem from="1577184995998" duration="888000" />
+      <workItem from="1577217576821" duration="14312000" />
     </task>
     <task id="LOCAL-00009" summary="Задача CSS Text скорректирована согласно замечаний 2">
       <created>1572193324736</created>
@@ -489,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577181564972</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Добавлена версия задачи WebPackPhoneBook&#10;Нужно настроить:&#10;• Однофайловые Vue компоненты&#10;• Babel и переписать код на ES 2015&#10;• SCSS">
+      <created>1577185431569</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1577185431569</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +527,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Сделан merge  с изменениями на работе." />
     <MESSAGE value="Добавлена задача Underscore" />
     <MESSAGE value="Немного даработан и отформатирован калькулятор.&#10;Добавить заполнение таблицы-шапки&#10;Добавить заполенение из формы." />
     <MESSAGE value="Частично добавлена задача PhoneBook" />
@@ -551,6 +551,7 @@
     <MESSAGE value="добработана задача PhoneBookServer согласно замечаний 1" />
     <MESSAGE value="Добавлена версия задачи WebPackPhoneBook без CSS" />
     <MESSAGE value="Добавлена версия задачи WebPackPhoneBook без подгрузки картинки из без бабель." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена версия задачи WebPackPhoneBook без подгрузки картинки из без бабель." />
+    <MESSAGE value="Добавлена версия задачи WebPackPhoneBook&#10;Нужно настроить:&#10;• Однофайловые Vue компоненты&#10;• Babel и переписать код на ES 2015&#10;• SCSS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена версия задачи WebPackPhoneBook&#10;Нужно настроить:&#10;• Однофайловые Vue компоненты&#10;• Babel и переписать код на ES 2015&#10;• SCSS" />
   </component>
 </project>

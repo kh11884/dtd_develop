@@ -70,7 +70,7 @@
                 </tr>
                 </thead>
                 <tbody id="phoneBook_table_body">
-                <tr v-for="(contact, index) in contacts" v-bind:key="contact.id">
+                <tr v-for="(contact, index) in contacts" :key="contact.id">
                     <td>{{ index + 1 }}</td>
                     <td>{{ contact.firstName }}</td>
                     <td>{{ contact.lastName }}</td>
@@ -79,7 +79,7 @@
                         <div class='form-check'>
                             <label class='form-check-label align-middle'>
                                 <input type='checkbox' class='form-check-input align-middle contact_checkbox'
-                                v-model="contact.mustBeDeleted">
+                                @change="checkWasAllMarked" v-model="contact.mustBeDeleted">
                             </label>
                         </div>
                     </td>

@@ -58,7 +58,7 @@
                 </tr>
                 </thead>
                 <tbody id="phoneBook_table_body">
-                <tr v-for="(item, index) in items" v-bind:key="item.id">
+                <tr v-for="(item, index) in items" :key="item.id">
                     <td>{{index + 1}}</td>
                     <td>{{item.firstName}}</td>
                     <td>{{item.lastName}}</td>
