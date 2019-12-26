@@ -145,14 +145,7 @@
       <workItem from="1576750972712" duration="9758000" />
       <workItem from="1576937641097" duration="20925000" />
       <workItem from="1577184995998" duration="888000" />
-      <workItem from="1577217576821" duration="25052000" />
-    </task>
-    <task id="LOCAL-00011" summary="Добавлена задача &quot;Работа с массивами&quot;">
-      <created>1572355236629</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1572355236629</updated>
+      <workItem from="1577217576821" duration="26478000" />
     </task>
     <task id="LOCAL-00012" summary="Добавлена задача &quot;Работа с массивами&quot;">
       <created>1572356224015</created>
@@ -490,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577334114581</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="задача PhoneBookServer&#10;вариант фильтрацией контактов на стороне клиента">
+      <created>1577372948138</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1577372948138</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +527,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Частично добавлена задача PhoneBook" />
     <MESSAGE value="Для вопроса про ширину элемента Bootstrap" />
     <MESSAGE value="добработана задача Bootstrap согласно замечаний 4" />
     <MESSAGE value="Добавлена задача PhoneBook без усложнений." />
@@ -552,6 +551,7 @@
     <MESSAGE value="Добавлена версия задачи WebPackPhoneBook&#10;Нужно настроить:&#10;• Однофайловые Vue компоненты&#10;• Babel и переписать код на ES 2015&#10;• SCSS" />
     <MESSAGE value="задача PhoneBookServer&#10;нужно найти способ обратиться к свойству после get запроса" />
     <MESSAGE value="задача PhoneBookServer&#10;вариант с синхронным ajax" />
-    <option name="LAST_COMMIT_MESSAGE" value="задача PhoneBookServer&#10;вариант с синхронным ajax" />
+    <MESSAGE value="задача PhoneBookServer&#10;вариант фильтрацией контактов на стороне клиента" />
+    <option name="LAST_COMMIT_MESSAGE" value="задача PhoneBookServer&#10;вариант фильтрацией контактов на стороне клиента" />
   </component>
 </project>

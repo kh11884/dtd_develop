@@ -14,7 +14,7 @@ function get(url, data) {
 }
 
 function saveMustBeDeletedIds(self) {
-    self.checkedContacts = self.filteredContacts.filter(function (contact) {
+    self.checkedContacts = self.contacts.filter(function (contact) {
         return contact.mustBeDeleted;
     }).map(function (contact) {
         return contact.id;
@@ -22,7 +22,7 @@ function saveMustBeDeletedIds(self) {
 }
 
 function markSelected(self) {
-    self.filteredContacts.forEach(function (contact) {
+    self.contacts.forEach(function (contact) {
         contact.mustBeDeleted = self.checkedContacts.includes(contact.id);
     });
 }
@@ -31,7 +31,6 @@ new Vue({
     el: "#app",
     data: {
         contacts: [],
-        filteredContacts: [],
         checkedContacts: [],
         newFirstName: "",
         newLastName: "",
@@ -87,13 +86,17 @@ new Vue({
             this.newPhoneNumber = "";
         },
         loadContacts: function () {
-            saveMustBeDeletedIds(this);
             var self = this;
+            saveMustBeDeletedIds(self);
 
-            get("/getContacts").done(function (contacts) {
+            var data = {
+                term: self.term
+            };
+
+            get("/getContacts", data).done(function (contacts) {
                 self.contacts = contacts;
-                self.showFilteredContacts();
                 markSelected(self);
+                self.checkWasAllMarked();
             });
         },
         deleteContact: function (contact) {
@@ -113,9 +116,9 @@ new Vue({
             self.needShowModalForDeleteChecked = false;
             self.checkAll = false;
 
-            saveMustBeDeletedIds(this);
+            saveMustBeDeletedIds(self);
             var data = {
-                mustDeleted: this.checkedContacts
+                mustDeleted: self.checkedContacts
             };
 
             post("/deleteCheckedContacts", data).done(function (responce) {
@@ -127,36 +130,26 @@ new Vue({
             });
         },
         checkWasAllMarked: function () {
-            if (this.filteredContacts.length === 0) {
+            if (this.contacts.length === 0) {
                 this.checkAll = false;
             } else {
-                this.checkAll = this.filteredContacts.every(function (contact) {
+                this.checkAll = this.contacts.every(function (contact) {
                     return contact.mustBeDeleted === true;
                 });
             }
         },
         checkedAllContacts: function () {
             var self = this;
-            this.filteredContacts.forEach(function (contact) {
+            this.contacts.forEach(function (contact) {
                 contact.mustBeDeleted = self.checkAll;
             });
         },
-        showFilteredContacts: function () {
-            if (this.term === "") {
-                this.filteredContacts = this.contacts;
-            } else {
-                var term = this.term.toUpperCase();
-                this.filteredContacts = this.contacts.filter(function (c) {
-                    return c.firstName.toUpperCase().includes(term) ||
-                        c.lastName.toUpperCase().includes(term) ||
-                        c.phoneNumber.toUpperCase().includes(term)
-                });
-            }
-            this.checkWasAllMarked();
+        search: function () {
+            this.loadContacts();
         },
         cancelSearch: function () {
             this.term = "";
-            this.showFilteredContacts();
+            this.loadContacts();
         },
         showModal: function (item) {
             item.needShowModal = true;
@@ -165,7 +158,7 @@ new Vue({
             item.needShowModal = false;
         },
         showDialogToCheckedDelete: function () {
-            if (this.filteredContacts.every(function (c) {
+            if (this.contacts.every(function (c) {
                 return c.mustBeDeleted === false;
             })) {
                 return;

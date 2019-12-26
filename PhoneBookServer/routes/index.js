@@ -5,7 +5,13 @@ var contacts = [];
 var id = 1;
 
 router.get("/getContacts", function (req, res) {
-    res.send(contacts);
+    var term = (req.query.term || "").toUpperCase();
+    var result = term === "" ? contacts : contacts.filter(function (contact) {
+        return contact.firstName.toUpperCase().includes(term) ||
+            contact.lastName.toUpperCase().includes(term) ||
+            contact.phoneNumber.toUpperCase().includes(term)
+    });
+    res.send(result);
 });
 
 router.post("/addContact", function (req, res) {

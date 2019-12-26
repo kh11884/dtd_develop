@@ -108,7 +108,7 @@ new Vue({
             });
 
         },
-        showFilteredContacts: function () {
+        search: function () {
             this.loadContacts();
             this.checkAll = false;
         },
