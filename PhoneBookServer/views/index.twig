@@ -40,7 +40,7 @@
         <form class="form-inline mb-4">
             <label class="mr-1 mt-1">Поиск</label>
             <input class="form-control mr-1 mt-1" v-model="term">
-            <button class="btn btn-primary mr-1 mt-1" type="button" @click="search">Поиск</button>
+            <button class="btn btn-primary mr-1 mt-1" type="button" @click="showFilteredContacts">Поиск</button>
             <button class="btn btn-secondary mt-1" type="button" @click="cancelSearch">Отмена</button>
         </form>
 
@@ -70,7 +70,7 @@
                 </tr>
                 </thead>
                 <tbody id="phoneBook_table_body">
-                <tr v-for="(contact, index) in contacts" :key="contact.id">
+                <tr v-for="(contact, index) in filteredContacts" :key="contact.id">
                     <td>{{ index + 1 }}</td>
                     <td>{{ contact.firstName }}</td>
                     <td>{{ contact.lastName }}</td>

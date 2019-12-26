@@ -4,6 +4,9 @@
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhoneBookServer/public/javascripts/serverPhoneBookScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/public/javascripts/serverPhoneBookScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/views/index.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/webpackPhoneBookScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/webpackPhoneBookScript.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,14 +145,7 @@
       <workItem from="1576750972712" duration="9758000" />
       <workItem from="1576937641097" duration="20925000" />
       <workItem from="1577184995998" duration="888000" />
-      <workItem from="1577217576821" duration="18580000" />
-    </task>
-    <task id="LOCAL-00010" summary="Задача CSS Таблица и Форма скорректированы согласно замечаний 2">
-      <created>1572276615207</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1572276615207</updated>
+      <workItem from="1577217576821" duration="25052000" />
     </task>
     <task id="LOCAL-00011" summary="Добавлена задача &quot;Работа с массивами&quot;">
       <created>1572355236629</created>
@@ -487,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577232297995</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="задача PhoneBookServer&#10;вариант с синхронным ajax">
+      <created>1577334114581</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1577334114581</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,7 +527,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Немного даработан и отформатирован калькулятор.&#10;Добавить заполнение таблицы-шапки&#10;Добавить заполенение из формы." />
     <MESSAGE value="Частично добавлена задача PhoneBook" />
     <MESSAGE value="Для вопроса про ширину элемента Bootstrap" />
     <MESSAGE value="добработана задача Bootstrap согласно замечаний 4" />
@@ -549,6 +551,7 @@
     <MESSAGE value="Добавлена версия задачи WebPackPhoneBook без подгрузки картинки из без бабель." />
     <MESSAGE value="Добавлена версия задачи WebPackPhoneBook&#10;Нужно настроить:&#10;• Однофайловые Vue компоненты&#10;• Babel и переписать код на ES 2015&#10;• SCSS" />
     <MESSAGE value="задача PhoneBookServer&#10;нужно найти способ обратиться к свойству после get запроса" />
-    <option name="LAST_COMMIT_MESSAGE" value="задача PhoneBookServer&#10;нужно найти способ обратиться к свойству после get запроса" />
+    <MESSAGE value="задача PhoneBookServer&#10;вариант с синхронным ajax" />
+    <option name="LAST_COMMIT_MESSAGE" value="задача PhoneBookServer&#10;вариант с синхронным ajax" />
   </component>
 </project>
