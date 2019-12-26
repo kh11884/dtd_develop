@@ -2,12 +2,17 @@ function post(url, data) {
     return $.post({
         url: url,
         data: JSON.stringify(data),
+        async: false,
         contentType: "application/json"
     });
 }
 
 function get(url, data) {
-    return $.get(url, data);
+    return $.get({
+        url: url,
+        data: data,
+        async: false
+    });
 }
 
 function getMustBeDeletedIds(self) {
@@ -40,6 +45,7 @@ new Vue({
         needShowModalForDeleteChecked: false,
         checkAll: false
     },
+    // Тестовый вариант вычисляемого свойства.
     // computed: {
     //     filteredContacts: function () {
     //         var term = this.term.toUpperCase();
@@ -144,17 +150,22 @@ new Vue({
             this.contacts.forEach(function (contact) {
                 contact.mustBeDeleted = self.checkAll;
             });
-
         },
         search: function () {
             var mustDeleted = getMustBeDeletedIds(this);
+
             this.loadContacts();
+
+            markSelected(this, mustDeleted);
             this.checkWasAllMarked();
         },
         cancelSearch: function () {
+            var mustDeleted = getMustBeDeletedIds(this);
+
             this.term = "";
             this.loadContacts();
-            // this.checkAll = false;
+
+            markSelected(this, mustDeleted);
             this.checkWasAllMarked();
         },
         showModal: function (item) {
