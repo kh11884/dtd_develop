@@ -1,8 +1,9 @@
 <template>
-  <div>
+  <v-app>
+    <p class="title text-center mt-3">Список задач</p>
     <newTodo/>
     <TodoList/>
-  </div>
+  </v-app>
 </template>
 
 <script>
@@ -12,7 +13,6 @@
 
     export default {
         name: 'App',
-
         components: {
             newTodo,
             TodoList

@@ -2,31 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/public/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/public/script.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/public/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/public/styles.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/src/plugins/vuetify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/TodoList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/newTodo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/listItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/TodoList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/TodoList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/newTodo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/newTodo.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -168,14 +150,7 @@
       <workItem from="1577184995998" duration="888000" />
       <workItem from="1577217576821" duration="28378000" />
       <workItem from="1577426191098" duration="6641000" />
-      <workItem from="1577434985895" duration="5350000" />
-    </task>
-    <task id="LOCAL-00013" summary="Добавлена задача &quot;Работа с массивами&quot;">
-      <created>1572367903807</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1572367903807</updated>
+      <workItem from="1577434985895" duration="20466000" />
     </task>
     <task id="LOCAL-00014" summary="Задача CSS Table доработана согласно замечаний 3">
       <created>1572612255743</created>
@@ -513,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577374402902</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Попытка подключения css для vuetify">
+      <created>1577440463612</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1577440463613</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добработана задача Bootstrap согласно замечаний 4" />
     <MESSAGE value="Добавлена задача PhoneBook без усложнений." />
     <MESSAGE value="добработана задача Bootstrap согласно замечаний 5" />
     <MESSAGE value="добработана задачаPhoneBook  согласно замечаний 1" />
@@ -575,6 +556,7 @@
     <MESSAGE value="задача PhoneBookServer&#10;вариант с синхронным ajax" />
     <MESSAGE value="задача PhoneBookServer&#10;вариант фильтрацией контактов на стороне клиента" />
     <MESSAGE value="задача PhoneBookServer&#10;вариант фильтрацией контактов на сервере" />
-    <option name="LAST_COMMIT_MESSAGE" value="задача PhoneBookServer&#10;вариант фильтрацией контактов на сервере" />
+    <MESSAGE value="Попытка подключения css для vuetify" />
+    <option name="LAST_COMMIT_MESSAGE" value="Попытка подключения css для vuetify" />
   </component>
 </project>

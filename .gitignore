@@ -2,3 +2,4 @@
 # Default ignored files
 /workspace.xml
 node_modules/
+/vf_test/

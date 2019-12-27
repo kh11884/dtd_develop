@@ -1,27 +1,53 @@
 <template>
-  <div>
-    <p class="text-center">Тут должна быть форма для добавления новой TODO</p>
-
-    <form>
-      <v-text-field
-        v-model="name"
-        v-validate="'required|max:10'"
-        :counter="10"
-        :error-messages="errors.collect('name')"
-        label="Name"
-        data-vv-name="name"
-        required
-      ></v-text-field>
-
-      <v-btn >Добавить</v-btn>
-    </form>
-  </div>
+  <v-container>
+    <v-form>
+      <v-row>
+        <v-text-field
+          label="Новая задача"
+          v-model="newTodoText"
+          @keydown.enter="addTodo"
+        ></v-text-field>
+        <v-btn @click="addTodo">Добавить</v-btn>
+      </v-row>
+    </v-form>
+    <p>{{$store.state.items}}</p>
+  </v-container>
 </template>
 
 <script>
+    import store from "../store/index";
+
     export default {
-        name: "newTodo"
+        name: "newTodo",
+        data () {
+            return {
+                items: [],
+                newTodoText: "",
+                isInvalid: false,
+            }
+        },
+        methods: {
+            addTodo () {
+                if (this.newTodoText === "") {
+                    this.isInvalid = true;
+                    return;
+                }
+                this.isInvalid = false;
+
+                var newItem = {
+                    text: this.newTodoText,
+                    editTodoText: "",
+                    isEditable: false,
+                    needShowModal: false
+                };
+                store.commit("addItem", newItem);
+                this.newTodoText = "";
+            }
+
+        }
     }
+
+
 </script>
 
 <style scoped>
