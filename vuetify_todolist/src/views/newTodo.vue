@@ -1,15 +1,18 @@
 <template>
-  <v-container>
-    <v-form>
-      <v-row>
-        <v-text-field
-          label="Новая задача"
-          v-model="newTodoText"
-          @keydown.enter="addTodo"
-        ></v-text-field>
-        <v-btn @click="addTodo">Добавить</v-btn>
+  <v-container class="v-size--small">
+    <v-col
+      justify="center"
+      no-gutters>
+      <v-row
+      align="center">
+          <v-btn @click="addTodo" class="mr-3">Добавить</v-btn>
+          <v-text-field
+            label="Новая задача"
+            v-model="newTodoText"
+            @keydown.enter="addTodo"
+          ></v-text-field>
       </v-row>
-    </v-form>
+    </v-col>
     <p>{{$store.state.items}}</p>
   </v-container>
 </template>
@@ -19,7 +22,7 @@
 
     export default {
         name: "newTodo",
-        data () {
+        data() {
             return {
                 items: [],
                 newTodoText: "",
@@ -27,7 +30,7 @@
             }
         },
         methods: {
-            addTodo () {
+            addTodo() {
                 if (this.newTodoText === "") {
                     this.isInvalid = true;
                     return;

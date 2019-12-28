@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/listItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/TodoList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/TodoList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/plugins/vuetify.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/plugins/vuetify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/listItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/listItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/newTodo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/newTodo.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -150,14 +150,8 @@
       <workItem from="1577184995998" duration="888000" />
       <workItem from="1577217576821" duration="28378000" />
       <workItem from="1577426191098" duration="6641000" />
-      <workItem from="1577434985895" duration="20466000" />
-    </task>
-    <task id="LOCAL-00014" summary="Задача CSS Table доработана согласно замечаний 3">
-      <created>1572612255743</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1572612255743</updated>
+      <workItem from="1577434985895" duration="20835000" />
+      <workItem from="1577511603435" duration="9498000" />
     </task>
     <task id="LOCAL-00015" summary="Задача JCObject добавил массив объектов-стран">
       <created>1572933585360</created>
@@ -495,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577440463613</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Сделана основа для TODOList vuetify">
+      <created>1577457661302</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1577457661302</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +533,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлена задача PhoneBook без усложнений." />
     <MESSAGE value="добработана задача Bootstrap согласно замечаний 5" />
     <MESSAGE value="добработана задачаPhoneBook  согласно замечаний 1" />
     <MESSAGE value="Добавлен модуль TodoListVue.&#10;Частично начата задача." />
@@ -557,6 +557,7 @@
     <MESSAGE value="задача PhoneBookServer&#10;вариант фильтрацией контактов на стороне клиента" />
     <MESSAGE value="задача PhoneBookServer&#10;вариант фильтрацией контактов на сервере" />
     <MESSAGE value="Попытка подключения css для vuetify" />
-    <option name="LAST_COMMIT_MESSAGE" value="Попытка подключения css для vuetify" />
+    <MESSAGE value="Сделана основа для TODOList vuetify" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделана основа для TODOList vuetify" />
   </component>
 </project>

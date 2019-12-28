@@ -1,7 +1,10 @@
-<template>
+<template  >
   <v-list-item>
+    <v-btn @click="editTodo(item)" class="mr-2">
+      <v-icon :color="'yellow darken-3'">mdi-lead-pencil</v-icon>
+    </v-btn>
     <v-btn @click="removeTodo(item)" class="mr-2">
-      X
+      <v-icon :color="'red'">mdi-trash-can-outline</v-icon>
     </v-btn>
     <v-list-item-title>
       {{ item.text }}
@@ -14,6 +17,7 @@
 
     export default {
         name: "listItem",
+
 
         props: {
             item: {}
