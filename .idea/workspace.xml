@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/public/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/plugins/vuetify.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/plugins/vuetify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/listItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/listItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/newTodo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/newTodo.vue" afterDir="false" />
     </list>
@@ -47,7 +46,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574833282855" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/PhoneBookWebpack/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vuetify_todolist/public" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -55,19 +54,19 @@
     <property name="project.structure.side.proportion" value="0.42415315" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\vuetify_todolist\public" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public\libs" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\1_forTest\src\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\frontend" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoList JQuery\src\js\libs\jquery-ui-1.12.1" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public\libs" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\1_forTest\src\js" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookServer\public\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -151,14 +150,7 @@
       <workItem from="1577217576821" duration="28378000" />
       <workItem from="1577426191098" duration="6641000" />
       <workItem from="1577434985895" duration="20835000" />
-      <workItem from="1577511603435" duration="9498000" />
-    </task>
-    <task id="LOCAL-00015" summary="Задача JCObject добавил массив объектов-стран">
-      <created>1572933585360</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1572933585360</updated>
+      <workItem from="1577511603435" duration="15725000" />
     </task>
     <task id="LOCAL-00016" summary="Добавлена задача JCObject.">
       <created>1572938973956</created>
@@ -496,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577457661302</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Сделана основа для TODOList vuetify&#10;Добавлены иконочные шрифты">
+      <created>1577521389379</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1577521389380</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добработана задача Bootstrap согласно замечаний 5" />
     <MESSAGE value="добработана задачаPhoneBook  согласно замечаний 1" />
     <MESSAGE value="Добавлен модуль TodoListVue.&#10;Частично начата задача." />
     <MESSAGE value="Добавлен модуль TodoListVue.&#10;Для вопроса" />
@@ -558,6 +556,7 @@
     <MESSAGE value="задача PhoneBookServer&#10;вариант фильтрацией контактов на сервере" />
     <MESSAGE value="Попытка подключения css для vuetify" />
     <MESSAGE value="Сделана основа для TODOList vuetify" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделана основа для TODOList vuetify" />
+    <MESSAGE value="Сделана основа для TODOList vuetify&#10;Добавлены иконочные шрифты" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделана основа для TODOList vuetify&#10;Добавлены иконочные шрифты" />
   </component>
 </project>

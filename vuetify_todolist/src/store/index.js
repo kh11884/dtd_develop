@@ -19,7 +19,13 @@ export default new Vuex.Store({
       state.items = state.items.filter(function (item) {
         return item.id !== id;
       })
-    }
+    },
+    changeItem (state, changedItem) {
+      var result = state.items.find(function (item) {
+        return item.id === changedItem.id;
+      });
+      result.text = changedItem.text;
+    },
   },
   actions: {
   },

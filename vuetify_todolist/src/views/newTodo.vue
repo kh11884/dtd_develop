@@ -1,20 +1,19 @@
 <template>
-  <v-container class="v-size--small">
-    <v-col
-      justify="center"
-      no-gutters>
-      <v-row
-      align="center">
+<!--  <v-container class="v-size&#45;&#45;small">-->
+<!--    <v-col-->
+<!--      justify="center"-->
+<!--      no-gutters>-->
+<!--      <v-row-->
+<!--      align="center">-->
           <v-btn @click="addTodo" class="mr-3">Добавить</v-btn>
           <v-text-field
             label="Новая задача"
             v-model="newTodoText"
             @keydown.enter="addTodo"
           ></v-text-field>
-      </v-row>
-    </v-col>
-    <p>{{$store.state.items}}</p>
-  </v-container>
+<!--      </v-row>-->
+<!--    </v-col>-->
+<!--  </v-container>-->
 </template>
 
 <script>
