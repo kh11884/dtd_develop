@@ -4,7 +4,7 @@
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/TodoList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/TodoList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/listItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/listItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/newTodo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/newTodo.vue" afterDir="false" />
     </list>
@@ -150,14 +150,7 @@
       <workItem from="1577426191098" duration="6641000" />
       <workItem from="1577434985895" duration="20835000" />
       <workItem from="1577511603435" duration="16553000" />
-      <workItem from="1577529159320" duration="814000" />
-    </task>
-    <task id="LOCAL-00017" summary="Добавлена задача Перевод Температур">
-      <created>1572974876899</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1572974876899</updated>
+      <workItem from="1577529159320" duration="7383000" />
     </task>
     <task id="LOCAL-00018" summary="Добавлена задача Todo List">
       <created>1572983174236</created>
@@ -495,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577528449679</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Сделана основа для TODOList vuetify&#10;Осталось причесать дизайн">
+      <created>1577529983496</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1577529983497</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

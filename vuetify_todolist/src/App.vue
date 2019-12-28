@@ -1,12 +1,11 @@
 <template>
   <v-app>
-    <p class="title text-center mt-3">Список задач:</p>
-
+    <v-container class="lighten-1">
+      <p class="title text-center mt-2 mb-0">Список задач:</p>
       <newTodo/>
       <TodoList/>
-
+    </v-container>
   </v-app>
-
 </template>
 
 <script>

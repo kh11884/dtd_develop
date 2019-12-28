@@ -1,12 +1,14 @@
 <template>
-  <v-container>
-    <v-list>
-      <listItem
-        v-for="item in items"
-        :key="item.id"
-        :item="item"/>
-    </v-list>
-  </v-container>
+  <v-row justify="center">
+    <v-col sm="8">
+      <v-list>
+        <listItem
+          v-for="item in items"
+          :key="item.id"
+          :item="item"/>
+      </v-list>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
@@ -23,7 +25,6 @@
                 return store.state.items;
             }
         }
-
     }
 </script>
 

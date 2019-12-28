@@ -1,44 +1,48 @@
 <template>
-  <span>
-  <v-list-item v-if="!isEditable">
-    <v-btn @click="editTodo(item)" class="mr-2">
-      <v-icon :color="'yellow darken-3'">mdi-lead-pencil</v-icon>
-    </v-btn>
+  <v-spacer>
+    <v-list-item v-if="!isEditable">
+      <v-row>
 
-    <v-btn @click="showModal" class="mr-2">
-      <v-icon :color="'red'">mdi-trash-can-outline</v-icon>
-    </v-btn>
+        <v-spacer class="min-vh-100">{{ item.text }}</v-spacer>
 
-    <v-list-item-content>
-      <v-list-item-title>{{ item.text }}</v-list-item-title>
-    </v-list-item-content>
-  </v-list-item>
+        <v-btn @click="editTodo(item)" class="mr-2">
+          <v-icon :color="'yellow darken-3'">mdi-lead-pencil</v-icon>
+        </v-btn>
 
-  <v-list-item v-else>
+        <v-btn @click="showModal" class="mr-2">
+          <v-icon :color="'red'">mdi-trash-can-outline</v-icon>
+        </v-btn>
 
-    <v-btn
-      @click="cancel(item)"
-      class="mr-2"
+      </v-row>
+    </v-list-item>
+
+    <v-list-item v-else>
+
+      <v-text-field
+        v-model="editTodoText"
+        @keydown.enter="changeTodo(item)"
+        @keydown.esc="isEditable=false"
+      ></v-text-field>
+
+      <v-btn
+        @click="cancel(item)"
+        class="ml-2"
+      >
+        <v-icon :color="'red'">mdi-cancel</v-icon>
+      </v-btn>
+
+      <v-btn
+        @click="changeTodo(item)"
+        class="ml-2"
+      >
+        <v-icon :color="'green'">mdi-check-bold</v-icon>
+      </v-btn>
+
+    </v-list-item>
+    <v-dialog
+      v-model="needShowModal"
+      max-width="320"
     >
-      <v-icon :color="'red'">mdi-cancel</v-icon>
-    </v-btn>
-
-    <v-btn
-      @click="changeTodo(item)"
-      class="mr-2"
-    >
-      <v-icon :color="'green'">mdi-check-bold</v-icon>
-    </v-btn>
-
-    <v-text-field
-      v-model="editTodoText"
-      @keydown.enter="changeTodo(item)"
-    ></v-text-field>
-  </v-list-item>
-        <v-dialog
-          v-model="needShowModal"
-          max-width="320"
-        >
       <v-card>
         <v-card-title class="title">Подтвердите удаление<br/>элемента</v-card-title>
 
@@ -68,7 +72,7 @@
       </v-card>
     </v-dialog>
 
-    </span>
+  </v-spacer>
 </template>
 
 <script>
@@ -111,7 +115,7 @@
                 store.commit("changeItem", changedItem);
                 this.isEditable = false;
             },
-            showModal: function (item) {
+            showModal: function () {
                 this.needShowModal = true;
             }
         }

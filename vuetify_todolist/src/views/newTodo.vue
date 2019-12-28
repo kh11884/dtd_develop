@@ -1,20 +1,19 @@
 <template>
 
-  <v-container class="v-size--small">
-    <v-col
-      justify="center"
-      no-gutters>
-      <v-row
-      align="center">
-          <v-btn @click="addTodo" class="mr-3">Добавить</v-btn>
-          <v-text-field
-            label="Новая задача"
-            v-model="newTodoText"
-            @keydown.enter="addTodo"
-          ></v-text-field>
+  <v-row justify="center" no-gutters>
+    <v-col sm="8">
+      <v-row align="center" no-gutters>
+        <v-text-field
+          label="Новая задача"
+          v-model="newTodoText"
+          @keydown.enter="addTodo"
+          @keydown.esc="newTodoText=''"
+        ></v-text-field>
+
+        <v-btn @click="addTodo" class="ml-2">Добавить</v-btn>
       </v-row>
     </v-col>
-  </v-container>
+  </v-row>
 
 </template>
 
@@ -47,7 +46,6 @@
                 store.commit("addItem", newItem);
                 this.newTodoText = "";
             }
-
         }
     }
 
