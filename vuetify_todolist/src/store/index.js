@@ -15,7 +15,6 @@ export default new Vuex.Store({
       state.id++;
     },
     removeItem (state, id){
-      console.log(id);
       state.items = state.items.filter(function (item) {
         return item.id !== id;
       })

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/public/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/listItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/listItem.vue" afterDir="false" />
@@ -150,14 +149,8 @@
       <workItem from="1577217576821" duration="28378000" />
       <workItem from="1577426191098" duration="6641000" />
       <workItem from="1577434985895" duration="20835000" />
-      <workItem from="1577511603435" duration="15725000" />
-    </task>
-    <task id="LOCAL-00016" summary="Добавлена задача JCObject.">
-      <created>1572938973956</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1572938973956</updated>
+      <workItem from="1577511603435" duration="16553000" />
+      <workItem from="1577529159320" duration="814000" />
     </task>
     <task id="LOCAL-00017" summary="Добавлена задача Перевод Температур">
       <created>1572974876899</created>
@@ -495,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577521389380</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Сделана основа для TODOList vuetify&#10;Осталось причесать дизайн">
+      <created>1577528449679</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1577528449679</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добработана задачаPhoneBook  согласно замечаний 1" />
     <MESSAGE value="Добавлен модуль TodoListVue.&#10;Частично начата задача." />
     <MESSAGE value="Добавлен модуль TodoListVue.&#10;Для вопроса" />
     <MESSAGE value="Добавлена задача TodoListVue." />
@@ -557,6 +556,7 @@
     <MESSAGE value="Попытка подключения css для vuetify" />
     <MESSAGE value="Сделана основа для TODOList vuetify" />
     <MESSAGE value="Сделана основа для TODOList vuetify&#10;Добавлены иконочные шрифты" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделана основа для TODOList vuetify&#10;Добавлены иконочные шрифты" />
+    <MESSAGE value="Сделана основа для TODOList vuetify&#10;Осталось причесать дизайн" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделана основа для TODOList vuetify&#10;Осталось причесать дизайн" />
   </component>
 </project>

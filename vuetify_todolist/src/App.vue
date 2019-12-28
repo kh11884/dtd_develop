@@ -1,8 +1,10 @@
 <template>
   <v-app>
     <p class="title text-center mt-3">Список задач:</p>
-    <newTodo/>
-    <TodoList/>
+
+      <newTodo/>
+      <TodoList/>
+
   </v-app>
 
 </template>

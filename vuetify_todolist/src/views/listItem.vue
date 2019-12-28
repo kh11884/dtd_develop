@@ -1,6 +1,6 @@
 <template>
   <span>
-  <v-list-item v-if="!item.isEditable">
+  <v-list-item v-if="!isEditable">
     <v-btn @click="editTodo(item)" class="mr-2">
       <v-icon :color="'yellow darken-3'">mdi-lead-pencil</v-icon>
     </v-btn>
@@ -93,14 +93,14 @@
             },
             editTodo: function (item) {
                 this.editTodoText = item.text;
-                item.isEditable = true;
+                this.isEditable = true;
             },
             cancel: function (item) {
                 item.editTodoText = item.text;
-                item.isEditable = false;
+                this.isEditable = false;
             },
             changeTodo: function (item) {
-                if (item.editTodoText === "") {
+                if (this.editTodoText === "") {
                     this.showModal(item);
                     return;
                 }
@@ -109,7 +109,7 @@
                     text: this.editTodoText
                 };
                 store.commit("changeItem", changedItem);
-                item.isEditable = false;
+                this.isEditable = false;
             },
             showModal: function (item) {
                 this.needShowModal = true;
