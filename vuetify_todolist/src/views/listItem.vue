@@ -2,7 +2,6 @@
   <v-spacer>
     <v-list-item v-if="!isEditable">
       <v-row>
-
         <v-spacer class="min-vh-100">{{ item.text }}</v-spacer>
 
         <v-btn @click="editTodo(item)" class="mr-2">
@@ -17,7 +16,6 @@
     </v-list-item>
 
     <v-list-item v-else>
-
       <v-text-field
         v-model="editTodoText"
         @keydown.enter="changeTodo(item)"
@@ -71,7 +69,6 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-
   </v-spacer>
 </template>
 

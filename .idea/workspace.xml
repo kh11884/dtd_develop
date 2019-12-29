@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/TodoList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/TodoList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/listItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/listItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/newTodo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/newTodo.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,7 +79,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AcademITScoool_ClientWEB/vuetify_todolist/dist/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="page2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AcademITScoool_ClientWEB/Html/page2.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -96,6 +98,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -150,14 +153,7 @@
       <workItem from="1577426191098" duration="6641000" />
       <workItem from="1577434985895" duration="20835000" />
       <workItem from="1577511603435" duration="16553000" />
-      <workItem from="1577529159320" duration="7383000" />
-    </task>
-    <task id="LOCAL-00018" summary="Добавлена задача Todo List">
-      <created>1572983174236</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1572983174236</updated>
+      <workItem from="1577529159320" duration="13473000" />
     </task>
     <task id="LOCAL-00019" summary="Добработаны задачи JSObject, Перевод температур, Todo List согласно замечаний 1">
       <created>1573326579671</created>
@@ -495,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577529983497</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Сделана основа для TODOList vuetify&#10;Немного причесать отображение списка&#10;Добавить vue валидацию">
+      <created>1577536707462</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1577536707462</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +535,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлен модуль TodoListVue.&#10;Частично начата задача." />
     <MESSAGE value="Добавлен модуль TodoListVue.&#10;Для вопроса" />
     <MESSAGE value="Добавлена задача TodoListVue." />
     <MESSAGE value="добработана задача PhoneBookJJQuery согласно замечаний 2." />
@@ -557,6 +559,7 @@
     <MESSAGE value="Сделана основа для TODOList vuetify" />
     <MESSAGE value="Сделана основа для TODOList vuetify&#10;Добавлены иконочные шрифты" />
     <MESSAGE value="Сделана основа для TODOList vuetify&#10;Осталось причесать дизайн" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделана основа для TODOList vuetify&#10;Осталось причесать дизайн" />
+    <MESSAGE value="Сделана основа для TODOList vuetify&#10;Немного причесать отображение списка&#10;Добавить vue валидацию" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделана основа для TODOList vuetify&#10;Немного причесать отображение списка&#10;Добавить vue валидацию" />
   </component>
 </project>

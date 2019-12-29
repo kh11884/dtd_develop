@@ -1,20 +1,22 @@
 <template>
+  <v-form>
+    <v-row justify="center" no-gutters>
+      <v-col sm="8">
+        <v-row align="center" no-gutters>
+          <v-text-field
+            label="Новая задача"
+            v-model="newTodoText"
+            @keydown.enter="addTodo"
+            @keydown.esc="newTodoText=''"
+            :error="isInvalid"
+            :error-messages="errorMessage"
+          ></v-text-field>
 
-  <v-row justify="center" no-gutters>
-    <v-col sm="8">
-      <v-row align="center" no-gutters>
-        <v-text-field
-          label="Новая задача"
-          v-model="newTodoText"
-          @keydown.enter="addTodo"
-          @keydown.esc="newTodoText=''"
-        ></v-text-field>
-
-        <v-btn @click="addTodo" class="ml-2">Добавить</v-btn>
-      </v-row>
-    </v-col>
-  </v-row>
-
+          <v-btn @click="addTodo" class="ml-2">Добавить</v-btn>
+        </v-row>
+      </v-col>
+    </v-row>
+  </v-form>
 </template>
 
 <script>
@@ -27,15 +29,15 @@
                 items: [],
                 newTodoText: "",
                 isInvalid: false,
+                errorMessage: ""
             }
         },
         methods: {
             addTodo() {
-                if (this.newTodoText === "") {
-                    this.isInvalid = true;
+                this.validation();
+                if (this.isInvalid) {
                     return;
                 }
-                this.isInvalid = false;
 
                 var newItem = {
                     text: this.newTodoText,
@@ -45,6 +47,15 @@
                 };
                 store.commit("addItem", newItem);
                 this.newTodoText = "";
+            },
+            validation() {
+                if (this.newTodoText === "") {
+                    this.isInvalid = true;
+                    this.errorMessage = "Заполните поле";
+                    return;
+                }
+                this.isInvalid = false;
+                this.errorMessage = "";
             }
         }
     }
