@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/TodoList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/TodoList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/newTodo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/newTodo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_forTest/src/js/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/1_forTest/src/js/test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,19 +50,19 @@
     <property name="project.structure.side.proportion" value="0.42415315" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\vuetify_todolist\public" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public\libs" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\1_forTest\src\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\frontend" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoList JQuery\src\js\libs\jquery-ui-1.12.1" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\vuetify_todolist\public" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public\libs" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\1_forTest\src\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -153,14 +151,10 @@
       <workItem from="1577426191098" duration="6641000" />
       <workItem from="1577434985895" duration="20835000" />
       <workItem from="1577511603435" duration="16553000" />
-      <workItem from="1577529159320" duration="13473000" />
-    </task>
-    <task id="LOCAL-00019" summary="Добработаны задачи JSObject, Перевод температур, Todo List согласно замечаний 1">
-      <created>1573326579671</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1573326579671</updated>
+      <workItem from="1577529159320" duration="17932000" />
+      <workItem from="1577787624093" duration="1398000" />
+      <workItem from="1577789045317" duration="376000" />
+      <workItem from="1577789441363" duration="14190000" />
     </task>
     <task id="LOCAL-00020" summary="Добработаны задачи JSObject, Перевод температур, Todo List согласно замечаний 1">
       <created>1573407362258</created>
@@ -498,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577536707462</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Добавлена задача TODOList vuetify">
+      <created>1577597830438</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1577597830438</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,7 +536,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлен модуль TodoListVue.&#10;Для вопроса" />
     <MESSAGE value="Добавлена задача TodoListVue." />
     <MESSAGE value="добработана задача PhoneBookJJQuery согласно замечаний 2." />
     <MESSAGE value="Добавлен модуль PhoneBookVue" />
@@ -560,6 +560,7 @@
     <MESSAGE value="Сделана основа для TODOList vuetify&#10;Добавлены иконочные шрифты" />
     <MESSAGE value="Сделана основа для TODOList vuetify&#10;Осталось причесать дизайн" />
     <MESSAGE value="Сделана основа для TODOList vuetify&#10;Немного причесать отображение списка&#10;Добавить vue валидацию" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделана основа для TODOList vuetify&#10;Немного причесать отображение списка&#10;Добавить vue валидацию" />
+    <MESSAGE value="Добавлена задача TODOList vuetify" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена задача TODOList vuetify" />
   </component>
 </project>
