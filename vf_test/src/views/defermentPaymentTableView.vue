@@ -12,10 +12,20 @@
             <td colspan="2">{{ item.value }}</td>
           </tr>
           <tr>
-          <td colspan="6" class="text-center font-weight-black">Прс = Сп х Д х Ст / (360 х 100%)</td>
+            <td colspan="6" class="text-center font-weight-black">Прс = Сп х Д х Ст / (360 х 100%)</td>
           </tr>
 
-
+          <tr class="text-center font-weight-black">
+            <td rowspan="2">Сп</td>
+            <td colspan="2">Период</td>
+            <td rowspan="2">Д</td>
+            <td rowspan="2">ст,%</td>
+            <td rowspan="2">Прс</td>
+          </tr>
+          <tr class="text-center font-weight-black">
+            <td>Начало</td>
+            <td>Конец</td>
+          </tr>
           <tr v-for="item in resultTable" :key="item.startDate">
             <td>{{ item.payment }}</td>
             <td>{{ item.startDate }}</td>
@@ -51,9 +61,9 @@
         //-- добавим в последний элемент конечную дату и число дней для нее, для стандартизированного подхода к дальнейшим рассчетам от элемента
         //-- можно добавить в кол-во дней 1, а в конечную дату текущую дату, чтобы не было лишних рассчетов.
         var endDate = new Date("12/31/2025"); //-- Дата до которой будет работает таблица
-        var lastElement = refinancingRateHistory[refinancingRateHistory.length -1 ];
+        var lastElement = refinancingRateHistory[refinancingRateHistory.length - 1];
         lastElement.endDate = endDate;
-        lastElement.days =  Math.round((lastElement.endDate - lastElement.startDate) / (1000 * 3600 * 24));
+        lastElement.days = Math.round((lastElement.endDate - lastElement.startDate) / (1000 * 3600 * 24));
 
         return refinancingRateHistory;
     }
@@ -62,7 +72,6 @@
         var filteredHistory = getFullInfoRefinancingRateHistory().filter(function (item) {
             return issueDate <= item.endDate && item.startDate <= applicationDate
         });
-        console.log(filteredHistory);
 
         filteredHistory[0].startDate = issueDate;
         filteredHistory[0].days = Math.round((filteredHistory[0].endDate - issueDate) / (1000 * 3600 * 24)) + 1;
@@ -94,7 +103,7 @@
         return result;
     }
 
-    function getFormatedData(unformattedData){
+    function getFormatedData(unformattedData) {
         var options = {year: 'numeric', month: 'short', day: 'numeric'};
         return unformattedData.toLocaleString('ru-RU', options);
     }
@@ -104,7 +113,7 @@
     }
 
     export default {
-        name: "summaryInfoTable",
+        name: "defermentPaymentTableView",
         comments: {
             percentCalculationTable
         },
@@ -135,12 +144,11 @@
         },
         computed: {
             headTable: function () {
-                    return 'Рассчет процентов за отсрочку таможенного платежа (5010 вид) от ' + this.currentData;
+                return 'Рассчет процентов за отсрочку таможенного платежа (5010 вид) от ' + this.currentData;
             }
         }
     }
 </script>
-
 
 <style scoped>
 

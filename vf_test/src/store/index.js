@@ -11,7 +11,7 @@ export default new Vuex.Store({
   state: {
     //входные данные нужно заменить на взятые из формы
     payment: 10000,
-    issueDate: new Date("01/01/2000"),
+    issueDate: new Date("01/01/2018"),
     applicationDate: new Date("10/29/2019"),
 
 

@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_forTest/src/js/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/1_forTest/src/js/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vf_test/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vf_test/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/views/summaryInfoTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vf_test/src/views/defermentPaymentTableView.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -154,14 +156,7 @@
       <workItem from="1577529159320" duration="17932000" />
       <workItem from="1577787624093" duration="1398000" />
       <workItem from="1577789045317" duration="376000" />
-      <workItem from="1577789441363" duration="14190000" />
-    </task>
-    <task id="LOCAL-00020" summary="Добработаны задачи JSObject, Перевод температур, Todo List согласно замечаний 1">
-      <created>1573407362258</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1573407362258</updated>
+      <workItem from="1577789441363" duration="15838000" />
     </task>
     <task id="LOCAL-00021" summary="Добработаны задачи JSObject, Перевод температур, Todo List согласно замечаний 2">
       <created>1573740858435</created>
@@ -499,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577597830438</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="В папке vf-test сделан процентный калькулятор на vuetify">
+      <created>1577818285394</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1577818285395</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +538,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлена задача TodoListVue." />
     <MESSAGE value="добработана задача PhoneBookJJQuery согласно замечаний 2." />
     <MESSAGE value="Добавлен модуль PhoneBookVue" />
     <MESSAGE value="добработана задача PhoneBookJJQuery согласно замечаний 3" />
@@ -561,6 +562,7 @@
     <MESSAGE value="Сделана основа для TODOList vuetify&#10;Осталось причесать дизайн" />
     <MESSAGE value="Сделана основа для TODOList vuetify&#10;Немного причесать отображение списка&#10;Добавить vue валидацию" />
     <MESSAGE value="Добавлена задача TODOList vuetify" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена задача TODOList vuetify" />
+    <MESSAGE value="В папке vf-test сделан процентный калькулятор на vuetify" />
+    <option name="LAST_COMMIT_MESSAGE" value="В папке vf-test сделан процентный калькулятор на vuetify" />
   </component>
 </project>

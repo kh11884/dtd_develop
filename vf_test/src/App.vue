@@ -38,19 +38,19 @@
     </v-app-bar>
 
     <v-content>
-      <summaryInfoTable/>
+      <defermentPaymentTableView/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import summaryInfoTable from './views/summaryInfoTable'
+import defermentPaymentTableView from './views/defermentPaymentTableView'
 
 export default {
   name: 'App',
 
   components: {
-    summaryInfoTable
+      defermentPaymentTableView
   },
 
   data: () => ({
