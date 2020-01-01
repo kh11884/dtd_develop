@@ -1,42 +1,45 @@
 <template>
+
   <v-row justify="center">
     <v-col class="col-6">
-      <v-simple-table>
-        <template v-slot:default>
-          <tbody>
-          <tr>
-            <td colspan="6" class="font-weight-black">{{headTable}}</td>
-          </tr>
-          <tr v-for="item in infoes" :key="item.name">
-            <td colspan="4">{{ item.name }}</td>
-            <td colspan="2">{{ item.value }}</td>
-          </tr>
-          <tr>
-            <td colspan="6" class="text-center font-weight-black">Прс = Сп х Д х Ст / (360 х 100%)</td>
-          </tr>
+      <v-sheet elevation="12">
+        <v-simple-table>
+          <template v-slot:default>
+            <tbody>
+            <tr>
+              <td colspan="6" class="font-weight-black">{{headTable}}</td>
+            </tr>
+            <tr v-for="item in infoes" :key="item.name">
+              <td colspan="4">{{ item.name }}</td>
+              <td colspan="2">{{ item.value }}</td>
+            </tr>
+            <tr>
+              <td colspan="6" class="text-center font-weight-black">Прс = Сп х Д х Ст / (360 х 100%)</td>
+            </tr>
 
-          <tr class="text-center font-weight-black">
-            <td rowspan="2">Сп</td>
-            <td colspan="2">Период</td>
-            <td rowspan="2">Д</td>
-            <td rowspan="2">ст,%</td>
-            <td rowspan="2">Прс</td>
-          </tr>
-          <tr class="text-center font-weight-black">
-            <td>Начало</td>
-            <td>Конец</td>
-          </tr>
-          <tr v-for="item in resultTable" :key="item.startDate">
-            <td>{{ item.payment }}</td>
-            <td>{{ item.startDate }}</td>
-            <td>{{ item.endDate }}</td>
-            <td>{{item.days}}</td>
-            <td>{{item.refinancing_rate}}</td>
-            <td>{{item.sum}}</td>
-          </tr>
-          </tbody>
-        </template>
-      </v-simple-table>
+            <tr class="text-center font-weight-black">
+              <td rowspan="2">Сп</td>
+              <td colspan="2">Период</td>
+              <td rowspan="2">Д</td>
+              <td rowspan="2">ст,%</td>
+              <td rowspan="2">Прс</td>
+            </tr>
+            <tr class="text-center font-weight-black">
+              <td>Начало</td>
+              <td>Конец</td>
+            </tr>
+            <tr v-for="item in resultTable" :key="item.startDate">
+              <td>{{ item.payment }}</td>
+              <td>{{ item.startDate }}</td>
+              <td>{{ item.endDate }}</td>
+              <td>{{item.days}}</td>
+              <td>{{item.refinancing_rate}}</td>
+              <td>{{item.sum}}</td>
+            </tr>
+            </tbody>
+          </template>
+        </v-simple-table>
+      </v-sheet>
     </v-col>
 
   </v-row>

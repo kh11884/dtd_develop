@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/customs_helper/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customs_helper/src/assets/vesna.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vf_test/src/assets/vesna.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vf_test/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vf_test/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vf_test/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vf_test/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vf_test/src/views/summaryInfoTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vf_test/src/views/defermentPaymentTableView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/views/defermentPaymentTableView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vf_test/src/views/defermentPaymentTableView.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +45,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574833282855" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vuetify_todolist/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AcademITScoool_ServerWEB" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -52,19 +53,19 @@
     <property name="project.structure.side.proportion" value="0.42415315" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\assets" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\vf_test\src\assets" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\vuetify_todolist\public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\frontend" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TodoList JQuery\src\js\libs\jquery-ui-1.12.1" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\TemperatureConverter\src\js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\vuetify_todolist\public" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public\libs" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\1_forTest\src\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -156,14 +157,9 @@
       <workItem from="1577529159320" duration="17932000" />
       <workItem from="1577787624093" duration="1398000" />
       <workItem from="1577789045317" duration="376000" />
-      <workItem from="1577789441363" duration="15838000" />
-    </task>
-    <task id="LOCAL-00021" summary="Добработаны задачи JSObject, Перевод температур, Todo List согласно замечаний 2">
-      <created>1573740858435</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1573740858435</updated>
+      <workItem from="1577789441363" duration="19397000" />
+      <workItem from="1577855877850" duration="12311000" />
+      <workItem from="1577888979929" duration="56000" />
     </task>
     <task id="LOCAL-00022" summary="Добавлена задача TodoList JQuery.">
       <created>1573760408095</created>
@@ -501,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577818285395</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="В папке vf-test сделан процентный калькулятор на vuetify">
+      <created>1577819783887</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1577819783887</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
