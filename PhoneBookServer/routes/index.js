@@ -1,4 +1,4 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
 
 var contacts = [];
@@ -17,11 +17,11 @@ router.get("/getContacts", function (req, res) {
 router.post("/addContact", function (req, res) {
     var contact = req.body;
 
-    var haveNumber = contacts.some(function (c) {
+    var hasNumber = contacts.some(function (c) {
         return c.phoneNumber === contact.phoneNumber;
     });
 
-    if (haveNumber) {
+    if (hasNumber) {
         res.send({
             success: false,
             message: "Такой номер уже есть в базе"
@@ -79,8 +79,8 @@ router.post("/deleteCheckedContacts", function (req, res) {
 });
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-    res.render('index', {title: 'Телефонная книга'});
+router.get("/", function (req, res, next) {
+    res.render("index", {title: "Телефонная книга"});
 });
 
 module.exports = router;
