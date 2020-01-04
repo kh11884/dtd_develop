@@ -35,8 +35,8 @@
       >
         <v-icon :color="'green'">mdi-check-bold</v-icon>
       </v-btn>
-
     </v-list-item>
+
     <v-dialog
       v-model="needShowModal"
       max-width="320"

@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/TodoList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/TodoList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/listItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/ListItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/newTodo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/NewTodo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/ListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/ListItem.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,13 +151,6 @@
       <workItem from="1577855877850" duration="12311000" />
       <workItem from="1577888979929" duration="56000" />
       <workItem from="1577895118384" duration="259000" />
-    </task>
-    <task id="LOCAL-00025" summary="Node_module добавлена в gitignore">
-      <created>1574422695335</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1574422695335</updated>
     </task>
     <task id="LOCAL-00026" summary="Node_module добавлена в gitignore">
       <created>1574423498336</created>
@@ -501,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578116720593</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="добработана задача vuetify_todolist согласно замечаний 1">
+      <created>1578119012240</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1578119012240</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добработана задача PhoneBookJJQuery согласно замечаний 3" />
     <MESSAGE value="добработана задача TodoListVue согласно замечаний 1" />
     <MESSAGE value="добработана задача PhoneBookVue согласно замечаний 1" />
     <MESSAGE value="Добавлен черновик задачи PhoneBookServer" />
@@ -563,6 +556,7 @@
     <MESSAGE value="В папке vf-test сделан процентный калькулятор на vuetify" />
     <MESSAGE value="В папке customs-helper сделан скелет на шаблоне vuetify&#10;После изучения серверного веба пробовать собрать проект" />
     <MESSAGE value="добработана задача PhoneBookServer согласно замечаний 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="добработана задача PhoneBookServer согласно замечаний 3" />
+    <MESSAGE value="добработана задача vuetify_todolist согласно замечаний 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="добработана задача vuetify_todolist согласно замечаний 1" />
   </component>
 </project>
