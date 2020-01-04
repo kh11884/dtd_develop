@@ -13,10 +13,10 @@
 
 <script>
     import store from "../store/index";
-    import listItem from './listItem'
+    import listItem from "./ListItem";
 
     export default {
-        name: 'TodoList',
+        name: "TodoList",
         components: {
             listItem
         },
@@ -25,7 +25,7 @@
                 return store.state.items;
             }
         }
-    }
+    };
 </script>
 
 <style scoped>

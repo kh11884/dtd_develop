@@ -85,7 +85,7 @@
                 needShowModal: false,
                 isEditable: false,
                 editTodoText: ""
-            }
+            };
         },
         methods: {
             removeTodo(item) {
@@ -116,7 +116,7 @@
                 this.needShowModal = true;
             }
         }
-    }
+    };
 </script>
 
 <style scoped>

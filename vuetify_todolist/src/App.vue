@@ -9,15 +9,15 @@
 </template>
 
 <script>
-    import 'vuetify/dist/vuetify.min.css'
-    import TodoList from './views/TodoList'
-    import newTodo from './views/newTodo'
+    import "vuetify/dist/vuetify.min.css";
+    import TodoList from "./views/TodoList";
+    import newTodo from "./views/NewTodo";
 
     export default {
-        name: 'App',
+        name: "App",
         components: {
             newTodo,
             TodoList
         },
-    }
+    };
 </script>

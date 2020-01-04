@@ -30,11 +30,11 @@
                 newTodoText: "",
                 isInvalid: false,
                 errorMessage: ""
-            }
+            };
         },
         methods: {
             addTodo() {
-                this.validation();
+                this.validate();
                 if (this.isInvalid) {
                     return;
                 }
@@ -48,7 +48,7 @@
                 store.commit("addItem", newItem);
                 this.newTodoText = "";
             },
-            validation() {
+            validate() {
                 if (this.newTodoText === "") {
                     this.isInvalid = true;
                     this.errorMessage = "Заполните поле";
@@ -58,9 +58,7 @@
                 this.errorMessage = "";
             }
         }
-    }
-
-
+    };
 </script>
 
 <style scoped>

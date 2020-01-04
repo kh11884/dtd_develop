@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
 
 Vue.use(Vuex);
 
@@ -17,7 +17,7 @@ export default new Vuex.Store({
     removeItem(state, id) {
       state.items = state.items.filter(function (item) {
         return item.id !== id;
-      })
+      });
     },
     changeItem(state, changedItem) {
       var result = state.items.find(function (item) {
@@ -28,4 +28,4 @@ export default new Vuex.Store({
   },
   actions: {},
   modules: {}
-})
+});
