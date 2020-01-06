@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/ListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/ListItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/vue.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +45,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578044598901" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AcademITScoool_ServerWEB" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test_web" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -109,7 +113,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0b9e3507-48d7-4521-bb9c-9921dbc10c9f" name="Default Changelist" comment="" />
+      <changelist id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="" />
       <created>1570250860608</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -151,13 +155,8 @@
       <workItem from="1577855877850" duration="12311000" />
       <workItem from="1577888979929" duration="56000" />
       <workItem from="1577895118384" duration="259000" />
-    </task>
-    <task id="LOCAL-00026" summary="Node_module добавлена в gitignore">
-      <created>1574423498336</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1574423498336</updated>
+      <workItem from="1578144350469" duration="370000" />
+      <workItem from="1578322459627" duration="11882000" />
     </task>
     <task id="LOCAL-00027" summary="задача TodoList Bootstrap доработана согласно замечаний 1.">
       <created>1574755515075</created>
@@ -495,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578119012240</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="добработана задача vuetify_todolist согласно замечаний 1">
+      <created>1578119300896</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1578119300896</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
