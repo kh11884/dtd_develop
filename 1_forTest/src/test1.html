@@ -10,11 +10,12 @@
 <div class="container mt-2">
     <div class="row justify-content-md-center">
         <div id="CurrencyCalculator">
-            <p class="font-weight-bold">Дата курсов: &nbsp;{{date}}</p>
+            <p class="font-weight-bold">Дата курсов: &nbsp;{{date}} USD - {{cbr_usd_rate}}; EUR - {{cbr_eur_rate}}</p>
+            <p>Указать курсы вручную <input type="checkbox" id="checkbox" v-model="isHandMadeRates"></p>
 
-            <p>
-                USD: <input v-model="usd_rate">
-                EUR: <input v-model="eur_rate">
+            <p v-show="isHandMadeRates">
+                <span :class="{'text-danger': isInvalid_hand_usd_rate}">USD: <input v-model="hand_usd_rate"></span>
+                <span :class="{'text-danger': isInvalid_hand_eur_rate}">EUR: <input v-model="hand_eur_rate"></span>
             </p>
 
             <p>
@@ -29,7 +30,10 @@
                 Раходы в RUB:
                 <input v-model="rub_charges">
             </p>
-            <p class="font-weight-bold"> Таможенная стоимость: {{ result }}</p>
+            <p class="font-weight-bold"> Таможенная стоимость: {{ result }}
+                <span v-show="isHandMadeRates">*</span>
+            </p>
+            <span v-show="isHandMadeRates">* Расчет таможенной стоимости ведется по курсам заданным вручную!</span>
         </div>
     </div>
 </div>
