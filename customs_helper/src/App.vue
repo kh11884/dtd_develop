@@ -33,7 +33,7 @@
 
         <v-list-item link>
           <div>
-            <router-link tag="div" to="/HelloWorld">
+            <router-link tag="div" to="/defermentPaymentTableView">
               <v-row>
                 <v-icon>mdi-percent-outline</v-icon>
                 <v-list-item-content class="ml-2">

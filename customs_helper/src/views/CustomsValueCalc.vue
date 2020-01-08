@@ -100,6 +100,11 @@
         return parseFloat(n).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1 ").replace('.', ',');
     }
 
+    function getRussianData(data) {
+        moment.locale('ru');
+        return moment(data.substring(0, 10)).format("DD MMMM YYYY");
+    }
+
     export default {
         name: 'CustomsValueCalc',
         components: {
@@ -147,10 +152,7 @@
                 .then(response => {
                     this.cbr_usd_rate = response.data.Valute.USD.Value;
                     this.cbr_eur_rate = response.data.Valute.EUR.Value;
-                    var rateDate = response.data.Date.substring(0, 10);
-                    moment.locale('ru');
-                    this.date = moment(rateDate).format("DD MMMM YYYY");
-
+                    this.date = getRussianData(response.data.Date);
                     this.hand_usd_rate = this.cbr_usd_rate;
                     this.hand_eur_rate = this.cbr_eur_rate;
                 })
