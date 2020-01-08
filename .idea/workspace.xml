@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/vue.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,19 +49,19 @@
     <property name="project.structure.side.proportion" value="0.42415315" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src" />
-      <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src\js" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\frontend" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src\js" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\assets" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\vf_test\src\assets" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src" />
+      <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src\js" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\frontend" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
     </key>
   </component>
   <component name="RunDashboard">

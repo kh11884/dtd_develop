@@ -36,6 +36,5 @@
         components: {
             HelloWorld
         },
-
     }
 </script>
