@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/js/calc_for_ED2.js" beforeDir="false" afterPath="$PROJECT_DIR$/PercentCalculation/src/js/calc_for_ED2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/components/formatDate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/components/formatDate.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -155,13 +157,6 @@
       <workItem from="1577895118384" duration="259000" />
       <workItem from="1578144350469" duration="370000" />
       <workItem from="1578322459627" duration="11882000" />
-    </task>
-    <task id="LOCAL-00030" summary="Немного даработан и отформатирован калькулятор.&#10;Добавить заполнение таблицы-шапки&#10;Добавить заполенение из формы.">
-      <created>1574871882924</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1574871882924</updated>
     </task>
     <task id="LOCAL-00031" summary="Частично добавлена задача PhoneBook">
       <created>1575044684740</created>
@@ -499,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578478216573</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Добавлены рассчеты процентов за отсрочку">
+      <created>1578480493881</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1578480493882</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

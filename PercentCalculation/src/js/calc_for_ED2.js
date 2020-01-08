@@ -121,8 +121,8 @@ var tableHead = $("#print_table_head");
 var tableBody = $("#print_table_body");
 
 //---Входные данные---//
-var issueDate = new Date("01/01/2000");
-var applicationDate = new Date("10/29/2019");
+var issueDate = new Date("12/31/2019");
+var applicationDate = new Date("01/08/2020");
 var payment = 10000;
 
 //---вычисления для верхней таблицы---//

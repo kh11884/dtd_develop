@@ -127,6 +127,8 @@
     import percentCalculationTable from "../components/percentCalculationTable";
     import store from "../store";
 
+    var fullInfoRefinancingRateHistory = getFullInfoRefinancingRateHistory();
+
     function getFullInfoRefinancingRateHistory() {
         var refinancingRateHistory = store.state.refinancingRateHistory;
 
@@ -148,8 +150,8 @@
     }
 
     function getFilteredHistory(issueDate, applicationDate) {
-        var filteredHistory = getFullInfoRefinancingRateHistory().filter(function (item) {
-            return issueDate <= item.endDate && item.startDate <= applicationDate
+        var filteredHistory = fullInfoRefinancingRateHistory.filter(function (item) {
+            return issueDate <= item.endDate && item.startDate <= applicationDate;
         });
 
         filteredHistory[0].startDate = issueDate;
@@ -161,13 +163,11 @@
         return filteredHistory;
     }
 
-    function getCalcTable(openDate, closeDate, payment) {
-        var issueDate = new Date(openDate);
-        var applicationDate = new Date(closeDate);
-
+    function getCalcTable(issueDate, applicationDate, payment) {
         var period = getFilteredHistory(issueDate, applicationDate);
         var options = {year: 'numeric', month: 'short', day: 'numeric'};
         var result = [];
+
         period.forEach(function (item) {
             result.push({
                 payment: payment,
@@ -186,10 +186,6 @@
         return unformattedData.toLocaleString('ru-RU', options);
     }
 
-    function getSumDays(issueDate, applicationDate) {
-        return Math.round((applicationDate - issueDate) / (1000 * 3600 * 24)) + 1;
-    }
-
     function getSumDaysTable(tableData) {
         return tableData.reduce(function (result, tableRow) {
             return result + parseFloat(tableRow.days);
@@ -199,7 +195,7 @@
     function getSumPercents(tableData) {
         return Math.round(tableData.reduce(function (result, tableRow) {
             return result + parseFloat(tableRow.sum);
-        }, 0) * 100)/100;
+        }, 0) * 100) / 100;
     }
 
     export default {
@@ -234,7 +230,6 @@
                 issuedDate: new Date("01/01/2020").toISOString().substring(0, 10),
                 closedDate: new Date().toISOString().substring(0, 10),
                 UNpayment: 1000,
-                currentData: getFormatedData(store.state.applicationDate),
                 resultTable: "",
                 isInvalidIssuedDateMessage: "",
                 isInvalidClosedDateMessage: "",
@@ -257,6 +252,7 @@
         },
         methods: {
             calc: function () {
+                this.isCalced = false;
                 this.loading = true;
                 this.isInvalidIssuedDateMessage = this.issuedDate === "" ? "Укажите дату выпуска ДТ" : "";
                 this.isInvalidClosedDateMessage = this.closedDate === "" ? "Укажите дату закрытия процедуры" : "";
@@ -265,7 +261,9 @@
                     this.loading = false;
                     return;
                 }
-                this.resultTable = getCalcTable(this.issuedDate, this.closedDate, this.UNpayment);
+                this.resultTable = getCalcTable(new Date(this.issuedDate),
+                    new Date(this.closedDate),
+                    this.UNpayment);
 
                 this.infoes[0].value = this.UNpayment;
                 this.infoes[1].value = this.UNpayment;
