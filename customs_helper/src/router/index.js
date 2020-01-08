@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import HelloWorld from '../components/HelloWorld'
+import CustomsValueCalc from '../views/CustomsValueCalc'
+import defermentPaymentTableView from '../views/defermentPaymentTableView'
 
 Vue.use(VueRouter);
 
@@ -12,9 +13,14 @@ const routes = [
     component: Home
   },
   {
-    path: '/HelloWorld',
-    name: 'HelloWorld',
-    component: HelloWorld
+    path: '/CustomsValueCalc',
+    name: 'CustomsValueCalc',
+    component: CustomsValueCalc
+  },
+  {
+    path: '/defermentPaymentTableView',
+    name: 'defermentPaymentTableView',
+    component: defermentPaymentTableView
   },
   {
     path: '/about',
@@ -31,15 +37,5 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 });
-
-// router.get("/getHistory", function (req, res) {
-//   // var term = (req.query.term || "").toUpperCase();
-//   // var result = term === "" ? contacts : contacts.filter(function (contact) {
-//   //   return contact.firstName.toUpperCase().includes(term) ||
-//   //     contact.lastName.toUpperCase().includes(term) ||
-//   //     contact.phoneNumber.toUpperCase().includes(term)
-//   // });
-//   res.send(111);
-// });
 
 export default router
