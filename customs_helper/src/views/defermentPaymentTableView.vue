@@ -26,7 +26,8 @@
                       :dense="true"
                     ></v-text-field>
                   </template>
-                  <v-date-picker locale="ru-ru" v-model="issuedDate" @input="showIssueDateCalendar = false"></v-date-picker>
+                  <v-date-picker locale="ru-ru" v-model="issuedDate"
+                                 @input="showIssueDateCalendar = false"></v-date-picker>
                 </v-menu>
               </v-col>
 
@@ -47,12 +48,13 @@
                       prepend-icon=mdi-calendar-edit
                       readonly
                       v-on="on"
-                      :error-messages="isInvalidclosedDateMessage"
+                      :error-messages="isInvalidClosedDateMessage"
                       :dense="true"
 
                     ></v-text-field>
                   </template>
-                  <v-date-picker locale="ru-ru" v-model="closedDate" @input="showCloseDateCalendar = false"></v-date-picker>
+                  <v-date-picker locale="ru-ru" v-model="closedDate"
+                                 @input="showCloseDateCalendar = false"></v-date-picker>
                 </v-menu>
               </v-col>
 
@@ -78,7 +80,7 @@
       </v-card>
       <v-spacer></v-spacer>
 
-      <v-sheet min-width="585" elevation="4" class="mt-3">
+      <v-sheet v-if="isCalced" min-width="585" elevation="4" class="mt-3">
         <v-simple-table>
           <template v-slot:default>
             <tbody>
@@ -163,9 +165,6 @@
         var issueDate = new Date(openDate);
         var applicationDate = new Date(closeDate);
 
-        console.log(issueDate);
-        console.log(closeDate);
-
         var period = getFilteredHistory(issueDate, applicationDate);
         var options = {year: 'numeric', month: 'short', day: 'numeric'};
         var result = [];
@@ -191,6 +190,18 @@
         return Math.round((applicationDate - issueDate) / (1000 * 3600 * 24)) + 1;
     }
 
+    function getSumDaysTable(tableData) {
+        return tableData.reduce(function (result, tableRow) {
+            return result + parseFloat(tableRow.days);
+        }, 0);
+    }
+
+    function getSumPercents(tableData) {
+        return Math.round(tableData.reduce(function (result, tableRow) {
+            return result + parseFloat(tableRow.sum);
+        }, 0) * 100)/100;
+    }
+
     export default {
         name: "defermentPaymentTableView",
         comments: {
@@ -202,43 +213,44 @@
                 infoes: [
                     {
                         name: "Сумма условно-начисленных платежей",
-                        value: "значение суммы",
+                        value: 0,
                     },
                     {
                         name: "Сумма платежа по которому предоставлена отсрочка",
-                        value: "Значение платежа",
+                        value: 0,
                     },
                     {
                         name: "количество дней отсрочки",
-                        value: getSumDays(store.state.issueDate, store.state.applicationDate),
+                        value: 0
                     },
                     {
                         name: "Сумма процентов за отсрочку таможенного платежа",
-                        value: "сумма процентов",
+                        value: 0,
                     },
                 ],
                 showIssueDateCalendar: false,
                 showCloseDateCalendar: false,
                 loading: false,
-                issuedDate: new Date("01/01/2018").toISOString().substring(0, 10),
+                issuedDate: new Date("01/01/2020").toISOString().substring(0, 10),
                 closedDate: new Date().toISOString().substring(0, 10),
                 UNpayment: 1000,
                 currentData: getFormatedData(store.state.applicationDate),
                 resultTable: "",
                 isInvalidIssuedDateMessage: "",
-                isInvalidclosedDateMessage: "",
+                isInvalidClosedDateMessage: "",
                 isInvalidUNPaymentMessage: "",
+                isCalced: false,
             }
         },
         computed: {
             headTable: function () {
                 return 'Рассчет процентов за отсрочку таможенного платежа (5010 вид) от ' + this.computedCloseDate;
             },
-            computedIssueDate () {
+            computedIssueDate() {
                 moment.locale('ru');
                 return this.issuedDate ? moment(this.issuedDate).format('D MMM YYYY') : ''
             },
-            computedCloseDate () {
+            computedCloseDate() {
                 moment.locale('ru');
                 return this.closedDate ? moment(this.closedDate).format('D MMM YYYY') : ''
             },
@@ -247,14 +259,20 @@
             calc: function () {
                 this.loading = true;
                 this.isInvalidIssuedDateMessage = this.issuedDate === "" ? "Укажите дату выпуска ДТ" : "";
-                this.isInvalidclosedDateMessage = this.closedDate === "" ? "Укажите дату закрытия процедуры" : "";
+                this.isInvalidClosedDateMessage = this.closedDate === "" ? "Укажите дату закрытия процедуры" : "";
                 this.isInvalidUNPaymentMessage = this.UNpayment === "" ? "Укажите сумму платежа" : "";
-                if(this.isInvalidIssuedDateMessage || this.isInvalidclosedDateMessage || this.isInvalidUNPaymentMessage){
+                if (this.isInvalidIssuedDateMessage || this.isInvalidClosedDateMessage || this.isInvalidUNPaymentMessage) {
                     this.loading = false;
                     return;
                 }
                 this.resultTable = getCalcTable(this.issuedDate, this.closedDate, this.UNpayment);
+
+                this.infoes[0].value = this.UNpayment;
+                this.infoes[1].value = this.UNpayment;
+                this.infoes[2].value = getSumDaysTable(this.resultTable);
+                this.infoes[3].value = getSumPercents(this.resultTable);
                 this.loading = false;
+                this.isCalced = true;
             }
         }
     }
