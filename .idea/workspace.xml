@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/js/calc_for_ED2.js" beforeDir="false" afterPath="$PROJECT_DIR$/PercentCalculation/src/js/calc_for_ED2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/components/formatDate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/components/formatDate.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/vue.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +43,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578044598901" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test_web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ServerWEB_AcademITS" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -157,13 +156,6 @@
       <workItem from="1577895118384" duration="259000" />
       <workItem from="1578144350469" duration="370000" />
       <workItem from="1578322459627" duration="11882000" />
-    </task>
-    <task id="LOCAL-00031" summary="Частично добавлена задача PhoneBook">
-      <created>1575044684740</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1575044684740</updated>
     </task>
     <task id="LOCAL-00032" summary="Частично добавлена задача PhoneBook">
       <created>1575046200817</created>
@@ -501,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578480493882</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Добавлены рассчеты процентов за отсрочку">
+      <created>1578483123714</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1578483123714</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

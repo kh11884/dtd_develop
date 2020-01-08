@@ -75,6 +75,12 @@
             @click="calc"
           >Расчитать
           </v-btn>
+          <v-btn
+            small
+            color="primary"
+            @click="reset"
+          >Сброс
+          </v-btn>
         </v-card-text>
 
       </v-card>
@@ -271,6 +277,12 @@
                 this.infoes[3].value = getSumPercents(this.resultTable);
                 this.loading = false;
                 this.isCalced = true;
+            },
+            reset: function () {
+                this.isCalced = false;
+                this.issuedDate = "";
+                this.closedDate = new Date().toISOString().substring(0, 10);
+                this.UNpayment = "";
             }
         }
     }
