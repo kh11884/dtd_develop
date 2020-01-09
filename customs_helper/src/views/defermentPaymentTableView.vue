@@ -1,38 +1,43 @@
+<!--TODO: Добавить ставку и дату круйней ставки-->
+<!--TODO: Добавить таблицу для вставки в графу 47 альты-->
+<!--TODO: Добавить пакетный рассчет процентов-->
+<!--TODO: Добавить рассчет процентов по отсрочке-->
+
+
 <template>
 
   <v-row justify="center">
     <v-col cols="12" sm="10" md="7" lg="5">
-      <v-card>
-        <v-card-text>
-          <v-form>
-            <v-row>
-              <v-col col-2>
-                <v-menu
-                  v-model="showIssueDateCalendar"
-                  :close-on-content-click="false"
-                  :nudge-right="40"
-                  transition="scale-transition"
-                  offset-y
-                  min-width="290px"
-                >
-                  <template v-slot:activator="{ on }">
-                    <v-text-field
-                      v-model="computedIssueDate"
-                      label="Дата выпуска ДТ:"
-                      prepend-icon=mdi-calendar-edit
-                      readonly
-                      v-on="on"
-                      :error-messages="isInvalidIssuedDateMessage"
-                      :dense="true"
-                    ></v-text-field>
-                  </template>
-                  <v-date-picker locale="ru-ru" v-model="issuedDate"
-                                 @input="showIssueDateCalendar = false"></v-date-picker>
-                </v-menu>
-              </v-col>
+      <v-card min-width="585">
+        <v-container class="pt-0">
+          <v-row>
+            <v-col>
+              <v-card-text class="headline">Расчет процентов по отсрочке платежа</v-card-text>
 
+              <v-menu
+                v-model="showIssueDateCalendar"
+                :close-on-content-click="false"
+                :nudge-right="40"
+                transition="scale-transition"
+                offset-y
+                min-width="290px"
+              >
+                <template v-slot:activator="{ on }">
+                  <v-text-field
+                    v-model="computedIssueDate"
+                    label="Дата выпуска ДТ:"
+                    prepend-icon=mdi-calendar-edit
+                    readonly
+                    v-on="on"
+                    :error-messages="isInvalidIssuedDateMessage"
+                    :dense="true"
+                  ></v-text-field>
+                </template>
+                <v-date-picker locale="ru-ru" v-model="issuedDate"
+                               @input="showIssueDateCalendar = false"></v-date-picker>
+              </v-menu>
 
-              <v-col col-2>
+              <div class="py-1">
                 <v-menu
                   v-model="showCloseDateCalendar"
                   :close-on-content-click="false"
@@ -44,7 +49,7 @@
                   <template v-slot:activator="{ on }">
                     <v-text-field
                       v-model="computedCloseDate"
-                      label="Дата закрытия:"
+                      label="Дата закрытия процедуры:"
                       prepend-icon=mdi-calendar-edit
                       readonly
                       v-on="on"
@@ -56,33 +61,53 @@
                   <v-date-picker locale="ru-ru" v-model="closedDate"
                                  @input="showCloseDateCalendar = false"></v-date-picker>
                 </v-menu>
-              </v-col>
+              </div>
 
-              <v-col col-2>
-                <v-text-field
-                  label="УН Платеж:"
-                  v-model="UNpayment"
-                  :error-messages="isInvalidUNPaymentMessage"
-                  :dense="true"
-                ></v-text-field>
-              </v-col>
+              <v-text-field
+                label="Условно-начисленный платеж:"
+                prepend-icon="mdi-currency-rub"
+                v-model="UNpayment"
+                :error-messages="isInvalidUNPaymentMessage"
+                :dense="true"
+              ></v-text-field>
+
+            </v-col>
+            <v-col cols="4" class="ma-4">
+              <v-avatar
+                class="ma-0"
+                size="180"
+                tile
+              >
+                <v-img src="../assets/calc2.jpg"></v-img>
+              </v-avatar>
+
+            </v-col>
+          </v-row>
+
+          <v-card-text class="pt-0">
+            <v-row
+              :align="'end'"
+              :justify="'start'">
+              <div class="my-2 ma-2">
+                <v-btn
+                  color="primary"
+                  :loading="loading"
+                  @click="calc"
+                >Расчитать
+                </v-btn>
+              </div>
+              <div class="my-2 ma-2">
+                <v-btn
+                  color="primary"
+                  @click="reset"
+                >Сброс
+                </v-btn>
+              </div>
             </v-row>
-          </v-form>
-          <v-btn
-            small
-            color="primary"
-            :loading="loading"
-            @click="calc"
-          >Расчитать
-          </v-btn>
-          <v-btn
-            small
-            color="primary"
-            @click="reset"
-          >Сброс
-          </v-btn>
-        </v-card-text>
 
+          </v-card-text>
+          <v-card-text class="error--text">!!! Добавить дату и ставку крайнего значения ключевой ставки, для наглядности работы отчета</v-card-text>
+        </v-container>
       </v-card>
       <v-spacer></v-spacer>
 
@@ -132,19 +157,16 @@
     import moment from 'moment'
     import percentCalculationTable from "../components/percentCalculationTable";
     import store from "../store";
-
-    var fullInfoRefinancingRateHistory = getFullInfoRefinancingRateHistory();
+    import lodash from 'lodash';
 
     function getFullInfoRefinancingRateHistory() {
         var refinancingRateHistory = store.state.refinancingRateHistory;
-
         refinancingRateHistory.reduce(function (memo, item) {
             memo.endDate = new Date(item.startDate);
             memo.endDate.setDate(memo.endDate.getDate() - 1);
             memo.days = Math.round((item.startDate - memo.startDate) / (1000 * 3600 * 24));
             return item;
         });
-
         //-- добавим в последний элемент конечную дату и число дней для нее, для стандартизированного подхода к дальнейшим рассчетам от элемента
         //-- можно добавить в кол-во дней 1, а в конечную дату текущую дату, чтобы не было лишних рассчетов.
         var endDate = new Date("12/31/2025"); //-- Дата до которой будет работает таблица
@@ -156,9 +178,11 @@
     }
 
     function getFilteredHistory(issueDate, applicationDate) {
-        var filteredHistory = fullInfoRefinancingRateHistory.filter(function (item) {
-            return issueDate <= item.endDate && item.startDate <= applicationDate;
+        var filterHistory = getFullInfoRefinancingRateHistory().filter(function (item) {
+            return issueDate <= item.endDate
+                && item.startDate <= applicationDate;
         });
+        var filteredHistory = _.cloneDeep(filterHistory);
 
         filteredHistory[0].startDate = issueDate;
         filteredHistory[0].days = Math.round((filteredHistory[0].endDate - issueDate) / (1000 * 3600 * 24)) + 1;
@@ -170,6 +194,7 @@
     }
 
     function getCalcTable(issueDate, applicationDate, payment) {
+        issueDate.setDate(issueDate.getDate() + 1);
         var period = getFilteredHistory(issueDate, applicationDate);
         var options = {year: 'numeric', month: 'short', day: 'numeric'};
         var result = [];
@@ -188,8 +213,10 @@
     }
 
     function getFormatedData(unformattedData) {
-        var options = {year: 'numeric', month: 'short', day: 'numeric'};
-        return unformattedData.toLocaleString('ru-RU', options);
+        var year = unformattedData.substring(0, 4);
+        var month = unformattedData.substring(5, 7);
+        var day = unformattedData.substring(8, 10);
+        return month + "/" + day + "/" + year;
     }
 
     function getSumDaysTable(tableData) {
@@ -233,8 +260,8 @@
                 showIssueDateCalendar: false,
                 showCloseDateCalendar: false,
                 loading: false,
-                issuedDate: new Date("01/01/2020").toISOString().substring(0, 10),
-                closedDate: new Date().toISOString().substring(0, 10),
+                issuedDate: (new Date(new Date("12/14/2015") - (new Date()).getTimezoneOffset() * 60000)).toISOString().substring(0, 10),
+                closedDate: (new Date(Date.now() - (new Date()).getTimezoneOffset() * 60000)).toISOString().substring(0, 10),
                 UNpayment: 1000,
                 resultTable: "",
                 isInvalidIssuedDateMessage: "",
@@ -267,8 +294,8 @@
                     this.loading = false;
                     return;
                 }
-                this.resultTable = getCalcTable(new Date(this.issuedDate),
-                    new Date(this.closedDate),
+                this.resultTable = getCalcTable(new Date(getFormatedData(this.issuedDate)),
+                    new Date(getFormatedData(this.closedDate)),
                     this.UNpayment);
 
                 this.infoes[0].value = this.UNpayment;
@@ -281,7 +308,7 @@
             reset: function () {
                 this.isCalced = false;
                 this.issuedDate = "";
-                this.closedDate = new Date().toISOString().substring(0, 10);
+                this.closedDate = moment(new Date()).format().substring(0, 10);
                 this.UNpayment = "";
             }
         }

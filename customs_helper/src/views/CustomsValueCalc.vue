@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <v-row justify="center">
-      <v-col cols="12" sm="9" md="7" lg="5">
-        <v-card>
+      <v-col cols="12" sm="10" md="7" lg="5">
+        <v-card min-width="585">
           <div class="d-flex flex-no-wrap justify-space-between">
             <div>
               <v-card-text class="headline">Калькулятор расчета таможенной стоимости</v-card-text>
@@ -16,16 +16,17 @@
                   <v-card-text>
                     <v-form>
                       <v-row>
-                        <v-col col-2>
+                        <v-col col-2 class="pb-0">
 
                           <v-text-field
+                            class="pb-0"
                             label="USD:"
                             v-model="hand_usd_rate"
                             :error-messages="isInvalid_hand_usd_rate_message"
                             :dense="true"
                           ></v-text-field>
                         </v-col>
-                        <v-col col-2>
+                        <v-col col-2 class="pb-0">
                           <v-text-field
                             label="EUR:"
                             v-model="hand_eur_rate"
@@ -49,9 +50,10 @@
             </v-avatar>
           </div>
 
-          <v-card-text>
-            <v-form>
+          <v-card-text class="pt-0">
+            <v-form class="pt-0">
               <v-text-field
+                class="pt-0"
                 label="Расходы в USD:"
                 v-model="usd_charges"
                 hint="Введите выражение в формате 2+3. Для дроби используйте точку."

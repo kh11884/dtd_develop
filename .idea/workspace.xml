@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
+    <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="Добавлены рассчеты процентов за отсрочку.">
+      <change afterPath="$PROJECT_DIR$/customs_helper/src/assets/calc2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customs_helper/src/assets/musor.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/CustomsValueCalc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/CustomsValueCalc.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/vue.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +48,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578044598901" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ServerWEB_AcademITS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/customs_helper/src/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -52,19 +57,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src\js" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\assets" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\vf_test\src\assets" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src" />
       <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src\js" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\frontend" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\assets" />
+      <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src\js" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\vf_test\src\assets" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -156,13 +161,8 @@
       <workItem from="1577895118384" duration="259000" />
       <workItem from="1578144350469" duration="370000" />
       <workItem from="1578322459627" duration="11882000" />
-    </task>
-    <task id="LOCAL-00032" summary="Частично добавлена задача PhoneBook">
-      <created>1575046200817</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1575046200817</updated>
+      <workItem from="1578566648614" duration="11017000" />
+      <workItem from="1578578788242" duration="8000000" />
     </task>
     <task id="LOCAL-00033" summary="Для вопроса про ширину элемента Bootstrap">
       <created>1575102344563</created>
@@ -500,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578483123714</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Добавлены рассчеты процентов за отсрочку">
+      <created>1578523039851</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1578523039851</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
