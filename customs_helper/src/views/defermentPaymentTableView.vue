@@ -103,10 +103,12 @@
                 >Сброс
                 </v-btn>
               </div>
+              <div class="my-2 ma-2">
+                <span>Последние изменения ключевой ставки используемые для рассчета: {{lastKeyRateDate}} - {{lastKeyRate}}</span>
+              </div>
             </v-row>
 
           </v-card-text>
-          <v-card-text class="error--text">!!! Добавить дату и ставку крайнего значения ключевой ставки, для наглядности работы отчета</v-card-text>
         </v-container>
       </v-card>
       <v-spacer></v-spacer>
@@ -116,14 +118,16 @@
           <template v-slot:default>
             <tbody>
             <tr>
-              <td colspan="6" class="font-weight-black">{{headTable}}</td>
+              <td colspan="4" class="font-weight-black">Рассчет процентов за отсрочку таможенного платежа (5010 вид)</td>
+              <td colspan="2" class="font-weight-black">{{computedCloseDate}}</td>
             </tr>
             <tr v-for="item in infoes" :key="item.name">
               <td colspan="4">{{ item.name }}</td>
               <td colspan="2">{{ item.value }}</td>
             </tr>
             <tr>
-              <td colspan="6" class="text-center font-weight-black">Прс = Сп х Д х Ст / (360 х 100%)</td>
+              <td colspan="4" class="text-center font-weight-black">Прс = Сп х Д х Ст / (360 х 100%)</td>
+              <td colspan="2" class="text-center font-weight-black"> </td>
             </tr>
 
             <tr class="text-center font-weight-black">
@@ -159,6 +163,8 @@
     import store from "../store";
     import lodash from 'lodash';
 
+    var fullInfoRefinancingRateHistory = getFullInfoRefinancingRateHistory();
+
     function getFullInfoRefinancingRateHistory() {
         var refinancingRateHistory = store.state.refinancingRateHistory;
         refinancingRateHistory.reduce(function (memo, item) {
@@ -178,7 +184,7 @@
     }
 
     function getFilteredHistory(issueDate, applicationDate) {
-        var filterHistory = getFullInfoRefinancingRateHistory().filter(function (item) {
+        var filterHistory = fullInfoRefinancingRateHistory.filter(function (item) {
             return issueDate <= item.endDate
                 && item.startDate <= applicationDate;
         });
@@ -231,6 +237,11 @@
         }, 0) * 100) / 100;
     }
 
+    function parseNumber(value) {
+        var result = value.toString().replace(/,/g, '.');
+        return parseFloat(result);
+    }
+
     export default {
         name: "defermentPaymentTableView",
         comments: {
@@ -272,7 +283,7 @@
         },
         computed: {
             headTable: function () {
-                return 'Рассчет процентов за отсрочку таможенного платежа (5010 вид) от ' + this.computedCloseDate;
+                return 'Рассчет процентов за отсрочку таможенного платежа (5010 вид)' + this.computedCloseDate;
             },
             computedIssueDate() {
                 moment.locale('ru');
@@ -282,6 +293,15 @@
                 moment.locale('ru');
                 return this.closedDate ? moment(this.closedDate).format('D MMM YYYY') : ''
             },
+            lastKeyRateDate() {
+                return moment(fullInfoRefinancingRateHistory[fullInfoRefinancingRateHistory.length - 1].startDate).format('D MMM YYYY');
+            },
+            lastKeyRate() {
+                return fullInfoRefinancingRateHistory[fullInfoRefinancingRateHistory.length - 1].refinancing_rate * 100 + " %";
+            },
+            formatedUNPayment(){
+                return parseNumber(this.UNpayment);
+            }
         },
         methods: {
             calc: function () {
@@ -296,10 +316,10 @@
                 }
                 this.resultTable = getCalcTable(new Date(getFormatedData(this.issuedDate)),
                     new Date(getFormatedData(this.closedDate)),
-                    this.UNpayment);
+                    this.formatedUNPayment);
 
-                this.infoes[0].value = this.UNpayment;
-                this.infoes[1].value = this.UNpayment;
+                this.infoes[0].value = this.formatedUNPayment;
+                this.infoes[1].value = this.formatedUNPayment;
                 this.infoes[2].value = getSumDaysTable(this.resultTable);
                 this.infoes[3].value = getSumPercents(this.resultTable);
                 this.loading = false;

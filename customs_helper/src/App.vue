@@ -59,6 +59,38 @@
             </router-link>
           </div>
         </v-list-item>
+
+        <v-list-item
+          disabled="disabled">
+          <div>
+            <router-link tag="div" to="/About">
+              <v-list-item-action>
+                <v-row>
+                  <v-icon>mdi-percent-outline</v-icon>
+                  <v-list-item-content class="ml-2">
+                    <v-list-item-title>Групповой расчет процентов<br/> для отсрочки платежа</v-list-item-title>
+                  </v-list-item-content>
+                </v-row>
+              </v-list-item-action>
+            </router-link>
+          </div>
+        </v-list-item>
+
+        <v-list-item
+          disabled="disabled">
+          <div>
+            <router-link tag="div" to="/About">
+              <v-list-item-action>
+                <v-row>
+                  <v-icon>mdi-percent-outline</v-icon>
+                  <v-list-item-content class="ml-2">
+                    <v-list-item-title>Групповой расчет процентов<br/> для рассрочки платежа</v-list-item-title>
+                  </v-list-item-content>
+                </v-row>
+              </v-list-item-action>
+            </router-link>
+          </div>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 

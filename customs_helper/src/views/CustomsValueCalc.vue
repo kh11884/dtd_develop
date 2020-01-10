@@ -8,8 +8,8 @@
               <v-card-text class="headline">Калькулятор расчета таможенной стоимости</v-card-text>
               <v-card-text>
                 <div>Дата курсов {{date}}</div>
-                <div>USD: {{usd_rate}}</div>
-                <div>EUR: {{eur_rate}}</div>
+                <div>USD: {{cbr_usd_rate}}</div>
+                <div>EUR: {{cbr_eur_rate}}</div>
                 <v-checkbox v-model="isHandMadeRates" :label="'Указать курсы вручную'"></v-checkbox>
 
                 <v-card v-show="isHandMadeRates" max-width="400" height="90" color="indigo lighten-5">
@@ -56,7 +56,7 @@
                 class="pt-0"
                 label="Расходы в USD:"
                 v-model="usd_charges"
-                hint="Введите выражение в формате 2+3. Для дроби используйте точку."
+                hint="Введите выражение в формате 2+3."
                 :clearable="true"
                 prefix="$"
               ></v-text-field>
@@ -64,7 +64,7 @@
               <v-text-field
                 label="Расходы в EUR:"
                 v-model="eur_charges"
-                hint="Введите выражение в формате 2+3. Для дроби используйте точку."
+                hint="Введите выражение в формате 2+3."
                 :clearable="true"
                 prefix="€"
               ></v-text-field>
@@ -72,7 +72,7 @@
               <v-text-field
                 label="Расходы в RUB:"
                 v-model="rub_charges"
-                hint="Введите выражение в формате 2+3. Для дроби используйте точку."
+                hint="Введите выражение в формате 2+3."
                 :clearable="true"
                 prefix="₽"
               ></v-text-field>
@@ -107,6 +107,11 @@
         return moment(data.substring(0, 10)).format("DD MMMM YYYY");
     }
 
+    function parseNumber(value) {
+        var result = value.toString().replace(/,/g, '.');
+        return parseFloat(result);
+    }
+
     export default {
         name: 'CustomsValueCalc',
         components: {
@@ -127,19 +132,20 @@
         },
         computed: {
             result: function () {
-                var usd_costs = this.usd_charges === "" ? 0 : eval(this.usd_charges);
-                var eur_costs = this.eur_charges === "" ? 0 : eval(this.eur_charges);
-                var rub_costs = this.rub_charges === "" ? 0 : eval(this.rub_charges);
+                var usd_costs = this.usd_charges === "" ? 0 : eval(this.usd_charges.replace(/,/g, '.'));
+                var eur_costs = this.eur_charges === "" ? 0 : eval(this.eur_charges.replace(/,/g, '.'));
+                var rub_costs = this.rub_charges === "" ? 0 : eval(this.rub_charges.replace(/,/g, '.'));
 
                 var result = usd_costs * this.usd_rate + eur_costs * this.eur_rate + rub_costs;
 
                 return moneyFormat(result);
             },
             usd_rate: function () {
-                return this.isHandMadeRates ? this.hand_usd_rate : this.cbr_usd_rate;
+                return this.isHandMadeRates ? parseNumber(this.hand_usd_rate) : this.cbr_usd_rate;
             },
             eur_rate: function () {
-                return this.isHandMadeRates ? this.hand_eur_rate : this.cbr_eur_rate;
+
+                return this.isHandMadeRates ? parseNumber(this.hand_eur_rate) : this.cbr_eur_rate;
             },
             isInvalid_hand_usd_rate_message: function () {
                 return this.hand_usd_rate === "" ? "Введите курс USD" : "";
