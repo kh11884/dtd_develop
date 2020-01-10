@@ -1,14 +1,13 @@
 <template>
-  <v-form>
+  <v-spacer>
     <v-row justify="center" no-gutters>
       <v-col sm="8">
         <v-row align="center" no-gutters>
           <v-text-field
             label="Новая задача"
             v-model="newTodoText"
-            @keydown.enter="addTodo"
+            @keyup.enter="addTodo"
             @keydown.esc="newTodoText=''"
-            :error="isInvalid"
             :error-messages="errorMessage"
           ></v-text-field>
 
@@ -16,7 +15,7 @@
         </v-row>
       </v-col>
     </v-row>
-  </v-form>
+  </v-spacer>
 </template>
 
 <script>
@@ -26,7 +25,6 @@
         name: "newTodo",
         data() {
             return {
-                items: [],
                 newTodoText: "",
                 isInvalid: false,
                 errorMessage: ""

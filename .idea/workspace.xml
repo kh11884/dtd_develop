@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
+    <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="Добавлено принятие чисел с точкой и с запятой.&#10;Добавить регулярное выражение принятие только цифр и арифметических знаков.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/CustomsValueCalc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/CustomsValueCalc.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/plugins/vuetify.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/plugins/vuetify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/NewTodo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/NewTodo.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,14 +159,8 @@
       <workItem from="1578322459627" duration="11882000" />
       <workItem from="1578566648614" duration="11017000" />
       <workItem from="1578578788242" duration="8702000" />
-      <workItem from="1578666580674" duration="5964000" />
-    </task>
-    <task id="LOCAL-00034" summary="добработана задача Bootstrap согласно замечаний 4">
-      <created>1575124462013</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1575124462013</updated>
+      <workItem from="1578666580674" duration="7183000" />
+      <workItem from="1578674159560" duration="493000" />
     </task>
     <task id="LOCAL-00035" summary="Добавлена задача PhoneBook без усложнений.">
       <created>1575131455404</created>
@@ -504,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578586809805</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Добавлено принятие чисел с точкой и с запятой.&#10;Добавить регулярное выражение принятие только цифр и арифметических знаков.">
+      <created>1578672978835</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1578672978836</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +542,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлен черновик задачи PhoneBookServer" />
     <MESSAGE value="Добавлена задача PhoneBookServer, надо причесать" />
     <MESSAGE value="Добавлена задача PhoneBookServer." />
     <MESSAGE value="Подправлены небольшие замечания:&#10;добавлена красная тень вокруг input при валидации.&#10;исправлены опечатки&#10;v-show заменен на v-if" />
@@ -566,6 +566,7 @@
     <MESSAGE value="добработана задача vuetify_todolist согласно замечаний 1" />
     <MESSAGE value="Добавлены рассчеты процентов за отсрочку" />
     <MESSAGE value="Добавлены рассчеты процентов за отсрочку." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены рассчеты процентов за отсрочку." />
+    <MESSAGE value="Добавлено принятие чисел с точкой и с запятой.&#10;Добавить регулярное выражение принятие только цифр и арифметических знаков." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлено принятие чисел с точкой и с запятой.&#10;Добавить регулярное выражение принятие только цифр и арифметических знаков." />
   </component>
 </project>
