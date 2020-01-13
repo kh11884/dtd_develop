@@ -7,9 +7,39 @@
             <div>
               <v-card-text class="headline">Калькулятор расчета таможенной стоимости</v-card-text>
               <v-card-text>
-                <div>Дата курсов {{date}}</div>
-                <div>USD: {{cbr_usd_rate}}</div>
-                <div>EUR: {{cbr_eur_rate}}</div>
+                <v-simple-table dense>
+                  <tr>
+                    <td colspan="2">Дата курсов</td>
+                    <td>{{date}}</td>
+                  </tr>
+                  <tr>
+                    <td>USD:</td>
+                    <td> {{cbr_usd_rate}}</td>
+                    <td rowspan="2">
+                      <v-tooltip
+                        right>
+                        <template v-slot:activator="{ on }">
+                          <v-btn
+                            depressed
+                            dark
+                            fab
+                            x-small
+                            color="primary"
+                            @click="refreshRate"
+                            v-on="on"
+                          >
+                            <v-icon dark>mdi-cached</v-icon>
+                          </v-btn>
+                        </template>
+                        <span>Обновить курсы</span>
+                      </v-tooltip>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>EUR:</td>
+                    <td> {{cbr_eur_rate}}</td>
+                  </tr>
+                </v-simple-table>
                 <v-checkbox v-model="isHandMadeRates" :label="'Указать курсы вручную'"></v-checkbox>
 
                 <v-card v-show="isHandMadeRates" max-width="400" height="90" color="indigo lighten-5">
@@ -78,11 +108,40 @@
               ></v-text-field>
             </v-form>
             <v-card>
-              <v-card-text
+              <v-row
+              :align="'center'">
+                <v-col
+                  cols="auto"
+                  class="mr-auto py-0">
+                  <v-card-text
                 class="headline black--text"
               >Таможенная стоимость: {{ result }}
                 <span v-show="isHandMadeRates" class="red--text">*</span>
               </v-card-text>
+                </v-col>
+                <v-col
+                  cols="auto"
+                  class="mr-4 py-0">
+              <v-tooltip
+                right>
+                <template v-slot:activator="{ on }">
+                  <v-btn
+                    depressed
+                    dark
+                    fab
+                    x-small
+                    color="primary"
+                    @click="clearAll"
+                    v-on="on">
+                    <v-icon>
+                      mdi-autorenew
+                    </v-icon>
+                  </v-btn>
+                </template>
+                <span>Очистить все</span>
+              </v-tooltip>
+                </v-col>
+              </v-row>
             </v-card>
             <span v-show="isHandMadeRates" class="red--text">* Расчет таможенной стоимости ведется по курсам заданным вручную!</span>
           </v-card-text>
@@ -96,21 +155,10 @@
     // @ is an alias to /src
     import HelloWorld from '@/components/HelloWorld.vue'
     import axios from 'axios'
-    import moment from 'moment'
-
-    function moneyFormat(n) {
-        return parseFloat(n).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1 ").replace('.', ',');
-    }
-
-    function getRussianData(data) {
-        moment.locale('ru');
-        return moment(data.substring(0, 10)).format("DD MMMM YYYY");
-    }
-
-    function parseNumber(value) {
-        var result = value.toString().replace(/,/g, '.');
-        return parseFloat(result);
-    }
+    import getRussianDate from "../components/customsValueCalcComponents/getRussianDate";
+    import getMoneyFormat from "../components/customsValueCalcComponents/getMoneyFormat";
+    import parseNumber from "../components/customsValueCalcComponents/parseNumber";
+    import getExpression from "../components/customsValueCalcComponents/getExpression";
 
     export default {
         name: 'CustomsValueCalc',
@@ -132,20 +180,33 @@
         },
         computed: {
             result: function () {
-                var usd_costs = this.usd_charges === "" ? 0 : eval(this.usd_charges.replace(/,/g, '.'));
-                var eur_costs = this.eur_charges === "" ? 0 : eval(this.eur_charges.replace(/,/g, '.'));
-                var rub_costs = this.rub_charges === "" ? 0 : eval(this.rub_charges.replace(/,/g, '.'));
+                this.usd_charges = getExpression(this.usd_charges);
+                this.eur_charges = getExpression(this.eur_charges);
+                this.rub_charges = getExpression(this.rub_charges);
+
+                var usd_costs = this.usd_charges === "" ? 0 : parseNumber(this.usd_charges);
+                var eur_costs = this.eur_charges === "" ? 0 : parseNumber(this.eur_charges);
+                var rub_costs = this.rub_charges === "" ? 0 : parseNumber(this.rub_charges);
 
                 var result = usd_costs * this.usd_rate + eur_costs * this.eur_rate + rub_costs;
 
-                return moneyFormat(result);
+                return getMoneyFormat(result);
             },
             usd_rate: function () {
-                return this.isHandMadeRates ? parseNumber(this.hand_usd_rate) : this.cbr_usd_rate;
+                if (this.isHandMadeRates) {
+                    this.hand_usd_rate = getExpression(this.hand_usd_rate);
+                    return parseNumber(this.hand_usd_rate);
+                } else {
+                    return this.cbr_usd_rate;
+                }
             },
             eur_rate: function () {
-
-                return this.isHandMadeRates ? parseNumber(this.hand_eur_rate) : this.cbr_eur_rate;
+                if (this.isHandMadeRates) {
+                    this.hand_eur_rate = getExpression(this.hand_eur_rate);
+                    return parseNumber(this.hand_eur_rate);
+                } else {
+                    return this.cbr_eur_rate;
+                }
             },
             isInvalid_hand_usd_rate_message: function () {
                 return this.hand_usd_rate === "" ? "Введите курс USD" : "";
@@ -154,19 +215,29 @@
                 return this.hand_eur_rate === "" ? "Введите курс EUR" : "";
             }
         },
+        methods: {
+            refreshRate: function () {
+                axios
+                    .get("https://www.cbr-xml-daily.ru/daily_json.js")
+                    .then(response => {
+                        this.cbr_usd_rate = response.data.Valute.USD.Value;
+                        this.cbr_eur_rate = response.data.Valute.EUR.Value;
+                        this.date = getRussianDate(response.data.Date);
+                        this.hand_usd_rate = this.cbr_usd_rate;
+                        this.hand_eur_rate = this.cbr_eur_rate;
+                    })
+                    .catch(function (e) {
+                        alert("Что-то пошло не так с загрузкой курсов. " + e);
+                    });
+            },
+            clearAll: function () {
+                this.usd_charges = "";
+                this.eur_charges = "";
+                this.rub_charges = "";
+            }
+        },
         mounted: function () {
-            axios
-                .get("https://www.cbr-xml-daily.ru/daily_json.js")
-                .then(response => {
-                    this.cbr_usd_rate = response.data.Valute.USD.Value;
-                    this.cbr_eur_rate = response.data.Valute.EUR.Value;
-                    this.date = getRussianData(response.data.Date);
-                    this.hand_usd_rate = this.cbr_usd_rate;
-                    this.hand_eur_rate = this.cbr_eur_rate;
-                })
-                .catch(function (e) {
-                    alert("Что-то пошло не так с загрузкой курсов. " + e);
-                });
+            this.refreshRate();
         },
     }
 </script>
