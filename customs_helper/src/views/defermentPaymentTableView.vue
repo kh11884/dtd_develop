@@ -1,4 +1,3 @@
-<!--TODO: Добавить ставку и дату круйней ставки-->
 <!--TODO: Добавить таблицу для вставки в графу 47 альты-->
 <!--TODO: Добавить пакетный рассчет процентов-->
 <!--TODO: Добавить рассчет процентов по отсрочке-->
@@ -118,7 +117,8 @@
           <template v-slot:default>
             <tbody>
             <tr>
-              <td colspan="4" class="font-weight-black">Рассчет процентов за отсрочку таможенного платежа (5010 вид)</td>
+              <td colspan="4" class="font-weight-black">Рассчет процентов за отсрочку таможенного платежа (5010 вид)
+              </td>
               <td colspan="2" class="font-weight-black">{{computedCloseDate}}</td>
             </tr>
             <tr v-for="item in infoes" :key="item.name">
@@ -127,7 +127,7 @@
             </tr>
             <tr>
               <td colspan="4" class="text-center font-weight-black">Прс = Сп х Д х Ст / (360 х 100%)</td>
-              <td colspan="2" class="text-center font-weight-black"> </td>
+              <td colspan="2" class="text-center font-weight-black"></td>
             </tr>
 
             <tr class="text-center font-weight-black">
@@ -159,95 +159,22 @@
 
 <script>
     import moment from 'moment'
-    import percentCalculationTable from "../components/percentCalculationTable";
-    import store from "../store";
     import lodash from 'lodash';
-
-    var fullInfoRefinancingRateHistory = getFullInfoRefinancingRateHistory();
-
-    function getFullInfoRefinancingRateHistory() {
-        var refinancingRateHistory = store.state.refinancingRateHistory;
-        refinancingRateHistory.reduce(function (memo, item) {
-            memo.endDate = new Date(item.startDate);
-            memo.endDate.setDate(memo.endDate.getDate() - 1);
-            memo.days = Math.round((item.startDate - memo.startDate) / (1000 * 3600 * 24));
-            return item;
-        });
-        //-- добавим в последний элемент конечную дату и число дней для нее, для стандартизированного подхода к дальнейшим рассчетам от элемента
-        //-- можно добавить в кол-во дней 1, а в конечную дату текущую дату, чтобы не было лишних рассчетов.
-        var endDate = new Date("12/31/2025"); //-- Дата до которой будет работает таблица
-        var lastElement = refinancingRateHistory[refinancingRateHistory.length - 1];
-        lastElement.endDate = endDate;
-        lastElement.days = Math.round((lastElement.endDate - lastElement.startDate) / (1000 * 3600 * 24));
-
-        return refinancingRateHistory;
-    }
-
-    function getFilteredHistory(issueDate, applicationDate) {
-        var filterHistory = fullInfoRefinancingRateHistory.filter(function (item) {
-            return issueDate <= item.endDate
-                && item.startDate <= applicationDate;
-        });
-        var filteredHistory = _.cloneDeep(filterHistory);
-
-        filteredHistory[0].startDate = issueDate;
-        filteredHistory[0].days = Math.round((filteredHistory[0].endDate - issueDate) / (1000 * 3600 * 24)) + 1;
-
-        filteredHistory[filteredHistory.length - 1].endDate = applicationDate;
-        filteredHistory[filteredHistory.length - 1].days = Math.round((applicationDate - filteredHistory[filteredHistory.length - 1].startDate) / (1000 * 3600 * 24)) + 1;
-
-        return filteredHistory;
-    }
-
-    function getCalcTable(issueDate, applicationDate, payment) {
-        issueDate.setDate(issueDate.getDate() + 1);
-        var period = getFilteredHistory(issueDate, applicationDate);
-        var options = {year: 'numeric', month: 'short', day: 'numeric'};
-        var result = [];
-
-        period.forEach(function (item) {
-            result.push({
-                payment: payment,
-                startDate: item.startDate.toLocaleString('ru-RU', options),
-                endDate: item.endDate.toLocaleString('ru-RU', options),
-                days: item.days,
-                refinancing_rate: (item.refinancing_rate * 100).toFixed(2) + " %",
-                sum: (payment * item.days * item.refinancing_rate / 360).toFixed(2)
-            });
-        });
-        return result;
-    }
-
-    function getFormatedData(unformattedData) {
-        var year = unformattedData.substring(0, 4);
-        var month = unformattedData.substring(5, 7);
-        var day = unformattedData.substring(8, 10);
-        return month + "/" + day + "/" + year;
-    }
-
-    function getSumDaysTable(tableData) {
-        return tableData.reduce(function (result, tableRow) {
-            return result + parseFloat(tableRow.days);
-        }, 0);
-    }
-
-    function getSumPercents(tableData) {
-        return Math.round(tableData.reduce(function (result, tableRow) {
-            return result + parseFloat(tableRow.sum);
-        }, 0) * 100) / 100;
-    }
-
-    function parseNumber(value) {
-        var result = value.toString().replace(/,/g, '.');
-        return parseFloat(result);
-    }
+    import parseNumber from "../components/percentCalculationComponents/parseNumber";
+    import {
+        getFormatedData,
+        getCorrectTimeZoneDate,
+        getRussianDate
+    } from "../components/percentCalculationComponents/dateFunction";
+    import {
+        getCalcTable,
+        getSumDaysTable,
+        getSumPercents,
+        fullInfoRefinancingRateHistory
+    } from "../components/percentCalculationComponents/defermentPercentCalculator";
 
     export default {
         name: "defermentPaymentTableView",
-        comments: {
-            percentCalculationTable
-        },
-        components: {percentCalculationTable},
         data() {
             return {
                 infoes: [
@@ -271,8 +198,8 @@
                 showIssueDateCalendar: false,
                 showCloseDateCalendar: false,
                 loading: false,
-                issuedDate: (new Date(new Date("12/14/2015") - (new Date()).getTimezoneOffset() * 60000)).toISOString().substring(0, 10),
-                closedDate: (new Date(Date.now() - (new Date()).getTimezoneOffset() * 60000)).toISOString().substring(0, 10),
+                issuedDate: getCorrectTimeZoneDate(new Date("12/14/2015")),
+                closedDate: getCorrectTimeZoneDate(Date.now()),
                 UNpayment: 1000,
                 resultTable: "",
                 isInvalidIssuedDateMessage: "",
@@ -286,12 +213,10 @@
                 return 'Рассчет процентов за отсрочку таможенного платежа (5010 вид)' + this.computedCloseDate;
             },
             computedIssueDate() {
-                moment.locale('ru');
-                return this.issuedDate ? moment(this.issuedDate).format('D MMM YYYY') : ''
+                return this.issuedDate ? getRussianDate(this.issuedDate) : ''
             },
             computedCloseDate() {
-                moment.locale('ru');
-                return this.closedDate ? moment(this.closedDate).format('D MMM YYYY') : ''
+                return this.closedDate ? getRussianDate(this.closedDate) : ''
             },
             lastKeyRateDate() {
                 return moment(fullInfoRefinancingRateHistory[fullInfoRefinancingRateHistory.length - 1].startDate).format('D MMM YYYY');
@@ -299,7 +224,7 @@
             lastKeyRate() {
                 return fullInfoRefinancingRateHistory[fullInfoRefinancingRateHistory.length - 1].refinancing_rate * 100 + " %";
             },
-            formatedUNPayment(){
+            formatedUNPayment() {
                 return parseNumber(this.UNpayment);
             }
         },

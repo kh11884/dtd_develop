@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/customs_helper/src/components/customsValueCalcComponents/getExpression.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customs_helper/src/components/customsValueCalcComponents/getMoneyFormat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customs_helper/src/components/customsValueCalcComponents/getRussianDate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customs_helper/src/components/customsValueCalcComponents/parseNumber.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customs_helper/src/components/formatDateJS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customs_helper/src/components/percentCalculationComponents/dateFunction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customs_helper/src/components/percentCalculationComponents/defermentPercentCalculator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customs_helper/src/components/percentCalculationComponents/parseNumber.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/components/formatDate.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/components/customsValueCalcComponents/getRussianDate.js" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/components/customsValueCalcComponents/getRussianDate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/components/formatDateJS.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/customs_helper/src/views/CustomsValueCalc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/CustomsValueCalc.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +50,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578044598901" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/customs_helper/src/components/customsValueCalcComponents" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/customs_helper/src/components/percentCalculationComponents" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -59,11 +60,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\components\percentCalculationComponents" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\components\customsValueCalcComponents" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\assets" />
       <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src\js" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\vf_test\src\assets" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\public" />
@@ -165,14 +166,7 @@
       <workItem from="1578566648614" duration="11017000" />
       <workItem from="1578578788242" duration="8702000" />
       <workItem from="1578666580674" duration="7183000" />
-      <workItem from="1578674159560" duration="12684000" />
-    </task>
-    <task id="LOCAL-00036" summary="добработана задача Bootstrap согласно замечаний 5">
-      <created>1575364963544</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1575364963544</updated>
+      <workItem from="1578674159560" duration="18767000" />
     </task>
     <task id="LOCAL-00037" summary="добработана задачаPhoneBook  согласно замечаний 1">
       <created>1575447707955</created>
@@ -510,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578674666417</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="customs_helper доделан калькулятор">
+      <created>1578900299571</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1578900299571</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,7 +548,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлена задача PhoneBookServer, надо причесать" />
     <MESSAGE value="Добавлена задача PhoneBookServer." />
     <MESSAGE value="Подправлены небольшие замечания:&#10;добавлена красная тень вокруг input при валидации.&#10;исправлены опечатки&#10;v-show заменен на v-if" />
     <MESSAGE value="добработана задача PhoneBookVue согласно замечаний 2" />
@@ -572,14 +572,15 @@
     <MESSAGE value="Добавлены рассчеты процентов за отсрочку." />
     <MESSAGE value="Добавлено принятие чисел с точкой и с запятой.&#10;Добавить регулярное выражение принятие только цифр и арифметических знаков." />
     <MESSAGE value="добработана задача vuetify_todolist согласно замечаний 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="добработана задача vuetify_todolist согласно замечаний 1" />
+    <MESSAGE value="customs_helper доделан калькулятор" />
+    <option name="LAST_COMMIT_MESSAGE" value="customs_helper доделан калькулятор" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/customs_helper/src/views/CustomsValueCalc.vue</url>
-          <line>130</line>
+          <line>129</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>

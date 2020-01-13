@@ -153,7 +153,6 @@
 
 <script>
     // @ is an alias to /src
-    import HelloWorld from '@/components/HelloWorld.vue'
     import axios from 'axios'
     import getRussianDate from "../components/customsValueCalcComponents/getRussianDate";
     import getMoneyFormat from "../components/customsValueCalcComponents/getMoneyFormat";
@@ -162,9 +161,6 @@
 
     export default {
         name: 'CustomsValueCalc',
-        components: {
-            HelloWorld
-        },
         data() {
             return {
                 hand_usd_rate: 0,

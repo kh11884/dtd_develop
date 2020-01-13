@@ -47,15 +47,6 @@
                 Расчет процентов<br>для отсрочки
               </v-btn>
             </router-link>
-<!--              <a href=".\src\assets\musor.docx" download>-->
-<!--              <v-btn-->
-<!--                large-->
-<!--                class="ma-2"-->
-<!--                color="primary"-->
-<!--              >-->
-<!--                Чек-лист-->
-<!--              </v-btn>-->
-<!--              </a>-->
           </v-row>
         </v-card>
       </v-col>
@@ -65,12 +56,8 @@
 
 <script>
     // @ is an alias to /src
-    import HelloWorld from '@/components/HelloWorld.vue'
 
     export default {
         name: 'home',
-        components: {
-            HelloWorld
-        },
     }
 </script>

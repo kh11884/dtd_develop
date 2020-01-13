@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-export default function (data) {
+export default function (date) {
   moment.locale('ru');
-  return moment(data.substring(0, 10)).format("DD MMMM YYYY");
+  return moment(date.substring(0, 10)).format("DD MMMM YYYY");
 }
