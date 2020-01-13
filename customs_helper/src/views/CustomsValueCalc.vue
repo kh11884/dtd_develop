@@ -213,9 +213,13 @@
         },
         methods: {
             refreshRate: function () {
+
+                // var c = file_get_contents('http://www.cbr.ru/scripts/XML_daily.asp?');
+                // console.log(c);
                 axios
                     .get("https://www.cbr-xml-daily.ru/daily_json.js")
                     .then(response => {
+                        // console.log(response);
                         this.cbr_usd_rate = response.data.Valute.USD.Value;
                         this.cbr_eur_rate = response.data.Valute.EUR.Value;
                         this.date = getRussianDate(response.data.Date);

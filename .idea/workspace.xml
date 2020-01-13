@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/customs_helper/src/components/percentCalculationComponents/dateFunction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customs_helper/src/components/percentCalculationComponents/defermentPercentCalculator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customs_helper/src/components/percentCalculationComponents/parseNumber.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/components/customsValueCalcComponents/getRussianDate.js" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/components/customsValueCalcComponents/getRussianDate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/components/formatDateJS.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/customs_helper/src/views/CustomsValueCalc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/CustomsValueCalc.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -166,14 +158,7 @@
       <workItem from="1578566648614" duration="11017000" />
       <workItem from="1578578788242" duration="8702000" />
       <workItem from="1578666580674" duration="7183000" />
-      <workItem from="1578674159560" duration="18767000" />
-    </task>
-    <task id="LOCAL-00037" summary="добработана задачаPhoneBook  согласно замечаний 1">
-      <created>1575447707955</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1575447707955</updated>
+      <workItem from="1578674159560" duration="21043000" />
     </task>
     <task id="LOCAL-00038" summary="Добавлен модуль TodoListVue.&#10;Частично начата задача.">
       <created>1575503080618</created>
@@ -511,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578900299571</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="customs_helper:&#10;доделан калькулятор ТС&#10;Рассчет процетов сделан модульностью.">
+      <created>1578915362627</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1578915362627</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +540,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлена задача PhoneBookServer." />
     <MESSAGE value="Подправлены небольшие замечания:&#10;добавлена красная тень вокруг input при валидации.&#10;исправлены опечатки&#10;v-show заменен на v-if" />
     <MESSAGE value="добработана задача PhoneBookVue согласно замечаний 2" />
     <MESSAGE value="добработана задача PhoneBookServer согласно замечаний 1" />
@@ -573,7 +564,8 @@
     <MESSAGE value="Добавлено принятие чисел с точкой и с запятой.&#10;Добавить регулярное выражение принятие только цифр и арифметических знаков." />
     <MESSAGE value="добработана задача vuetify_todolist согласно замечаний 1" />
     <MESSAGE value="customs_helper доделан калькулятор" />
-    <option name="LAST_COMMIT_MESSAGE" value="customs_helper доделан калькулятор" />
+    <MESSAGE value="customs_helper:&#10;доделан калькулятор ТС&#10;Рассчет процетов сделан модульностью." />
+    <option name="LAST_COMMIT_MESSAGE" value="customs_helper:&#10;доделан калькулятор ТС&#10;Рассчет процетов сделан модульностью." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
