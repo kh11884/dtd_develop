@@ -13,20 +13,6 @@ function get(url, data) {
     });
 }
 
-// function saveMustBeDeletedIds(self) {
-//     self.checkedContacts = self.contacts.filter(function (contact) {
-//         return contact.mustBeDeleted;
-//     }).map(function (contact) {
-//         return contact.id;
-//     });
-// }
-
-// function markSelected(self) {
-//     self.contacts.forEach(function (contact) {
-//         contact.mustBeDeleted = self.checkedContacts.includes(contact.id);
-//     });
-// }
-
 new Vue({
     el: "#app",
     data: {
@@ -171,7 +157,7 @@ new Vue({
         markSelected: function () {
             var self = this;
             self.contacts.forEach(function (contact) {
-                contact.mustBeDeleted = self.checkedContacts.includes(contact.id);
+                contact.mustBeDeleted = self.checkedContacts.indexOf(contact.id) > -1;
             });
         },
         saveMustBeDeletedIds: function () {
