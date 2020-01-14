@@ -10,6 +10,8 @@
                 <div>Сайт находится в разработке</div>
                 <div>Информация предоставляется справочно и не гарантирует успешный выпуск ДТ</div>
                 <div>Замечания и предложения направляйте команде разработчиков</div>
+<!--                <a v-bind:href="'/dtd/img/check.docx'" download="check.docx" class="btn btn-light btn-sm mr-1 mt-2">Скачать</a>-->
+
               </v-card-text>
 
             </div>

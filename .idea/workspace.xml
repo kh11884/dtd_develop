@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookServer/public/javascripts/serverPhoneBookScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookServer/public/javascripts/serverPhoneBookScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +42,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578044598901" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/customs_helper/src/components/percentCalculationComponents" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dtd" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -51,19 +51,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\components\percentCalculationComponents" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\components\customsValueCalcComponents" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\assets" />
-      <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src\js" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\vf_test\src\assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\assets" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\public" />
       <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src" />
       <recent name="C:\Users\a.khoroshunov\IdeaProjects\AcademITScoool_ClientWEB\PercentCalculation\src\js" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\public" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\frontend" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\dist\img" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\dist\files" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\components\percentCalculationComponents" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\components\customsValueCalcComponents" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -159,14 +159,7 @@
       <workItem from="1578578788242" duration="8702000" />
       <workItem from="1578666580674" duration="7183000" />
       <workItem from="1578674159560" duration="21198000" />
-      <workItem from="1579011162978" duration="1093000" />
-    </task>
-    <task id="LOCAL-00039" summary="Добавлен модуль TodoListVue.&#10;Для вопроса">
-      <created>1575703299626</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1575703299626</updated>
+      <workItem from="1579011162978" duration="4839000" />
     </task>
     <task id="LOCAL-00040" summary="Добавлена задача TodoListVue.">
       <created>1575775653247</created>
@@ -504,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578930030980</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="добработана задача PhoneBookServer согласно замечаний 3">
+      <created>1579012311413</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1579012311414</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,7 +558,6 @@
     <MESSAGE value="Добавлена задача TODOList vuetify" />
     <MESSAGE value="В папке vf-test сделан процентный калькулятор на vuetify" />
     <MESSAGE value="В папке customs-helper сделан скелет на шаблоне vuetify&#10;После изучения серверного веба пробовать собрать проект" />
-    <MESSAGE value="добработана задача PhoneBookServer согласно замечаний 3" />
     <MESSAGE value="Добавлены рассчеты процентов за отсрочку" />
     <MESSAGE value="Добавлены рассчеты процентов за отсрочку." />
     <MESSAGE value="Добавлено принятие чисел с точкой и с запятой.&#10;Добавить регулярное выражение принятие только цифр и арифметических знаков." />
@@ -566,7 +565,8 @@
     <MESSAGE value="customs_helper доделан калькулятор" />
     <MESSAGE value="customs_helper:&#10;доделан калькулятор ТС&#10;Рассчет процетов сделан модульностью." />
     <MESSAGE value="customs_helper:&#10;Сделать калькулятор с запросом на cbr/ru" />
-    <option name="LAST_COMMIT_MESSAGE" value="customs_helper:&#10;Сделать калькулятор с запросом на cbr/ru" />
+    <MESSAGE value="добработана задача PhoneBookServer согласно замечаний 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="добработана задача PhoneBookServer согласно замечаний 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
