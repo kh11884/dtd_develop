@@ -7,9 +7,9 @@
             <div>
               <v-card-text class="headline">ПОМОЩНИК ДЕКЛАРАНТА</v-card-text>
               <v-card-text>
-                <div>Сайт находится в разработке</div>
+                <div>Ресурс находится в разработке</div>
                 <div>Информация предоставляется справочно и не гарантирует успешный выпуск ДТ</div>
-                <div>Замечания и предложения направляйте команде разработчиков</div>
+                <div>Ждем Ваших замечаний и предложений</div>
 <!--                <a v-bind:href="'/dtd/img/check.docx'" download="check.docx" class="btn btn-light btn-sm mr-1 mt-2">Скачать</a>-->
 
               </v-card-text>
@@ -24,7 +24,6 @@
               <v-img src="../assets/customs_2.jpg"></v-img>
             </v-avatar>
           </div>
-
 
           <v-row justify="center">
             <router-link tag="div" to="/CustomsValueCalc">

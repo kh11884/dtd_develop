@@ -3,6 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/phoneBookServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/phoneBookServices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/webpackPhoneBookScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/webpackPhoneBookScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/public/images/remove_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/public/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/public/script.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/public/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/public/styles.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/views/index.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/components/customsValueCalcComponents/getRussianDate.js" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/components/customsValueCalcComponents/getRussianDate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/CustomsValueCalc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/CustomsValueCalc.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AcademITScoool_ClientWEB/vuetify_todolist/dist/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -95,6 +109,32 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/PhoneBookWebpack/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/PhoneBookWebpack/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.watch" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
@@ -159,14 +199,7 @@
       <workItem from="1578578788242" duration="8702000" />
       <workItem from="1578666580674" duration="7183000" />
       <workItem from="1578674159560" duration="21198000" />
-      <workItem from="1579011162978" duration="4839000" />
-    </task>
-    <task id="LOCAL-00040" summary="Добавлена задача TodoListVue.">
-      <created>1575775653247</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1575775653247</updated>
+      <workItem from="1579011162978" duration="25864000" />
     </task>
     <task id="LOCAL-00041" summary="добработана задача PhoneBookJJQuery согласно замечаний 2.">
       <created>1575777711959</created>
@@ -504,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579012311414</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Сделать чек-лист простой табличкой для печати&#10;Сделать пакетные рассчеты&#10;сделать таблицы процентов для вставки в альту&#10;настроить таблицы процентов для печати">
+      <created>1579016717691</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1579016717692</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +581,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добработана задача PhoneBookVue согласно замечаний 2" />
     <MESSAGE value="добработана задача PhoneBookServer согласно замечаний 1" />
     <MESSAGE value="Добавлена версия задачи WebPackPhoneBook без CSS" />
     <MESSAGE value="Добавлена версия задачи WebPackPhoneBook без подгрузки картинки из без бабель." />
@@ -566,17 +605,7 @@
     <MESSAGE value="customs_helper:&#10;доделан калькулятор ТС&#10;Рассчет процетов сделан модульностью." />
     <MESSAGE value="customs_helper:&#10;Сделать калькулятор с запросом на cbr/ru" />
     <MESSAGE value="добработана задача PhoneBookServer согласно замечаний 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="добработана задача PhoneBookServer согласно замечаний 3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/customs_helper/src/views/CustomsValueCalc.vue</url>
-          <line>129</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Сделать чек-лист простой табличкой для печати&#10;Сделать пакетные рассчеты&#10;сделать таблицы процентов для вставки в альту&#10;настроить таблицы процентов для печати" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделать чек-лист простой табличкой для печати&#10;Сделать пакетные рассчеты&#10;сделать таблицы процентов для вставки в альту&#10;настроить таблицы процентов для печати" />
   </component>
 </project>

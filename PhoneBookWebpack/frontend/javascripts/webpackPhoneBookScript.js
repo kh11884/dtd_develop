@@ -4,12 +4,13 @@ import "../stylesheets/style.css";
 import $ from "jquery";
 import Vue from "vue";
 import "bootstrap";
-import phoneBookServices from "./phoneBookServices";
+import PhoneBookServices from "./phoneBookServices";
 
 new Vue({
     el: "#app",
     data: {
         contacts: [],
+        checkedContacts: [],
         newFirstName: "",
         newLastName: "",
         newPhoneNumber: "",
@@ -21,11 +22,11 @@ new Vue({
         needShowModalForDeleteChecked: false,
         checkAll: false
     },
-    created: function () {
+    created() {
         this.loadContacts();
     },
     methods: {
-        addContact: function () {
+        addContact() {
             this.isInvalidFirstName = this.newFirstName === "";
             this.isInvalidLastName = this.newLastName === "";
             this.isInvalidPhoneNumber = this.newPhoneNumber === "";
@@ -34,7 +35,7 @@ new Vue({
             }
 
             var newPhoneNumber = this.newPhoneNumber;
-            this.haveNumber = this.contacts.some(function (c) {
+            this.haveNumber = this.contacts.some(c => {
                 return c.phoneNumber === newPhoneNumber;
             });
             if (this.haveNumber) {
@@ -51,7 +52,7 @@ new Vue({
 
             var self = this;
 
-            phoneBookServices.addContact(contact).done(function (responce) {
+            PhoneBookServices.addContact(contact).done(responce => {
                 if (!responce.success) {
                     alert(responce.message);
                     return;
@@ -63,18 +64,21 @@ new Vue({
             this.newLastName = "";
             this.newPhoneNumber = "";
         },
-        loadContacts: function () {
+        loadContacts() {
             var self = this;
+            this.saveMustBeDeletedIds();
 
-            phoneBookServices.getContacts(this.term).done(function (contacts) {
+            PhoneBookServices.getContacts(this.term).done(contacts => {
                 self.contacts = contacts;
+                self.markSelected();
+                self.checkWasAllMarked();
             });
         },
-        deleteContact: function (contact) {
+        deleteContact(contact) {
             var self = this;
             contact.needShowModal = false;
 
-            phoneBookServices.deleteContact(contact).done(function (responce) {
+            PhoneBookServices.deleteContact(contact).done(responce => {
                 if (!responce.success) {
                     alert(responce.message);
                     return;
@@ -82,18 +86,14 @@ new Vue({
                 self.loadContacts();
             });
         },
-        deleteCheckedContacts: function () {
+        deleteCheckedContacts() {
             var self = this;
             self.needShowModalForDeleteChecked = false;
             self.checkAll = false;
 
-            var mustDeleted = self.contacts.filter(function (contact) {
-                return contact.mustBeDeleted;
-            }).map(function (contact) {
-                return contact.id;
-            });
+            this.saveMustBeDeletedIds();
 
-            phoneBookServices.deleteCheckedContacts(mustDeleted).done(function (responce) {
+            PhoneBookServices.deleteCheckedContacts(this.checkedContacts).done(responce => {
                 if (!responce.success) {
                     alert(responce.message);
                     return;
@@ -101,38 +101,57 @@ new Vue({
                 self.loadContacts();
             });
         },
-        checkedAllContacts: function () {
+        checkWasAllMarked() {
+            if (this.contacts.length === 0) {
+                this.checkAll = false;
+            } else {
+                this.checkAll = this.contacts.every(contact => {
+                    return contact.mustBeDeleted === true;
+                });
+            }
+        },
+        checkedAllContacts() {
             var self = this;
-            this.contacts.map(function (contact) {
+            this.contacts.map(contact => {
                 contact.mustBeDeleted = self.checkAll;
             });
 
-        },
-        search: function () {
+        }, search() {
             this.loadContacts();
-            this.checkAll = false;
         },
-        cancelSearch: function () {
+        cancelSearch() {
             this.term = "";
             this.loadContacts();
-            this.checkAll = false;
         },
-        showModal: function (item) {
+        showModal(item) {
             item.needShowModal = true;
         },
-        hideModal: function (item) {
+        hideModal(item) {
             item.needShowModal = false;
         },
-        showDialogToCheckedDelete: function () {
-            if (this.contacts.every(function (c) {
+        showDialogToCheckedDelete() {
+            if (this.contacts.every(c => {
                 return c.mustBeDeleted === false;
             })) {
                 return;
             }
             this.needShowModalForDeleteChecked = true;
         },
-        hideDialogToCheckedDelete: function () {
+        hideDialogToCheckedDelete() {
             this.needShowModalForDeleteChecked = false;
+        },
+        markSelected() {
+            var self = this;
+            self.contacts.forEach(contact => {
+                contact.mustBeDeleted = self.checkedContacts.indexOf(contact.id) > -1;
+            });
+        },
+        saveMustBeDeletedIds() {
+            this.checkedContacts = this.contacts.filter(contact => {
+                return contact.mustBeDeleted;
+            }).map(contact => {
+                return contact.id;
+            });
         }
     }
 });

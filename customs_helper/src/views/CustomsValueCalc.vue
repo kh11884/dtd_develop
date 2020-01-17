@@ -9,15 +9,18 @@
               <v-card-text>
                 <v-simple-table dense>
                   <tr>
-                    <td colspan="2">Дата курсов</td>
+                    <td >Дата</td>
                     <td>{{date}}</td>
+                    <td colspan="2">
+                      <span v-show="isWrongDate" class="error--text">неправильная дата <br> проверь курсы</span>
+                    </td>
                   </tr>
                   <tr>
                     <td>USD:</td>
                     <td> {{cbr_usd_rate}}</td>
                     <td rowspan="2">
                       <v-tooltip
-                        right>
+                        bottom>
                         <template v-slot:activator="{ on }">
                           <v-btn
                             depressed
@@ -33,6 +36,10 @@
                         </template>
                         <span>Обновить курсы</span>
                       </v-tooltip>
+
+                    </td>
+                    <td rowspan="2">
+                      <a href="http://cbr.ru" target="_blank">ЦБ РФ</a>
                     </td>
                   </tr>
                   <tr>
@@ -158,6 +165,7 @@
     import getMoneyFormat from "../components/customsValueCalcComponents/getMoneyFormat";
     import parseNumber from "../components/customsValueCalcComponents/parseNumber";
     import getExpression from "../components/customsValueCalcComponents/getExpression";
+    import {getCorrectTimeZoneDate} from "../components/percentCalculationComponents/dateFunction"
 
     export default {
         name: 'CustomsValueCalc',
@@ -172,6 +180,7 @@
                 rub_charges: "",
                 date: "!!! Курсы валют не загрузились. Проверь курсы!!!",
                 isHandMadeRates: false,
+                isWrongDate: false,
             }
         },
         computed: {
@@ -180,9 +189,9 @@
                 this.eur_charges = getExpression(this.eur_charges);
                 this.rub_charges = getExpression(this.rub_charges);
 
-                var usd_costs = this.usd_charges === "" ? 0 : parseNumber(this.usd_charges);
-                var eur_costs = this.eur_charges === "" ? 0 : parseNumber(this.eur_charges);
-                var rub_costs = this.rub_charges === "" ? 0 : parseNumber(this.rub_charges);
+                var usd_costs = this.usd_charges === "" || this.usd_charges === null || this.usd_charges === undefined ? 0 : parseNumber(this.usd_charges);
+                var eur_costs = this.eur_charges === "" || this.eur_charges === null || this.eur_charges === undefined ? 0 : parseNumber(this.eur_charges);
+                var rub_costs = this.rub_charges === "" || this.rub_charges === null || this.rub_charges === undefined ? 0 : parseNumber(this.rub_charges);
 
                 var result = usd_costs * this.usd_rate + eur_costs * this.eur_rate + rub_costs;
 
@@ -209,7 +218,7 @@
             },
             isInvalid_hand_eur_rate_message: function () {
                 return this.hand_eur_rate === "" ? "Введите курс EUR" : "";
-            }
+            },
         },
         methods: {
             refreshRate: function () {
@@ -219,12 +228,12 @@
                 axios
                     .get("https://www.cbr-xml-daily.ru/daily_json.js")
                     .then(response => {
-                        // console.log(response);
                         this.cbr_usd_rate = response.data.Valute.USD.Value;
                         this.cbr_eur_rate = response.data.Valute.EUR.Value;
                         this.date = getRussianDate(response.data.Date);
                         this.hand_usd_rate = this.cbr_usd_rate;
                         this.hand_eur_rate = this.cbr_eur_rate;
+                        this.isWrongDate = response.data.Date.substring(0, 10) !== getCorrectTimeZoneDate(new Date());
                     })
                     .catch(function (e) {
                         alert("Что-то пошло не так с загрузкой курсов. " + e);

@@ -1,7 +1,7 @@
 import $ from "jquery";
 
 export default {
-    post: function post(url, data) {
+    post(url, data) {
         return $.post({
             url: url,
             data: JSON.stringify(data),
@@ -9,7 +9,7 @@ export default {
         });
     },
 
-    get: function get(url, data) {
+    get(url, data) {
         return $.get(url, data);
     }
 }
