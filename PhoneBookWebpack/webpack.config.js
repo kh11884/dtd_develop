@@ -18,7 +18,6 @@ module.exports = {
     },
     module: {
         rules: [
-
             {
                 test: /\.css$/,
                 use: [
@@ -49,7 +48,7 @@ module.exports = {
             },
             { test: /\.vue$/,
                 use: "vue-loader"
-            },
+            }
         ]
     },
     plugins: [

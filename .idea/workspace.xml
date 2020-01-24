@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="Исправлена задача PhoneBookWebpack согласно замечаний 1">
-      <change afterPath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/PhoneBook.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/phoneBookServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/phoneBookService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/webpackPhoneBookScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/webpackPhoneBookScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/frontend/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/frontend/stylesheets/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/public/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/public/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/public/script.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/public/script.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/public/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/public/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/public/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/public/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/routes/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/views/index.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneBookWebpack/webpack.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -202,14 +186,7 @@
       <workItem from="1578674159560" duration="21198000" />
       <workItem from="1579011162978" duration="26797000" />
       <workItem from="1579241976706" duration="819000" />
-      <workItem from="1579834904997" duration="13211000" />
-    </task>
-    <task id="LOCAL-00042" summary="добработана задача PhoneBookJJQuery согласно замечаний 2.">
-      <created>1575777898734</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1575777898734</updated>
+      <workItem from="1579834904997" duration="13729000" />
     </task>
     <task id="LOCAL-00043" summary="Добавлен модуль PhoneBookVue">
       <created>1575790309403</created>
@@ -547,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579237357618</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Исправлена задача PhoneBookWebpack согласно замечаний 1">
+      <created>1579874825469</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1579874825470</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,7 +568,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлена версия задачи WebPackPhoneBook без CSS" />
     <MESSAGE value="Добавлена версия задачи WebPackPhoneBook без подгрузки картинки из без бабель." />
     <MESSAGE value="Добавлена версия задачи WebPackPhoneBook&#10;Нужно настроить:&#10;• Однофайловые Vue компоненты&#10;• Babel и переписать код на ES 2015&#10;• SCSS" />
     <MESSAGE value="задача PhoneBookServer&#10;нужно найти способ обратиться к свойству после get запроса" />
@@ -609,6 +592,7 @@
     <MESSAGE value="добработана задача PhoneBookServer согласно замечаний 3" />
     <MESSAGE value="Сделать чек-лист простой табличкой для печати&#10;Сделать пакетные рассчеты&#10;сделать таблицы процентов для вставки в альту&#10;настроить таблицы процентов для печати" />
     <MESSAGE value="Добавлена задача PhoneBookWebpack" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена задача PhoneBookWebpack" />
+    <MESSAGE value="Исправлена задача PhoneBookWebpack согласно замечаний 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлена задача PhoneBookWebpack согласно замечаний 1" />
   </component>
 </project>
