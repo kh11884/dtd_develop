@@ -1,8 +1,8 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
 
-var contacts = [];
-var id = 1;
+let contacts = [];
+let id = 1;
 
 router.get("/getContacts", function (req, res) {
     var term = (req.query.term || "").toUpperCase();

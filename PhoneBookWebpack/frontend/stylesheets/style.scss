@@ -1,7 +1,14 @@
-.form-check-input {
+$warning-color: blue;
+$site_font:  impact;
+
+@mixin checkbox_style{
   position: inherit;
   width: 20px;
   height: 20px;
+}
+
+.form-check-input {
+@include checkbox_style;
 }
 
 .small_button_icon {
@@ -9,7 +16,7 @@
 }
 
 .red_placeholder::-webkit-input-placeholder {
-  color: red
+  color: $warning-color;
 }
 
 .form-control.red_placeholder:focus {
@@ -17,7 +24,7 @@
 }
 
 .errorMessage {
-  color: red
+  color: $warning-color;
 }
 
 [v-cloak] {
@@ -49,12 +56,12 @@
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
   transition: all .3s ease;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: $site_font;
 }
 
 .modal-header h3 {
   margin-top: 0;
-  color: #42b983;
+  color: $warning-color;
 }
 
 .modal-body {

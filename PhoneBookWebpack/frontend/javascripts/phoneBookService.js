@@ -5,21 +5,21 @@ export default {
         return Ajax.post("/addContact", contact);
     },
     getContacts(term) {
-        var data = {
+        const data = {
             term: term
         };
 
         return Ajax.get("/getContacts", data);
     },
     deleteContact(contact) {
-        var data = {
+        const data = {
             id: contact.id
         };
 
         return Ajax.post("/deleteContact", data);
     },
     deleteCheckedContacts(mustBeDeleted) {
-        var data = {
+        const data = {
             mustDeleted: mustBeDeleted
         };
 

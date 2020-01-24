@@ -86,6 +86,19 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./frontend/images/remove_icon.png":
+/*!*****************************************!*\
+  !*** ./frontend/images/remove_icon.png ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "frontend/images/remove_icon.png?b36afdeaf5555ab55180841addc3bd83");
+
+/***/ }),
+
 /***/ "./frontend/javascripts/ajax.js":
 /*!**************************************!*\
   !*** ./frontend/javascripts/ajax.js ***!
@@ -98,31 +111,94 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
-
 /* harmony default export */ __webpack_exports__["default"] = ({
-    post(url, data) {
-        return jquery__WEBPACK_IMPORTED_MODULE_0___default.a.post({
-            url: url,
-            data: JSON.stringify(data),
-            contentType: "application/json"
-        });
-    },
-
-    get(url, data) {
-        return jquery__WEBPACK_IMPORTED_MODULE_0___default.a.get(url, data);
-    }
+  post: function post(url, data) {
+    return jquery__WEBPACK_IMPORTED_MODULE_0___default.a.post({
+      url: url,
+      data: JSON.stringify(data),
+      contentType: "application/json"
+    });
+  },
+  get: function get(url, data) {
+    return jquery__WEBPACK_IMPORTED_MODULE_0___default.a.get(url, data);
+  }
 });
 
+/***/ }),
 
+/***/ "./frontend/javascripts/phoneBook.vue":
+/*!********************************************!*\
+  !*** ./frontend/javascripts/phoneBook.vue ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _phoneBook_vue_vue_type_template_id_39ab6f9f_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./phoneBook.vue?vue&type=template&id=39ab6f9f&scoped=true& */ "./frontend/javascripts/phoneBook.vue?vue&type=template&id=39ab6f9f&scoped=true&");
+/* harmony import */ var _phoneBook_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./phoneBook.vue?vue&type=script&lang=js& */ "./frontend/javascripts/phoneBook.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _phoneBook_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _phoneBook_vue_vue_type_template_id_39ab6f9f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _phoneBook_vue_vue_type_template_id_39ab6f9f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "39ab6f9f",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "frontend/javascripts/phoneBook.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./frontend/javascripts/phoneBook.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./frontend/javascripts/phoneBook.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_3_node_modules_vue_loader_lib_index_js_vue_loader_options_phoneBook_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--3!../../node_modules/vue-loader/lib??vue-loader-options!./phoneBook.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./frontend/javascripts/phoneBook.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_3_node_modules_vue_loader_lib_index_js_vue_loader_options_phoneBook_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./frontend/javascripts/phoneBook.vue?vue&type=template&id=39ab6f9f&scoped=true&":
+/*!***************************************************************************************!*\
+  !*** ./frontend/javascripts/phoneBook.vue?vue&type=template&id=39ab6f9f&scoped=true& ***!
+  \***************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_phoneBook_vue_vue_type_template_id_39ab6f9f_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./phoneBook.vue?vue&type=template&id=39ab6f9f&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./frontend/javascripts/phoneBook.vue?vue&type=template&id=39ab6f9f&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_phoneBook_vue_vue_type_template_id_39ab6f9f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_phoneBook_vue_vue_type_template_id_39ab6f9f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./frontend/javascripts/phoneBookServices.js":
-/*!***************************************************!*\
-  !*** ./frontend/javascripts/phoneBookServices.js ***!
-  \***************************************************/
+/***/ "./frontend/javascripts/phoneBookService.js":
+/*!**************************************************!*\
+  !*** ./frontend/javascripts/phoneBookService.js ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -130,32 +206,28 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ajax__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ajax */ "./frontend/javascripts/ajax.js");
 
-
 /* harmony default export */ __webpack_exports__["default"] = ({
-    addContact(contact) {
-        return _ajax__WEBPACK_IMPORTED_MODULE_0__["default"].post("/addContact", contact);
-    },
-    getContacts(term) {
-        var data = {
-            term: term
-        };
-
-        return _ajax__WEBPACK_IMPORTED_MODULE_0__["default"].get("/getContacts", data);
-    },
-    deleteContact(contact) {
-        var data = {
-            id: contact.id
-        };
-
-        return _ajax__WEBPACK_IMPORTED_MODULE_0__["default"].post("/deleteContact", data);
-    },
-    deleteCheckedContacts(mustBeDeleted) {
-        var data = {
-            mustDeleted: mustBeDeleted
-        };
-
-        return _ajax__WEBPACK_IMPORTED_MODULE_0__["default"].post("/deleteCheckedContacts", data);
-    }
+  addContact: function addContact(contact) {
+    return _ajax__WEBPACK_IMPORTED_MODULE_0__["default"].post("/addContact", contact);
+  },
+  getContacts: function getContacts(term) {
+    var data = {
+      term: term
+    };
+    return _ajax__WEBPACK_IMPORTED_MODULE_0__["default"].get("/getContacts", data);
+  },
+  deleteContact: function deleteContact(contact) {
+    var data = {
+      id: contact.id
+    };
+    return _ajax__WEBPACK_IMPORTED_MODULE_0__["default"].post("/deleteContact", data);
+  },
+  deleteCheckedContacts: function deleteCheckedContacts(mustBeDeleted) {
+    var data = {
+      mustDeleted: mustBeDeleted
+    };
+    return _ajax__WEBPACK_IMPORTED_MODULE_0__["default"].post("/deleteCheckedContacts", data);
+  }
 });
 
 /***/ }),
@@ -171,16 +243,14 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ "./node_modules/bootstrap/dist/css/bootstrap.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../stylesheets/style.css */ "./frontend/stylesheets/style.css");
-/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _stylesheets_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../stylesheets/style.scss */ "./frontend/stylesheets/style.scss");
+/* harmony import */ var _stylesheets_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_style_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _phoneBookServices__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./phoneBookServices */ "./frontend/javascripts/phoneBookServices.js");
-
-
+/* harmony import */ var _phoneBook_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./phoneBook.vue */ "./frontend/javascripts/phoneBook.vue");
 
 
 
@@ -188,167 +258,353 @@ __webpack_require__.r(__webpack_exports__);
 
 
 new vue__WEBPACK_IMPORTED_MODULE_3__["default"]({
-    el: "#app",
-    data: {
-        contacts: [],
-        checkedContacts: [],
-        newFirstName: "",
-        newLastName: "",
-        newPhoneNumber: "",
-        term: "",
-        isInvalidFirstName: false,
-        isInvalidLastName: false,
-        isInvalidPhoneNumber: false,
-        haveNumber: false,
-        needShowModalForDeleteChecked: false,
-        checkAll: false
-    },
-    created() {
-        this.loadContacts();
-    },
-    methods: {
-        addContact() {
-            this.isInvalidFirstName = this.newFirstName === "";
-            this.isInvalidLastName = this.newLastName === "";
-            this.isInvalidPhoneNumber = this.newPhoneNumber === "";
-            if (this.isInvalidFirstName || this.isInvalidLastName || this.isInvalidPhoneNumber) {
-                return;
-            }
-
-            var newPhoneNumber = this.newPhoneNumber;
-            this.haveNumber = this.contacts.some(c => {
-                return c.phoneNumber === newPhoneNumber;
-            });
-            if (this.haveNumber) {
-                return;
-            }
-
-            var contact = {
-                firstName: this.newFirstName,
-                lastName: this.newLastName,
-                phoneNumber: this.newPhoneNumber,
-                mustBeDeleted: false,
-                needShowModal: false
-            };
-
-            var self = this;
-
-            _phoneBookServices__WEBPACK_IMPORTED_MODULE_5__["default"].addContact(contact).done(responce => {
-                if (!responce.success) {
-                    alert(responce.message);
-                    return;
-                }
-                self.loadContacts();
-            });
-
-            this.newFirstName = "";
-            this.newLastName = "";
-            this.newPhoneNumber = "";
-        },
-        loadContacts() {
-            var self = this;
-            this.saveMustBeDeletedIds();
-
-            _phoneBookServices__WEBPACK_IMPORTED_MODULE_5__["default"].getContacts(this.term).done(contacts => {
-                self.contacts = contacts;
-                self.markSelected();
-                self.checkWasAllMarked();
-            });
-        },
-        deleteContact(contact) {
-            var self = this;
-            contact.needShowModal = false;
-
-            _phoneBookServices__WEBPACK_IMPORTED_MODULE_5__["default"].deleteContact(contact).done(responce => {
-                if (!responce.success) {
-                    alert(responce.message);
-                    return;
-                }
-                self.loadContacts();
-            });
-        },
-        deleteCheckedContacts() {
-            var self = this;
-            self.needShowModalForDeleteChecked = false;
-            self.checkAll = false;
-
-            this.saveMustBeDeletedIds();
-
-            _phoneBookServices__WEBPACK_IMPORTED_MODULE_5__["default"].deleteCheckedContacts(this.checkedContacts).done(responce => {
-                if (!responce.success) {
-                    alert(responce.message);
-                    return;
-                }
-                self.loadContacts();
-            });
-        },
-        checkWasAllMarked() {
-            if (this.contacts.length === 0) {
-                this.checkAll = false;
-            } else {
-                this.checkAll = this.contacts.every(contact => {
-                    return contact.mustBeDeleted === true;
-                });
-            }
-        },
-        checkedAllContacts() {
-            var self = this;
-            this.contacts.map(contact => {
-                contact.mustBeDeleted = self.checkAll;
-            });
-
-        }, search() {
-            this.loadContacts();
-        },
-        cancelSearch() {
-            this.term = "";
-            this.loadContacts();
-        },
-        showModal(item) {
-            item.needShowModal = true;
-        },
-        hideModal(item) {
-            item.needShowModal = false;
-        },
-        showDialogToCheckedDelete() {
-            if (this.contacts.every(c => {
-                return c.mustBeDeleted === false;
-            })) {
-                return;
-            }
-            this.needShowModalForDeleteChecked = true;
-        },
-        hideDialogToCheckedDelete() {
-            this.needShowModalForDeleteChecked = false;
-        },
-        markSelected() {
-            var self = this;
-            self.contacts.forEach(contact => {
-                contact.mustBeDeleted = self.checkedContacts.indexOf(contact.id) > -1;
-            });
-        },
-        saveMustBeDeletedIds() {
-            this.checkedContacts = this.contacts.filter(contact => {
-                return contact.mustBeDeleted;
-            }).map(contact => {
-                return contact.id;
-            });
-        }
-    }
+  el: "#app",
+  components: {
+    "phone-book": _phoneBook_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }
 });
-
-
 
 /***/ }),
 
-/***/ "./frontend/stylesheets/style.css":
-/*!****************************************!*\
-  !*** ./frontend/stylesheets/style.css ***!
-  \****************************************/
+/***/ "./frontend/stylesheets/style.scss":
+/*!*****************************************!*\
+  !*** ./frontend/stylesheets/style.scss ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./frontend/javascripts/phoneBook.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--3!./node_modules/vue-loader/lib??vue-loader-options!./frontend/javascripts/phoneBook.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _phoneBookService__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./phoneBookService */ "./frontend/javascripts/phoneBookService.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      contacts: [],
+      checkedContacts: [],
+      newFirstName: "",
+      newLastName: "",
+      newPhoneNumber: "",
+      term: "",
+      isInvalidFirstName: false,
+      isInvalidLastName: false,
+      isInvalidPhoneNumber: false,
+      haveNumber: false,
+      needShowModalForDeleteChecked: false,
+      checkAll: false
+    };
+  },
+  created: function created() {
+    this.loadContacts();
+  },
+  methods: {
+    addContact: function addContact() {
+      var _this = this;
+
+      this.isInvalidFirstName = this.newFirstName === "";
+      this.isInvalidLastName = this.newLastName === "";
+      this.isInvalidPhoneNumber = this.newPhoneNumber === "";
+
+      if (this.isInvalidFirstName || this.isInvalidLastName || this.isInvalidPhoneNumber) {
+        return;
+      }
+
+      var newPhoneNumber = this.newPhoneNumber;
+      this.haveNumber = this.contacts.some(function (c) {
+        return c.phoneNumber === newPhoneNumber;
+      });
+
+      if (this.haveNumber) {
+        return;
+      }
+
+      var contact = {
+        firstName: this.newFirstName,
+        lastName: this.newLastName,
+        phoneNumber: this.newPhoneNumber,
+        mustBeDeleted: false,
+        needShowModal: false
+      };
+      _phoneBookService__WEBPACK_IMPORTED_MODULE_0__["default"].addContact(contact).done(function (response) {
+        if (!response.success) {
+          alert(response.message);
+          return;
+        }
+
+        _this.loadContacts();
+      });
+      this.newFirstName = "";
+      this.newLastName = "";
+      this.newPhoneNumber = "";
+    },
+    loadContacts: function loadContacts() {
+      var _this2 = this;
+
+      this.saveMustBeDeletedIds();
+      _phoneBookService__WEBPACK_IMPORTED_MODULE_0__["default"].getContacts(this.term).done(function (contacts) {
+        _this2.contacts = contacts;
+
+        _this2.markSelected();
+
+        _this2.checkWasAllMarked();
+      });
+    },
+    deleteContact: function deleteContact(contact) {
+      var _this3 = this;
+
+      contact.needShowModal = false;
+      _phoneBookService__WEBPACK_IMPORTED_MODULE_0__["default"].deleteContact(contact).done(function (response) {
+        if (!response.success) {
+          alert(response.message);
+          return;
+        }
+
+        _this3.loadContacts();
+      });
+    },
+    deleteCheckedContacts: function deleteCheckedContacts() {
+      var _this4 = this;
+
+      this.needShowModalForDeleteChecked = false;
+      this.checkAll = false;
+      this.saveMustBeDeletedIds();
+      _phoneBookService__WEBPACK_IMPORTED_MODULE_0__["default"].deleteCheckedContacts(this.checkedContacts).done(function (response) {
+        if (!response.success) {
+          alert(response.message);
+          return;
+        }
+
+        _this4.loadContacts();
+      });
+    },
+    checkWasAllMarked: function checkWasAllMarked() {
+      if (this.contacts.length === 0) {
+        this.checkAll = false;
+      } else {
+        this.checkAll = this.contacts.every(function (contact) {
+          return contact.mustBeDeleted === true;
+        });
+      }
+    },
+    checkedAllContacts: function checkedAllContacts() {
+      var _this5 = this;
+
+      this.contacts.map(function (contact) {
+        contact.mustBeDeleted = _this5.checkAll;
+      });
+    },
+    search: function search() {
+      this.loadContacts();
+    },
+    cancelSearch: function cancelSearch() {
+      this.term = "";
+      this.loadContacts();
+    },
+    showModal: function showModal(item) {
+      item.needShowModal = true;
+    },
+    hideModal: function hideModal(item) {
+      item.needShowModal = false;
+    },
+    showDialogToCheckedDelete: function showDialogToCheckedDelete() {
+      if (this.contacts.every(function (c) {
+        return c.mustBeDeleted === false;
+      })) {
+        return;
+      }
+
+      this.needShowModalForDeleteChecked = true;
+    },
+    hideDialogToCheckedDelete: function hideDialogToCheckedDelete() {
+      this.needShowModalForDeleteChecked = false;
+    },
+    markSelected: function markSelected() {
+      var _this6 = this;
+
+      this.contacts.forEach(function (contact) {
+        contact.mustBeDeleted = _this6.checkedContacts.indexOf(contact.id) > -1;
+      });
+    },
+    saveMustBeDeletedIds: function saveMustBeDeletedIds() {
+      this.checkedContacts = this.contacts.filter(function (contact) {
+        return contact.mustBeDeleted;
+      }).map(function (contact) {
+        return contact.id;
+      });
+    }
+  }
+});
 
 /***/ }),
 
@@ -18599,6 +18855,649 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
                          (this && this.clearImmediate);
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./frontend/javascripts/phoneBook.vue?vue&type=template&id=39ab6f9f&scoped=true&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./frontend/javascripts/phoneBook.vue?vue&type=template&id=39ab6f9f&scoped=true& ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container" }, [
+    _c("h3", [_vm._v("Телефонная книга")]),
+    _vm._v(" "),
+    _c("form", { staticClass: "mb-3" }, [
+      _c("div", { staticClass: "form-row my-1 no-gutters" }, [
+        _c("div", { staticClass: "col-12 col-sm mt-1" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.newFirstName,
+                expression: "newFirstName"
+              }
+            ],
+            staticClass: "form-control",
+            class: {
+              red_placeholder: _vm.isInvalidFirstName,
+              "border-danger": _vm.isInvalidFirstName
+            },
+            attrs: {
+              id: "first_name",
+              type: "text",
+              placeholder: _vm.isInvalidFirstName ? "Введите имя" : "Имя"
+            },
+            domProps: { value: _vm.newFirstName },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.newFirstName = $event.target.value
+              }
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-12 col-sm mt-1" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.newLastName,
+                expression: "newLastName"
+              }
+            ],
+            staticClass: "form-control",
+            class: {
+              red_placeholder: _vm.isInvalidLastName,
+              "border-danger": _vm.isInvalidLastName
+            },
+            attrs: {
+              id: "last_name",
+              type: "text",
+              placeholder: "Фамилия",
+              placeholder: _vm.isInvalidLastName ? "Введите фамилию" : "Фамилия"
+            },
+            domProps: { value: _vm.newLastName },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.newLastName = $event.target.value
+              }
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-12 col-sm mt-1" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.newPhoneNumber,
+                expression: "newPhoneNumber"
+              }
+            ],
+            staticClass: "form-control",
+            class: {
+              red_placeholder: _vm.isInvalidPhoneNumber || _vm.haveNumber,
+              "border-danger": _vm.isInvalidPhoneNumber || _vm.haveNumber,
+              errorMessage: _vm.haveNumber
+            },
+            attrs: {
+              id: "phone_number",
+              type: "number",
+              placeholder: "Номер телефона",
+              pattern: "",
+              placeholder: _vm.isInvalidPhoneNumber
+                ? "Введите телефон"
+                : "Телефон"
+            },
+            domProps: { value: _vm.newPhoneNumber },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.newPhoneNumber = $event.target.value
+              }
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-12 col-sm mt-1" }, [
+          _c("span", { staticClass: "input-group-btn" }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { type: "button" },
+                on: { click: _vm.addContact }
+              },
+              [_vm._v("Добавить")]
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _vm.haveNumber
+        ? _c("span", { staticClass: "errorMessage" }, [
+            _vm._v("Такой номер телефона уже добавлен. Проверьте записи.")
+          ])
+        : _vm._e()
+    ]),
+    _vm._v(" "),
+    _c("form", { staticClass: "form-inline mb-4" }, [
+      _c("label", { staticClass: "mr-1 mt-1" }, [_vm._v("Поиск")]),
+      _vm._v(" "),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.term,
+            expression: "term"
+          }
+        ],
+        staticClass: "form-control mr-1 mt-1",
+        domProps: { value: _vm.term },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.term = $event.target.value
+          }
+        }
+      }),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-primary mr-1 mt-1",
+          attrs: { type: "button" },
+          on: { click: _vm.search }
+        },
+        [_vm._v("Поиск")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-secondary mt-1",
+          attrs: { type: "button" },
+          on: { click: _vm.cancelSearch }
+        },
+        [_vm._v("Отмена")]
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: " min-width-860 table-responsive-sm" }, [
+      _c(
+        "table",
+        {
+          staticClass: "table table-striped table-hover",
+          attrs: { id: "phoneBook_table" }
+        },
+        [
+          _c("thead", { staticClass: "table-primary" }, [
+            _c("tr", [
+              _c("th", { staticClass: "align-middle" }, [_vm._v("№")]),
+              _vm._v(" "),
+              _c("th", { staticClass: "align-middle" }, [_vm._v("Имя")]),
+              _vm._v(" "),
+              _c("th", { staticClass: "align-middle" }, [_vm._v("Фамилия")]),
+              _vm._v(" "),
+              _c("th", { staticClass: "align-middle text-nowrap" }, [
+                _vm._v("Номер телефона")
+              ]),
+              _vm._v(" "),
+              _c("th", { staticClass: "align-middle" }, [
+                _c("div", { staticClass: "form-check" }, [
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.checkAll,
+                          expression: "checkAll"
+                        }
+                      ],
+                      staticClass: "form-check-input",
+                      attrs: { id: "root-checkbox", type: "checkbox" },
+                      domProps: {
+                        checked: Array.isArray(_vm.checkAll)
+                          ? _vm._i(_vm.checkAll, null) > -1
+                          : _vm.checkAll
+                      },
+                      on: {
+                        change: [
+                          function($event) {
+                            var $$a = _vm.checkAll,
+                              $$el = $event.target,
+                              $$c = $$el.checked ? true : false
+                            if (Array.isArray($$a)) {
+                              var $$v = null,
+                                $$i = _vm._i($$a, $$v)
+                              if ($$el.checked) {
+                                $$i < 0 && (_vm.checkAll = $$a.concat([$$v]))
+                              } else {
+                                $$i > -1 &&
+                                  (_vm.checkAll = $$a
+                                    .slice(0, $$i)
+                                    .concat($$a.slice($$i + 1)))
+                              }
+                            } else {
+                              _vm.checkAll = $$c
+                            }
+                          },
+                          _vm.checkedAllContacts
+                        ]
+                      }
+                    })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("th", { staticClass: "align-middle text-nowrap" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-outline-danger",
+                    attrs: { type: "button", title: "удалить" },
+                    on: { click: _vm.showDialogToCheckedDelete }
+                  },
+                  [
+                    _vm._v("\n                        Удалить"),
+                    _c("br"),
+                    _vm._v("выбранное\n                    ")
+                  ]
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "tbody",
+            { attrs: { id: "phoneBook_table_body" } },
+            _vm._l(_vm.contacts, function(contact, index) {
+              return _c("tr", { key: contact.id }, [
+                _c("td", [_vm._v(_vm._s(index + 1))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(contact.firstName))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(contact.lastName))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(contact.phoneNumber))]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("div", { staticClass: "form-check" }, [
+                    _c(
+                      "label",
+                      { staticClass: "form-check-label align-middle" },
+                      [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: contact.mustBeDeleted,
+                              expression: "contact.mustBeDeleted"
+                            }
+                          ],
+                          staticClass:
+                            "form-check-input align-middle contact_checkbox",
+                          attrs: { type: "checkbox" },
+                          domProps: {
+                            checked: Array.isArray(contact.mustBeDeleted)
+                              ? _vm._i(contact.mustBeDeleted, null) > -1
+                              : contact.mustBeDeleted
+                          },
+                          on: {
+                            change: function($event) {
+                              var $$a = contact.mustBeDeleted,
+                                $$el = $event.target,
+                                $$c = $$el.checked ? true : false
+                              if (Array.isArray($$a)) {
+                                var $$v = null,
+                                  $$i = _vm._i($$a, $$v)
+                                if ($$el.checked) {
+                                  $$i < 0 &&
+                                    _vm.$set(
+                                      contact,
+                                      "mustBeDeleted",
+                                      $$a.concat([$$v])
+                                    )
+                                } else {
+                                  $$i > -1 &&
+                                    _vm.$set(
+                                      contact,
+                                      "mustBeDeleted",
+                                      $$a
+                                        .slice(0, $$i)
+                                        .concat($$a.slice($$i + 1))
+                                    )
+                                }
+                              } else {
+                                _vm.$set(contact, "mustBeDeleted", $$c)
+                              }
+                            }
+                          }
+                        })
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-outline-danger",
+                      attrs: { type: "button", title: "Удалить" },
+                      on: {
+                        click: function($event) {
+                          return _vm.showModal(contact)
+                        }
+                      }
+                    },
+                    [
+                      _c("img", {
+                        staticClass: "small_button_icon",
+                        attrs: {
+                          alt: "del",
+                          src: __webpack_require__(/*! ../../frontend/images/remove_icon.png */ "./frontend/images/remove_icon.png")
+                        }
+                      })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  contact.needShowModal
+                    ? _c("div", [
+                        _c("div", { staticClass: "modal-mask" }, [
+                          _c("div", { staticClass: "modal-wrapper" }, [
+                            _c("div", { staticClass: "modal-container" }, [
+                              _c(
+                                "div",
+                                { staticClass: "modal-header" },
+                                [
+                                  _vm._t("header", [
+                                    _vm._v(
+                                      "\n                                            Удаление элемента\n                                        "
+                                    )
+                                  ])
+                                ],
+                                2
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "modal-body" },
+                                [
+                                  _vm._t("body", [
+                                    _vm._v(
+                                      "\n                                            Вы действительно хотите удалить элемент?\n                                        "
+                                    )
+                                  ])
+                                ],
+                                2
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                { staticClass: "modal-footer" },
+                                [
+                                  _vm._t("footer", [
+                                    _c(
+                                      "button",
+                                      {
+                                        staticClass: "modal-default-button",
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.hideModal(contact)
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                                                Отмена\n                                            "
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "button",
+                                      {
+                                        staticClass: "modal-default-button",
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.deleteContact(contact)
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                                                Да\n                                            "
+                                        )
+                                      ]
+                                    )
+                                  ])
+                                ],
+                                2
+                              )
+                            ])
+                          ])
+                        ])
+                      ])
+                    : _vm._e()
+                ])
+              ])
+            }),
+            0
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _vm.needShowModalForDeleteChecked
+        ? _c("div", [
+            _c("div", { staticClass: "modal-mask" }, [
+              _c("div", { staticClass: "modal-wrapper" }, [
+                _c("div", { staticClass: "modal-container" }, [
+                  _c(
+                    "div",
+                    { staticClass: "modal-header" },
+                    [
+                      _vm._t("header", [
+                        _vm._v(
+                          "\n                                Удаление выбранных элементов\n                            "
+                        )
+                      ])
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "modal-body" },
+                    [
+                      _vm._t("body", [
+                        _vm._v(
+                          "\n                                Вы действительно хотите удалить выбранные элементы?\n                            "
+                        )
+                      ])
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "modal-footer" },
+                    [
+                      _vm._t("footer", [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "modal-default-button",
+                            on: { click: _vm.hideDialogToCheckedDelete }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                    Отмена\n                                "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass: "modal-default-button",
+                            on: { click: _vm.deleteCheckedContacts }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                    Да\n                                "
+                            )
+                          ]
+                        )
+                      ])
+                    ],
+                    2
+                  )
+                ])
+              ])
+            ])
+          ])
+        : _vm._e()
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return normalizeComponent; });
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+function normalizeComponent (
+  scriptExports,
+  render,
+  staticRenderFns,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier, /* server only */
+  shadowMode /* vue-cli only */
+) {
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (render) {
+    options.render = render
+    options.staticRenderFns = staticRenderFns
+    options._compiled = true
+  }
+
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = 'data-v-' + scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = shadowMode
+      ? function () { injectStyles.call(this, this.$root.$options.shadowRoot) }
+      : injectStyles
+  }
+
+  if (hook) {
+    if (options.functional) {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
+      // register for functioal component in vue file
+      var originalRender = options.render
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return originalRender(h, context)
+      }
+    } else {
+      // inject component registration as beforeCreate hook
+      var existing = options.beforeCreate
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    }
+  }
+
+  return {
+    exports: scriptExports,
+    options: options
+  }
+}
+
 
 /***/ }),
 
