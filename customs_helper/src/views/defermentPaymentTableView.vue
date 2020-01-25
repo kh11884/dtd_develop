@@ -106,7 +106,7 @@
               </div>
 
               <div class="my-2 ma-2">
-                <v-dialog width="620">
+                <v-dialog width="660">
                   <template v-slot:activator="{ on }">
                     <v-btn
                       color="primary"

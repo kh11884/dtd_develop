@@ -146,13 +146,16 @@
                         let endDate = new Date(getFormatedData(this.endDate));
                         let sumPlat = parseFloat(subarray[1].replace(',', '.'));
                         let resultTable = getCalcTable(startDate, endDate, sumPlat);
-                        let sum = getSumPercents(resultTable) > 0 ? getSumPercents(resultTable) : 0;
+                        let resultSum = getSumPercents(resultTable);
+                        let sum = resultSum > 0 ? resultSum : 0;
+                        console.log(resultSum);
                         this.outputTable.push({
                             startDate: subarray[0],
                             endDate: getExcelFormatDate(endDate),
                             UNPlat: subarray[1],
                             sumPercents: sum.toString().replace('.', ',')
                         });
+
                         totalUNPlat += sumPlat;
                         totalSum += sum;
                     }
