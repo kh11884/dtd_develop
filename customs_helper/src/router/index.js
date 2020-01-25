@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import CustomsValueCalc from '../views/CustomsValueCalc'
 import defermentPaymentTableView from '../views/defermentPaymentTableView'
+import PackageDefermentTable from '../views/PackageDefermentTable'
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/defermentPaymentTableView',
     name: 'defermentPaymentTableView',
     component: defermentPaymentTableView
+  },
+  {
+    path: '/PackageDefermentTable',
+    name: 'PackageDefermentTable',
+    component: PackageDefermentTable
   },
   {
     path: '/about',

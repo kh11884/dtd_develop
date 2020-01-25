@@ -60,10 +60,9 @@
           </div>
         </v-list-item>
 
-        <v-list-item
-          disabled="disabled">
+        <v-list-item>
           <div>
-            <router-link tag="div" to="/About">
+            <router-link tag="div" to="/PackageDefermentTable">
               <v-list-item-action>
                 <v-row>
                   <v-icon>mdi-percent-outline</v-icon>
