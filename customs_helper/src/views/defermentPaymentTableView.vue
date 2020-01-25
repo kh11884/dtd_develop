@@ -4,7 +4,6 @@
 
 
 <template>
-
   <v-row justify="center">
     <v-col cols="12" sm="10" md="7" lg="5">
       <v-card min-width="585">

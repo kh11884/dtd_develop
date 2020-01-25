@@ -2,14 +2,19 @@
   <v-row justify="center">
     <v-col cols="9">
       <v-card>
+        <v-card-title>
+          <span>
+            Пакетный расчет процентов за отсрочку
+          </span>
+        </v-card-title>
         <v-card-text>
-          <v-row justify="center">
-            <v-col cols="3">
+          <div class="my-2 ma-2">
+            <span>Последние изменения ключевой ставки используемые для рассчета: {{lastKeyRateDate}} - {{lastKeyRate}}</span>
+          </div>
+          <v-row>
+            <v-col>
               <v-sheet
-                min-width="220">
-                <div class="my-2 ma-2">
-                  <span>Последние изменения ключевой ставки используемые для рассчета: {{lastKeyRateDate}} - {{lastKeyRate}}</span>
-                </div>
+                width="260">
                 <v-btn
                   color="primary"
                   @click="calc"
@@ -44,20 +49,16 @@
                                    @input="showEndDateCalendar = false"></v-date-picker>
                   </v-menu>
                 </div>
-
-
                 <v-textarea
                   label="Вставьте данные:"
                   v-model="inputData"
                   :dense="true"
                   :loader-height="20"
                 ></v-textarea>
-
-
               </v-sheet>
             </v-col>
-            <v-col cols="7">
-              <v-sheet>
+            <v-col>
+              <v-sheet min-width="480">
                 <v-simple-table
                   dense>
                   <tbody>
@@ -84,7 +85,7 @@
         getFormattedDataFromExcelCell,
         getExcelFormatDate,
         getRussianDate,
-        getCorrectTimeZoneDate
+        getCorrectTimeZoneDate, getFormatedData
     } from "../components/percentCalculationComponents/dateFunction";
     import {
         getCalcTable,
@@ -114,10 +115,10 @@
                     let subarray = item.split('\t');
                     if (subarray[0] !== "") {
                         let startDate = new Date(getFormattedDataFromExcelCell(subarray[0]));
-                        let endDate = new Date("01/25/2020");
+                        let endDate = new Date(getFormatedData(this.endDate));
                         let sumPlat = parseFloat(subarray[1].replace(',', '.'));
                         let resultTable = getCalcTable(startDate, endDate, sumPlat);
-                        let sum = getSumPercents(resultTable);
+                        let sum = getSumPercents(resultTable) > 0 ? getSumPercents(resultTable) : 0;
                         this.outputTable.push({
                             startDate: subarray[0],
                             endDate: getExcelFormatDate(endDate),
