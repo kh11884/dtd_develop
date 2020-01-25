@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableCopy.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/components/percentCalculationComponents/defermentPercentCalculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/components/percentCalculationComponents/defermentPercentCalculator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,19 +53,22 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\dist\img" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\dist\files" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\components\percentCalculationComponents" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\components\customsValueCalcComponents" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\frontend\images" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\frontend\javascripts" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\assets" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\public" />
+    </key>
+    <key name="OPEN_URL_DIALOG">
+      <recent name="https://vk.com/away.php?to=https%3A%2F%2Fgithub.com%2FOlesiaGuk%2FAcademIT_ClientWeb%2Ftree%2Fmaster%2FTask16_Server&amp;cc_key=" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\dist\img" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\dist\files" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\components\percentCalculationComponents" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\components\customsValueCalcComponents" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -187,13 +193,9 @@
       <workItem from="1579011162978" duration="26797000" />
       <workItem from="1579241976706" duration="819000" />
       <workItem from="1579834904997" duration="13729000" />
-    </task>
-    <task id="LOCAL-00043" summary="Добавлен модуль PhoneBookVue">
-      <created>1575790309403</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1575790309403</updated>
+      <workItem from="1579875840748" duration="60000" />
+      <workItem from="1579922588198" duration="550000" />
+      <workItem from="1579928347976" duration="8094000" />
     </task>
     <task id="LOCAL-00044" summary="добработана задача PhoneBookJJQuery согласно замечаний 3">
       <created>1576169779431</created>
@@ -531,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579874825470</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="Исправлена задача PhoneBookWebpack согласно замечаний 1">
+      <created>1579875886181</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1579875886181</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

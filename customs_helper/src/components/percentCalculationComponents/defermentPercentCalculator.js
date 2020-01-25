@@ -49,7 +49,8 @@ export function getCalcTable(issueDate, applicationDate, payment) {
       endDate: item.endDate.toLocaleString('ru-RU', options),
       days: item.days,
       refinancing_rate: (item.refinancing_rate * 100).toFixed(2) + " %",
-      sum: (payment * item.days * item.refinancing_rate / 360).toFixed(2)
+      sum: (payment * item.days * item.refinancing_rate / 360).toFixed(2),
+      simpleRate: (item.refinancing_rate * 100).toFixed(2)
     });
   });
   return result;

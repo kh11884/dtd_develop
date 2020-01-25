@@ -1,4 +1,4 @@
-<!--TODO: Добавить таблицу для вставки в графу 47 альты-->
+<!--TODO: Вынести таблицу для вставки в графу 47 альты в отдельный VUE компонент-->
 <!--TODO: Добавить пакетный рассчет процентов-->
 <!--TODO: Добавить рассчет процентов по отсрочке-->
 
@@ -102,6 +102,40 @@
                 >Сброс
                 </v-btn>
               </div>
+
+              <div class="my-2 ma-2">
+                <v-dialog width="600">
+                  <template v-slot:activator="{ on }">
+                    <v-btn
+                      color="primary"
+                      v-on="on"
+                    >
+                      для гр. 47
+                    </v-btn>
+                  </template>
+
+                  <v-sheet>
+                    <v-simple-table
+                    dense>
+                      <tbody>
+                      <tr v-for="item in resultTable" :key="item.startDate">
+                        <td>5012</td>
+                        <td>{{ item.payment }}</td>
+                        <td>{{item.refinancing_rate}}</td>
+                        <td></td>
+                        <td>{{item.sum}}</td>
+                        <td>ИУ</td>
+                        <td>{{item.days}}</td>
+                        <td></td>
+                        <td></td>
+                        <td>{{item.simpleRate}}</td>
+                      </tr>
+                      </tbody>
+                    </v-simple-table>
+                  </v-sheet>
+                </v-dialog>
+              </div>
+
               <div class="my-2 ma-2">
                 <span>Последние изменения ключевой ставки используемые для рассчета: {{lastKeyRateDate}} - {{lastKeyRate}}</span>
               </div>
@@ -255,7 +289,7 @@
                 this.issuedDate = "";
                 this.closedDate = moment(new Date()).format().substring(0, 10);
                 this.UNpayment = "";
-            }
+            },
         }
     }
 </script>
