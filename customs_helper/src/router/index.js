@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import CustomsValueCalc from '../views/CustomsValueCalc'
 import defermentPaymentTableView from '../views/defermentPaymentTableView'
 import PackageDefermentTable from '../views/PackageDefermentTable'
+import checkList from "../views/checkList";
 
 Vue.use(VueRouter);
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/PackageDefermentTable',
     name: 'PackageDefermentTable',
     component: PackageDefermentTable
+  },
+  {
+    path: '/checkList',
+    name: 'checkList',
+    component: checkList
   },
   {
     path: '/about',

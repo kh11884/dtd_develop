@@ -3,6 +3,7 @@
     <v-navigation-drawer
       v-model="drawer"
       app
+      class="d-print-none"
     >
       <v-list dense>
         <v-list-item link>
@@ -90,6 +91,21 @@
             </router-link>
           </div>
         </v-list-item>
+
+        <v-list-item>
+          <div>
+            <router-link tag="div" to="/checkList">
+              <v-list-item-action>
+                <v-row>
+                  <v-icon>mdi-clipboard-check-multiple-outline</v-icon>
+                  <v-list-item-content class="ml-2">
+                    <v-list-item-title>Чек-лист</v-list-item-title>
+                  </v-list-item-content>
+                </v-row>
+              </v-list-item-action>
+            </router-link>
+          </div>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
@@ -97,6 +113,7 @@
       app
       color="indigo"
       dark
+      class="d-print-none"
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
       <v-toolbar-title>Приложения</v-toolbar-title>
@@ -109,6 +126,7 @@
     <v-footer
       color="indigo"
       app
+      class="d-print-none"
     >
       <span class="white--text">&copy; 2020</span>
     </v-footer>
