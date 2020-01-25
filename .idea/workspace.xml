@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/customs_helper/src/assets/package1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customs_helper/src/views/PackageDefermentTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/PackageDefermentTable.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +43,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578044598901" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/customs_helper/src/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -52,22 +52,22 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="OPEN_URL_DIALOG">
+      <recent name="https://vk.com/away.php?to=https%3A%2F%2Fgithub.com%2FOlesiaGuk%2FAcademIT_ClientWeb%2Ftree%2Fmaster%2FTask16_Server&amp;cc_key=" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\assets" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\dist\img" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\dist\files" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\components\percentCalculationComponents" />
+      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\components\customsValueCalcComponents" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\frontend\images" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\PhoneBookWebpack\frontend\javascripts" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\assets" />
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\public" />
-    </key>
-    <key name="OPEN_URL_DIALOG">
-      <recent name="https://vk.com/away.php?to=https%3A%2F%2Fgithub.com%2FOlesiaGuk%2FAcademIT_ClientWeb%2Ftree%2Fmaster%2FTask16_Server&amp;cc_key=" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\dist\img" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\dist\files" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\components\percentCalculationComponents" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\components\customsValueCalcComponents" />
-      <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\src\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -194,14 +194,7 @@
       <workItem from="1579834904997" duration="13729000" />
       <workItem from="1579875840748" duration="60000" />
       <workItem from="1579922588198" duration="550000" />
-      <workItem from="1579928347976" duration="22118000" />
-    </task>
-    <task id="LOCAL-00047" summary="Добавлен черновик задачи PhoneBookServer">
-      <created>1576395252947</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1576395252947</updated>
+      <workItem from="1579928347976" duration="28304000" />
     </task>
     <task id="LOCAL-00048" summary="Добавлена задача PhoneBookServer, надо причесать">
       <created>1576430804380</created>
@@ -539,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579958120969</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Добавлен шаблон пакетный расчет по отсрочке платежа&#10;Допилить единообразное форматирование">
+      <created>1579959417642</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1579959417642</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,7 +576,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="задача PhoneBookServer&#10;вариант с синхронным ajax" />
     <MESSAGE value="задача PhoneBookServer&#10;вариант фильтрацией контактов на стороне клиента" />
     <MESSAGE value="задача PhoneBookServer&#10;вариант фильтрацией контактов на сервере" />
     <MESSAGE value="Попытка подключения css для vuetify" />
@@ -601,6 +600,7 @@
     <MESSAGE value="Добавлено модальное окно с таблицей для графы 47." />
     <MESSAGE value="Добавлен шаблон пакетного расчета по отсрочке платежа" />
     <MESSAGE value="Добавлен шаблон пакетного расчета по отсрочке платежа&#10;Допилить корректное использование поля ввода ДАТА" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен шаблон пакетного расчета по отсрочке платежа&#10;Допилить корректное использование поля ввода ДАТА" />
+    <MESSAGE value="Добавлен шаблон пакетный расчет по отсрочке платежа&#10;Допилить единообразное форматирование" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен шаблон пакетный расчет по отсрочке платежа&#10;Допилить единообразное форматирование" />
   </component>
 </project>

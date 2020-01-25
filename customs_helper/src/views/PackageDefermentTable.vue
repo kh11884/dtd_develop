@@ -1,80 +1,96 @@
 <template>
   <v-row justify="center">
-    <v-col cols="9">
-      <v-card>
-        <v-card-title>
-          <span>
-            Пакетный расчет процентов за отсрочку
-          </span>
-        </v-card-title>
-        <v-card-text>
-          <div class="my-2 ma-2">
-            <span>Последние изменения ключевой ставки используемые для рассчета: {{lastKeyRateDate}} - {{lastKeyRate}}</span>
-          </div>
+    <v-col cols="12" sm="10" md="7" lg="5">
+      <v-card min-width="585">
+        <v-container class="pt-0">
           <v-row>
-            <v-col>
-              <v-sheet
-                width="260">
+            <v-col class="pb-0">
+              <v-card-text class="headline">Пакетный расчет процентов за отсрочку</v-card-text>
+              <v-menu
+                v-model="showEndDateCalendar"
+                :close-on-content-click="false"
+                :nudge-right="40"
+                transition="scale-transition"
+                offset-y
+                min-width="290px"
+              >
+                <template v-slot:activator="{ on }">
+                  <v-text-field
+                    v-model="computedEndDate"
+                    label="Дата расчета:"
+                    prepend-icon=mdi-calendar-edit
+                    readonly
+                    v-on="on"
+                    :dense="true"
+                  ></v-text-field>
+                </template>
+                <v-date-picker locale="ru-ru" v-model="endDate"
+                               @input="showEndDateCalendar = false"></v-date-picker>
+              </v-menu>
+
+              <v-textarea
+                label="Вставьте данные:"
+                v-model="inputData"
+                prepend-icon=mdi-application-import
+                :placeholder="placeholder"
+                :dense="true"
+                :loader-height="20"
+              ></v-textarea>
+            </v-col>
+
+            <v-col cols="4" class="ma-4">
+              <v-avatar
+                class="ma-0"
+                size="180"
+                tile
+              >
+                <v-img src="../assets/package1.jpg"></v-img>
+              </v-avatar>
+
+            </v-col>
+          </v-row>
+          <v-card-text class="pt-0">
+            <v-row
+              :align="'end'"
+              :justify="'start'">
+              <div class="my-2 ma-2">
                 <v-btn
                   color="primary"
                   @click="calc"
                 >расчитать
                 </v-btn>
+              </div>
+              <div class="my-2 ma-2">
                 <v-btn
                   color="primary"
                   @click="clear"
                 >Очистить
                 </v-btn>
+              </div>
 
-                <div class="py-1">
-                  <v-menu
-                    v-model="showEndDateCalendar"
-                    :close-on-content-click="false"
-                    :nudge-right="40"
-                    transition="scale-transition"
-                    offset-y
-                    min-width="290px"
-                  >
-                    <template v-slot:activator="{ on }">
-                      <v-text-field
-                        v-model="computedEndDate"
-                        label="Дата расчета:"
-                        prepend-icon=mdi-calendar-edit
-                        readonly
-                        v-on="on"
-                        :dense="true"
-                      ></v-text-field>
-                    </template>
-                    <v-date-picker locale="ru-ru" v-model="endDate"
-                                   @input="showEndDateCalendar = false"></v-date-picker>
-                  </v-menu>
-                </div>
-                <v-textarea
-                  label="Вставьте данные:"
-                  v-model="inputData"
-                  :dense="true"
-                  :loader-height="20"
-                ></v-textarea>
-              </v-sheet>
-            </v-col>
-            <v-col>
-              <v-sheet min-width="480">
-                <v-simple-table
-                  dense>
-                  <tbody>
-                  <tr v-for="item in outputTable">
-                    <td>{{ item.startDate }}</td>
-                    <td>{{ item.endDate }}</td>
-                    <td>{{item.UNPlat}}</td>
-                    <td>{{item.sumPercents}}</td>
-                  </tr>
-                  </tbody>
-                </v-simple-table>
-              </v-sheet>
-            </v-col>
-          </v-row>
-        </v-card-text>
+              <div class="my-2 ma-2">
+                <span>Последние изменения ключевой ставки используемые для рассчета: {{lastKeyRateDate}} - {{lastKeyRate}}</span>
+              </div>
+            </v-row>
+          </v-card-text>
+        </v-container>
       </v-card>
+
+      <v-spacer></v-spacer>
+
+      <v-sheet min-width="585" elevation="4" class="mt-3" v-show="showTable">
+        <v-data-table
+          :headers="headTable"
+          :items="outputTable"
+          dense
+          class="elevation-1"
+          hide-default-footer
+          :items-per-page="rows"
+        >
+        </v-data-table>
+      </v-sheet>
+
+
     </v-col>
   </v-row>
 </template>
@@ -100,13 +116,25 @@
             return {
                 inputData: "",
                 isInvalidInputData: false,
+                headTable: [
+                    {text: 'Дата Открытия', sortable: false, value: 'startDate'},
+                    {text: 'Дата закрытия', sortable: false, value: 'endDate'},
+                    {text: 'Сумма платежа', sortable: false, value: 'UNPlat'},
+                    {text: 'Сумма процентов', sortable: false, value: 'sumPercents'},
+                ],
                 outputTable: [],
                 endDate: getCorrectTimeZoneDate(Date.now()),
                 showEndDateCalendar: false,
+                rows: 1,
+                showTable: false,
+                placeholder: "Скопируйте из Excel два столбца: \n \"дата выпуска ДТ\" и \"сумма платежа\" \n и вставьте в это поле"
             }
         },
         methods: {
             calc() {
+                if (this.inputData === "") {
+                    return;
+                }
                 this.outputTable = [];
                 let totalUNPlat = 0;
                 let totalSum = 0;
@@ -136,8 +164,11 @@
                     UNPlat: totalUNPlat.toString().replace('.', ','),
                     sumPercents: totalSum.toString().replace('.', ',')
                 });
+                this.rows = this.outputTable.length;
+                this.showTable = true;
             },
             clear() {
+                this.showTable = false;
                 this.inputData = "";
                 this.outputTable = [];
             }
