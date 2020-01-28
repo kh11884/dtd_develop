@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/components/percentCalculationComponents/dateFunction.js" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/components/percentCalculationComponents/dateFunction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customs_helper/src/views/PackageDefermentTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/PackageDefermentTable.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -194,14 +195,8 @@
       <workItem from="1579834904997" duration="13729000" />
       <workItem from="1579875840748" duration="60000" />
       <workItem from="1579922588198" duration="550000" />
-      <workItem from="1579928347976" duration="38307000" />
-    </task>
-    <task id="LOCAL-00051" summary="Подправлены небольшие замечания:&#10;добавлена красная тень вокруг input при валидации.&#10;исправлены опечатки&#10;v-show заменен на v-if">
-      <created>1576435913754</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1576435913754</updated>
+      <workItem from="1579928347976" duration="39376000" />
+      <workItem from="1580186111939" duration="3700000" />
     </task>
     <task id="LOCAL-00052" summary="добработана задача PhoneBookVue согласно замечаний 2">
       <created>1576818198204</created>
@@ -539,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579974339269</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="Добавлен чек-лист.">
+      <created>1579975746475</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1579975746475</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

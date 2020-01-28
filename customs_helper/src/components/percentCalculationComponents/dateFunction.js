@@ -35,3 +35,7 @@ export function getExcelFormatDate(date) {
   }
   return day + "." + month + "." + year;
 }
+
+export function isValidDate(date) {
+  return date instanceof Date && !isNaN(date);
+}

@@ -61,7 +61,7 @@
           </div>
         </v-list-item>
 
-        <v-list-item>
+        <v-list-item link>
           <div>
             <router-link tag="div" to="/PackageDefermentTable">
               <v-list-item-action>
@@ -92,7 +92,7 @@
           </div>
         </v-list-item>
 
-        <v-list-item>
+        <v-list-item link>
           <div>
             <router-link tag="div" to="/checkList">
               <v-list-item-action>

@@ -69,7 +69,7 @@
               </div>
 
               <div class="my-2 ma-2">
-                <span>Последние изменения ключевой ставки используемые для рассчета: {{lastKeyRateDate}} - {{lastKeyRate}}</span>
+                <span>Последние изменения ключевой ставки используемые для расчета: {{lastKeyRateDate}} - {{lastKeyRate}}</span>
               </div>
             </v-row>
           </v-card-text>
@@ -101,7 +101,9 @@
         getFormattedDataFromExcelCell,
         getExcelFormatDate,
         getRussianDate,
-        getCorrectTimeZoneDate, getFormatedData
+        getCorrectTimeZoneDate,
+        getFormatedData,
+        isValidDate,
     } from "../components/percentCalculationComponents/dateFunction";
     import {
         getCalcTable,
@@ -117,7 +119,7 @@
                 inputData: "",
                 isInvalidInputData: false,
                 headTable: [
-                    {text: 'Дата Открытия', sortable: false, value: 'startDate'},
+                    {text: 'Начало расчета', sortable: false, value: 'startDate'},
                     {text: 'Дата закрытия', sortable: false, value: 'endDate'},
                     {text: 'Сумма платежа', sortable: false, value: 'UNPlat'},
                     {text: 'Сумма процентов', sortable: false, value: 'sumPercents'},
@@ -144,22 +146,39 @@
                     if (subarray[0] !== "") {
                         let startDate = new Date(getFormattedDataFromExcelCell(subarray[0]));
                         let endDate = new Date(getFormatedData(this.endDate));
-                        let sumPlat = parseFloat(subarray[1].replace(',', '.'));
+                        let sumPlat;
+                        if (subarray[1] === undefined) {
+                            sumPlat = 0;
+                        } else {
+                            sumPlat = parseFloat(subarray[1].replace(',', '.'));
+                        }
+                        console.log(startDate);
+                        if(!isValidDate(startDate)){
+                            alert("Необходимо проверить входные данные. \nВ какой-то из строк дата может иметь некорректный формат.\nИтоговые значения могут быть некорректными");
+                        }
+                        if(isNaN(sumPlat)){
+                            alert("Необходимо проверить входные данные. \nВ какой-то из строк сумма платежа может иметь некорректный формат.\nИтоговые значения могут быть некорректными");
+                        }
+
+                        console.log(startDate + " - " + sumPlat);
+
                         let resultTable = getCalcTable(startDate, endDate, sumPlat);
-                        let resultSum = getSumPercents(resultTable);
-                        let sum = resultSum > 0 ? resultSum : 0;
-                        console.log(resultSum);
+                        let stepSum = getSumPercents(resultTable);
+
+                        let sum = stepSum > 0 ? stepSum : 0;
+
                         this.outputTable.push({
-                            startDate: subarray[0],
+                            startDate: getExcelFormatDate(startDate),
                             endDate: getExcelFormatDate(endDate),
                             UNPlat: subarray[1],
                             sumPercents: sum.toString().replace('.', ',')
                         });
 
-                        totalUNPlat += sumPlat;
-                        totalSum += sum;
+                        totalUNPlat += Math.round(sumPlat * 100) / 100;
+                        totalSum += Math.round(sum * 100) / 100;
                     }
                 });
+                totalUNPlat = Math.round(totalUNPlat * 100) / 100;
                 totalSum = Math.round(totalSum * 100) / 100;
                 this.outputTable.push({
                     startDate: "ИТОГО:",
