@@ -10,7 +10,7 @@
                 <div>Ресурс находится в разработке</div>
                 <div>Информация предоставляется справочно и не гарантирует успешный выпуск ДТ</div>
                 <div>Ждем Ваших замечаний и предложений</div>
-<!--                <a v-bind:href="'/dtd/img/check.docx'" download="check.docx" class="btn btn-light btn-sm mr-1 mt-2">Скачать</a>-->
+                <!--                <a v-bind:href="'/dtd/img/check.docx'" download="check.docx" class="btn btn-light btn-sm mr-1 mt-2">Скачать</a>-->
 
               </v-card-text>
 
@@ -25,30 +25,127 @@
             </v-avatar>
           </div>
 
-          <v-row justify="center">
-            <router-link tag="div" to="/CustomsValueCalc">
-              <v-btn
-                large
-                class="ma-2"
-                color="primary"
-                @click="loader = 'loading'"
-              >
-                Калькулятор ТС
-              </v-btn>
-            </router-link>
+          <v-item-group>
+            <v-container>
+              <v-row justify="center">
+                <v-col
+                  cols="12"
+                  md="4">
+                  <router-link tag="div" to="/CustomsValueCalc">
+                    <v-card
+                      color="primary"
+                      dark
+                      @click="loader = 'loading'"
+                      class="text-center"
+                    >
+                      <v-card-title class="justify-center">Калькулятор</v-card-title>
+                      <v-card-text>
+                        таможенной стоимости
+                      </v-card-text>
 
+                    </v-card>
+                  </router-link>
+                </v-col>
 
-            <router-link tag="div" to="/defermentPaymentTableView">
-              <v-btn
-                large
-                color="primary"
-                class="ma-2 white--text"
-                @click="loader = 'loading3'"
-              >
-                Расчет процентов<br>для отсрочки
-              </v-btn>
-            </router-link>
-          </v-row>
+                <v-col
+                  cols="12"
+                  md="4">
+                  <router-link tag="div" to="/defermentPaymentTableView">
+                    <v-card
+                      color="primary"
+                      dark
+                      @click="loader = 'loading'"
+                      class="text-center"
+                    >
+                      <v-card-title class="justify-center">Отсрочка</v-card-title>
+                      <v-card-text>
+                        расчет для одной ДТ
+                      </v-card-text>
+                    </v-card>
+                  </router-link>
+                </v-col>
+
+                <v-col
+                  cols="12"
+                  md="4">
+                  <router-link tag="div" to="/PackageDefermentTable">
+                    <v-card
+                      color="primary"
+                      dark
+                      @click="loader = 'loading'"
+                      class="text-center"
+                    >
+                      <v-card-title class="justify-center">Отсрочка</v-card-title>
+                      <v-card-text>
+                        расчет для пакета ДТ
+                      </v-card-text>
+
+                    </v-card>
+                  </router-link>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-item-group>
+
+          <v-item-group>
+            <v-container>
+              <v-row justify="center">
+                <v-col
+                  cols="12"
+                  md="4">
+                  <router-link tag="div" to="/checkList">
+                    <v-card
+                      color="primary"
+                      dark
+                      @click="loader = 'loading'"
+                      class="text-center"
+                    >
+                      <v-card-title class="justify-center">Чек-лист</v-card-title>
+                      <v-card-text>
+                        проверка ДТ
+                      </v-card-text>
+
+                    </v-card>
+                  </router-link>
+                </v-col>
+                <v-col
+                  cols="12"
+                  md="4">
+                  <router-link tag="div" to="/">
+                    <v-card
+                      color="grey"
+                      @click="loader = 'loading'"
+                      class="text-center"
+                    >
+                      <v-card-title class="justify-center">Рассрочка</v-card-title>
+                      <v-card-text>
+                        расчет для одной ДТ<br>
+                        (в разработке)
+                      </v-card-text>
+                    </v-card>
+                  </router-link>
+                </v-col>
+                <v-col
+                  cols="12"
+                  md="4">
+                  <router-link tag="div" to="/">
+                    <v-card
+                      color="grey"
+                      @click="loader = 'loading'"
+                      class="text-center"
+                    >
+                      <v-card-title class="justify-center">Рассрочка</v-card-title>
+                      <v-card-text>
+                        расчет для пакета ДТ<br>
+                        (в разработке)
+                      </v-card-text>
+                    </v-card>
+                  </router-link>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-item-group>
+
         </v-card>
       </v-col>
     </v-row>

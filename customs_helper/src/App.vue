@@ -68,7 +68,7 @@
                 <v-row>
                   <v-icon>mdi-percent-outline</v-icon>
                   <v-list-item-content class="ml-2">
-                    <v-list-item-title>Групповой расчет процентов<br/> для отсрочки платежа</v-list-item-title>
+                    <v-list-item-title>Пакетный расчет процентов<br/> для отсрочки платежа</v-list-item-title>
                   </v-list-item-content>
                 </v-row>
               </v-list-item-action>

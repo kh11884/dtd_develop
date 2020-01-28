@@ -4,8 +4,7 @@
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customs_helper/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/components/percentCalculationComponents/dateFunction.js" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/components/percentCalculationComponents/dateFunction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/PackageDefermentTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/PackageDefermentTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -196,14 +195,7 @@
       <workItem from="1579875840748" duration="60000" />
       <workItem from="1579922588198" duration="550000" />
       <workItem from="1579928347976" duration="39376000" />
-      <workItem from="1580186111939" duration="3700000" />
-    </task>
-    <task id="LOCAL-00052" summary="добработана задача PhoneBookVue согласно замечаний 2">
-      <created>1576818198204</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1576818198205</updated>
+      <workItem from="1580186111939" duration="7297000" />
     </task>
     <task id="LOCAL-00053" summary="добработана задача PhoneBookServer согласно замечаний 1">
       <created>1576942968678</created>
@@ -541,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579975746475</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="В пакетном расчете:&#10;добалено округление входных данных&#10;Добавлена проверка на валидность данных&#10;исправлены опечатки">
+      <created>1580190566690</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1580190566691</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,7 +577,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Сделана основа для TODOList vuetify" />
     <MESSAGE value="Сделана основа для TODOList vuetify&#10;Добавлены иконочные шрифты" />
     <MESSAGE value="Сделана основа для TODOList vuetify&#10;Осталось причесать дизайн" />
     <MESSAGE value="Сделана основа для TODOList vuetify&#10;Немного причесать отображение списка&#10;Добавить vue валидацию" />
@@ -603,6 +601,7 @@
     <MESSAGE value="Добавлен пакетный расчет по отсрочке платежа" />
     <MESSAGE value="Добавлен чек-лист.&#10;Сделать изменение фона листа при выбранных всех чек-боксах" />
     <MESSAGE value="Добавлен чек-лист." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен чек-лист." />
+    <MESSAGE value="В пакетном расчете:&#10;добалено округление входных данных&#10;Добавлена проверка на валидность данных&#10;исправлены опечатки" />
+    <option name="LAST_COMMIT_MESSAGE" value="В пакетном расчете:&#10;добалено округление входных данных&#10;Добавлена проверка на валидность данных&#10;исправлены опечатки" />
   </component>
 </project>
