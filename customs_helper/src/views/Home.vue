@@ -25,126 +25,126 @@
             </v-avatar>
           </div>
 
-          <v-item-group>
-            <v-container>
-              <v-row justify="center">
-                <v-col
-                  cols="12"
-                  md="4">
+          <v-container>
+            <v-row justify="center">
+              <v-col
+                cols="12"
+                md="4">
+                <v-card
+                  @click="loader = 'loading'"
+                  class="text-center"
+                  color="primary" dark
+                  height="100%"
+                >
                   <router-link tag="div" to="/CustomsValueCalc">
-                    <v-card
-                      color="primary"
-                      dark
-                      @click="loader = 'loading'"
-                      class="text-center"
-                    >
-                      <v-card-title class="justify-center">Калькулятор</v-card-title>
-                      <v-card-text>
-                        таможенной стоимости
-                      </v-card-text>
-
-                    </v-card>
+                    <v-card-title class="justify-center">Калькулятор</v-card-title>
+                    <v-card-text>
+                      таможенной стоимости
+                    </v-card-text>
                   </router-link>
-                </v-col>
+                </v-card>
+              </v-col>
 
-                <v-col
-                  cols="12"
-                  md="4">
+              <v-col
+                cols="12"
+                md="4"
+              >
+                <v-card
+                  color="primary" dark
+                  @click="loader = 'loading'"
+                  class="text-center"
+                  height="100%"
+                >
                   <router-link tag="div" to="/defermentPaymentTableView">
-                    <v-card
-                      color="primary"
-                      dark
-                      @click="loader = 'loading'"
-                      class="text-center"
-                    >
-                      <v-card-title class="justify-center">Отсрочка</v-card-title>
-                      <v-card-text>
-                        расчет для одной ДТ
-                      </v-card-text>
-                    </v-card>
+                    <v-card-title class="justify-center">Отсрочка</v-card-title>
+                    <v-card-text>
+                      расчет для одной ДТ
+                    </v-card-text>
                   </router-link>
-                </v-col>
+                </v-card>
+              </v-col>
 
-                <v-col
-                  cols="12"
-                  md="4">
-                  <router-link tag="div" to="/PackageDefermentTable">
-                    <v-card
-                      color="primary"
-                      dark
-                      @click="loader = 'loading'"
-                      class="text-center"
-                    >
-                      <v-card-title class="justify-center">Отсрочка</v-card-title>
-                      <v-card-text>
-                        расчет для пакета ДТ
-                      </v-card-text>
+              <v-col
+                cols="12"
+                md="4">
 
-                    </v-card>
+                <v-card
+                  color="primary" dark
+                  @click="loader = 'loading'"
+                  class="text-center"
+                  height="100%"
+                >
+                  <router-link tag="div" to="/PackageDefermentTable" height="100%">
+                    <v-card-title class="justify-center">Отсрочка</v-card-title>
+                    <v-card-text>
+                      расчет для пакета ДТ
+                    </v-card-text>
                   </router-link>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-item-group>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-container>
 
-          <v-item-group>
-            <v-container>
-              <v-row justify="center">
-                <v-col
-                  cols="12"
-                  md="4">
+          <v-container>
+            <v-row justify="center">
+              <v-col
+                cols="12"
+                md="4">
+
+                <v-card
+                  color="primary" dark
+                  @click="loader = 'loading'"
+                  class="text-center"
+                  height="100%"
+                >
                   <router-link tag="div" to="/checkList">
-                    <v-card
-                      color="primary"
-                      dark
-                      @click="loader = 'loading'"
-                      class="text-center"
-                    >
-                      <v-card-title class="justify-center">Чек-лист</v-card-title>
-                      <v-card-text>
-                        проверка ДТ
-                      </v-card-text>
+                    <v-card-title class="justify-center">Чек-лист</v-card-title>
+                    <v-card-text>
+                      проверка ДТ
+                    </v-card-text>
+                  </router-link>
+                </v-card>
+              </v-col>
 
-                    </v-card>
-                  </router-link>
-                </v-col>
-                <v-col
-                  cols="12"
-                  md="4">
+              <v-col
+                cols="12"
+                md="4">
+                <v-card
+                  color="grey"
+                  @click="loader = 'loading'"
+                  class="text-center"
+                  height="100%"
+                >
                   <router-link tag="div" to="/">
-                    <v-card
-                      color="grey"
-                      @click="loader = 'loading'"
-                      class="text-center"
-                    >
-                      <v-card-title class="justify-center">Рассрочка</v-card-title>
-                      <v-card-text>
-                        расчет для одной ДТ<br>
-                        (в разработке)
-                      </v-card-text>
-                    </v-card>
+                    <v-card-title class="justify-center">Рассрочка</v-card-title>
+                    <v-card-text>
+                      расчет для одной ДТ<br>
+                      (в разработке)
+                    </v-card-text>
                   </router-link>
-                </v-col>
-                <v-col
-                  cols="12"
-                  md="4">
+                </v-card>
+
+              </v-col>
+              <v-col
+                cols="12"
+                md="4">
+                <v-card
+                  color="grey"
+                  @click="loader = 'loading'"
+                  class="text-center"
+                  height="100%"
+                >
                   <router-link tag="div" to="/">
-                    <v-card
-                      color="grey"
-                      @click="loader = 'loading'"
-                      class="text-center"
-                    >
-                      <v-card-title class="justify-center">Рассрочка</v-card-title>
-                      <v-card-text>
-                        расчет для пакета ДТ<br>
-                        (в разработке)
-                      </v-card-text>
-                    </v-card>
+                    <v-card-title class="justify-center">Рассрочка</v-card-title>
+                    <v-card-text>
+                      расчет для пакета ДТ<br>
+                      (в разработке)
+                    </v-card-text>
                   </router-link>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-item-group>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-container>
 
         </v-card>
       </v-col>

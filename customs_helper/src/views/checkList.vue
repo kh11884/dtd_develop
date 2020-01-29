@@ -1,5 +1,5 @@
 <template>
-  <div class="print">
+  <div class="print" id="print-content">
     <v-row justify="center">
       <v-col cols="12" sm="10" md="7" lg="5">
         <v-card min-width="585" :class="{'green lighten-5': allSelected}">
@@ -123,6 +123,9 @@
         methods: {
             print() {
                 window.print();
+            },
+
+            CallPrint() {
             }
         },
         computed: {
@@ -131,6 +134,8 @@
             }
         }
     }
+
+
 </script>
 
 <style scoped>

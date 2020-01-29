@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customs_helper/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/checkList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/checkList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,14 +199,7 @@
       <workItem from="1579875840748" duration="60000" />
       <workItem from="1579922588198" duration="550000" />
       <workItem from="1579928347976" duration="39376000" />
-      <workItem from="1580186111939" duration="7297000" />
-    </task>
-    <task id="LOCAL-00053" summary="добработана задача PhoneBookServer согласно замечаний 1">
-      <created>1576942968678</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1576942968679</updated>
+      <workItem from="1580186111939" duration="13441000" />
     </task>
     <task id="LOCAL-00054" summary="добработана задача PhoneBookServer согласно замечаний 1">
       <created>1576943055622</created>
@@ -540,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580190566691</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Добавлены кнопки на стартовой странице для всех разделов">
+      <created>1580194317859</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1580194317859</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +581,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Сделана основа для TODOList vuetify&#10;Добавлены иконочные шрифты" />
     <MESSAGE value="Сделана основа для TODOList vuetify&#10;Осталось причесать дизайн" />
     <MESSAGE value="Сделана основа для TODOList vuetify&#10;Немного причесать отображение списка&#10;Добавить vue валидацию" />
     <MESSAGE value="Добавлена задача TODOList vuetify" />
@@ -602,6 +605,7 @@
     <MESSAGE value="Добавлен чек-лист.&#10;Сделать изменение фона листа при выбранных всех чек-боксах" />
     <MESSAGE value="Добавлен чек-лист." />
     <MESSAGE value="В пакетном расчете:&#10;добалено округление входных данных&#10;Добавлена проверка на валидность данных&#10;исправлены опечатки" />
-    <option name="LAST_COMMIT_MESSAGE" value="В пакетном расчете:&#10;добалено округление входных данных&#10;Добавлена проверка на валидность данных&#10;исправлены опечатки" />
+    <MESSAGE value="Добавлены кнопки на стартовой странице для всех разделов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены кнопки на стартовой странице для всех разделов" />
   </component>
 </project>

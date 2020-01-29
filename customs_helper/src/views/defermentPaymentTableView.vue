@@ -1,8 +1,7 @@
-<!--TODO: Сделать большие квадратные кнопки для выбора приложений-->
 <!--TODO: Вынести таблицу для вставки в графу 47 альты в отдельный VUE компонент-->
-<!--TODO: Добавить чек-лист-->
-<!--TODO: Добавить рассчет процентов по отсрочке-->
-<!--TODO: Добавить пакетный рассчет процентов по отсрочке-->
+<!--TODO: Добавить корректныю печать чек-лист-->
+<!--TODO: Добавить рассчет процентов по рассрочке-->
+<!--TODO: Добавить пакетный рассчет процентов по рассрочке-->
 <!--TODO: Добавить проверку изменения ставки рефинансирования-->
 
 
@@ -116,25 +115,28 @@
                     </v-btn>
                   </template>
 
-                  <v-sheet>
-                    <v-simple-table
-                    dense>
-                      <tbody>
-                      <tr v-for="item in resultTable" :key="item.startDate">
-                        <td>5012</td>
-                        <td>{{ item.payment }}</td>
-                        <td>{{item.refinancing_rate}}</td>
-                        <td></td>
-                        <td>{{item.sum}}</td>
-                        <td>ИУ</td>
-                        <td>{{item.days}}</td>
-                        <td></td>
-                        <td></td>
-                        <td>{{item.simpleRate}}</td>
-                      </tr>
-                      </tbody>
-                    </v-simple-table>
-                  </v-sheet>
+                  <v-card>
+                    <v-container>
+                        <v-simple-table
+                          dense
+                          class="p-5">
+                          <tbody>
+                          <tr v-for="item in resultTable" :key="item.startDate">
+                            <td>5012</td>
+                            <td>{{ item.payment }}</td>
+                            <td>{{item.refinancing_rate}}</td>
+                            <td></td>
+                            <td>{{item.sum}}</td>
+                            <td>ИУ</td>
+                            <td>{{item.days}}</td>
+                            <td></td>
+                            <td></td>
+                            <td>{{item.simpleRate}}</td>
+                          </tr>
+                          </tbody>
+                        </v-simple-table>
+                    </v-container>
+                  </v-card>
                 </v-dialog>
               </div>
 
