@@ -189,7 +189,6 @@
                 if (this.isInvalidFirstName || this.isInvalidLastName || this.isInvalidPhoneNumber) {
                     return;
                 }
-
                 const newPhoneNumber = this.newPhoneNumber;
                 this.haveNumber = this.contacts.some(c => {
                     return c.phoneNumber === newPhoneNumber;
@@ -197,7 +196,6 @@
                 if (this.haveNumber) {
                     return;
                 }
-
                 const contact = {
                     firstName: this.newFirstName,
                     lastName: this.newLastName,
@@ -205,7 +203,6 @@
                     mustBeDeleted: false,
                     needShowModal: false
                 };
-
                 PhoneBookService.addContact(contact).done(response => {
                     if (!response.success) {
                         alert(response.message);
@@ -213,7 +210,6 @@
                     }
                     this.loadContacts();
                 });
-
                 this.newFirstName = "";
                 this.newLastName = "";
                 this.newPhoneNumber = "";
@@ -241,7 +237,6 @@
             deleteCheckedContacts() {
                 this.needShowModalForDeleteChecked = false;
                 this.checkAll = false;
-
                 this.saveMustBeDeletedIds();
 
                 PhoneBookService.deleteCheckedContacts(this.checkedContacts).done(response => {

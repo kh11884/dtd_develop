@@ -141,7 +141,7 @@
               </div>
 
               <div class="my-2 ma-2">
-                <span>Последние изменения ключевой ставки используемые для рассчета: {{lastKeyRateDate}} - {{lastKeyRate}}</span>
+                <span>Последние изменения ключевой ставки используемые для расчета: {{lastKeyRateDate}} - {{lastKeyRate}}</span>
               </div>
             </v-row>
 
@@ -155,7 +155,7 @@
           <template v-slot:default>
             <tbody>
             <tr>
-              <td colspan="4" class="font-weight-black">Рассчет процентов за отсрочку таможенного платежа (5010 вид)
+              <td colspan="4" class="font-weight-black">Расчет процентов за отсрочку таможенного платежа (5010 вид)
               </td>
               <td colspan="2" class="font-weight-black">{{computedCloseDate}}</td>
             </tr>

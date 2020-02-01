@@ -2,10 +2,10 @@ const path = require("path");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-    entry: "./frontend/javascripts/webpackPhoneBookScript.js",
+    context: path.resolve(__dirname, "frontend"),
+    entry: "./javascripts/webpackPhoneBookScript.js",
     devtool: "source-map",
     resolve: {
         alias: {
@@ -26,7 +26,13 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|gif|svg|ttf|eot|woff|woff2)$/,
-                use: "file-loader?name=[path][name].[ext]?[hash]"
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        esModule: false,
+                        name: "[path][name].[ext]?[hash]"
+                    }
+                }
             },
             {
                 test: /\.scss$/,
@@ -46,7 +52,8 @@ module.exports = {
                     }
                 }
             },
-            { test: /\.vue$/,
+            {
+                test: /\.vue$/,
                 use: "vue-loader"
             }
         ]
@@ -56,9 +63,6 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "styles.css"
         }),
-        new CopyPlugin([
-            { from: './frontend/images', to: './images' },
-        ]),
         new VueLoaderPlugin()
     ]
 };

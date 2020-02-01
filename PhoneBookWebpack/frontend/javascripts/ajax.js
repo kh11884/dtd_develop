@@ -8,7 +8,6 @@ export default {
             contentType: "application/json"
         });
     },
-
     get(url, data) {
         return $.get(url, data);
     }

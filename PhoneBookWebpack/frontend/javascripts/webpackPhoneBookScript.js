@@ -1,10 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css"
 import "../stylesheets/style.scss";
-
-import $ from "jquery";
 import Vue from "vue";
 import "bootstrap";
-
 import PhoneBook from "./phoneBook.vue";
 
 new Vue({
