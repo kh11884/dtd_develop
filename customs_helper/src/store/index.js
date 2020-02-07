@@ -262,11 +262,14 @@ function getRefinancingRateHistory() {
     {
       startDate: new Date("10/28/2019"),
       refinancing_rate: 0.065,
-    }
-    ,
+    },
     {
       startDate: new Date("12/16/2019"),
       refinancing_rate: 0.0625,
+    },
+    {
+      startDate: new Date("02/10/2020"),
+      refinancing_rate: 0.06,
     }
   ];
 }

@@ -78,7 +78,10 @@
 
       <v-spacer></v-spacer>
 
-      <v-sheet min-width="585" elevation="4" class="mt-3" v-show="showTable">
+      <v-card v-if="showTable" min-width="620" elevation="4" class="mt-3" justify="center">
+        <div class="pt-5 pl-5">
+        </div>
+
         <v-data-table
           :headers="headTable"
           :items="outputTable"
@@ -88,7 +91,8 @@
           :items-per-page="rows"
         >
         </v-data-table>
-      </v-sheet>
+
+      </v-card>
 
 
     </v-col>

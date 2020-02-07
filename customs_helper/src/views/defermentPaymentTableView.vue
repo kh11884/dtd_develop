@@ -1,3 +1,4 @@
+<!--TODO: Доработать кнопки копирования в буфер-->
 <!--TODO: Вынести таблицу для вставки в графу 47 альты в отдельный VUE компонент-->
 <!--TODO: Добавить корректныю печать чек-лист-->
 <!--TODO: Добавить рассчет процентов по рассрочке-->
@@ -8,7 +9,7 @@
 <template>
   <v-row justify="center">
     <v-col cols="12" sm="10" md="7" lg="5">
-      <v-card min-width="585" class="d-print-none">
+      <v-card min-width="600" class="d-print-none">
         <v-container class="pt-0">
           <v-row>
             <v-col>
@@ -116,43 +117,61 @@
                   </template>
 
                   <v-card>
-                    <v-container>
-                        <v-simple-table
-                          dense
-                          class="p-5">
-                          <tbody>
-                          <tr v-for="item in resultTable" :key="item.startDate">
-                            <td>5012</td>
-                            <td>{{ item.payment }}</td>
-                            <td>{{item.refinancing_rate}}</td>
-                            <td></td>
-                            <td>{{item.sum}}</td>
-                            <td>ИУ</td>
-                            <td>{{item.days}}</td>
-                            <td></td>
-                            <td></td>
-                            <td>{{item.simpleRate}}</td>
-                          </tr>
-                          </tbody>
-                        </v-simple-table>
+                    <div class="pt-5 pl-5">
+<!--          Доработать кнопки копирования в буфер-->
+<!--                      <v-chip-->
+<!--                        color="default"-->
+<!--                        @click="copyGraph47Table()"-->
+<!--                      >Копировать в буфер-->
+<!--                      </v-chip>-->
+                    </div>
+
+                    <v-container id="graph47Table">
+                      <v-simple-table
+                        dense
+                        class="p-5">
+                        <tbody>
+                        <tr v-for="item in resultTable" :key="item.startDate">
+                          <td>5012</td>
+                          <td>{{ item.payment }}</td>
+                          <td>{{item.refinancing_rate}}</td>
+                          <td></td>
+                          <td>{{item.sum}}</td>
+                          <td>ИУ</td>
+                          <td>{{item.days}}</td>
+                          <td></td>
+                          <td></td>
+                          <td>{{item.simpleRate}}</td>
+                        </tr>
+                        </tbody>
+                      </v-simple-table>
                     </v-container>
                   </v-card>
                 </v-dialog>
               </div>
-
               <div class="my-2 ma-2">
                 <span>Последние изменения ключевой ставки используемые для расчета: {{lastKeyRateDate}} - {{lastKeyRate}}</span>
               </div>
             </v-row>
-
           </v-card-text>
         </v-container>
       </v-card>
       <v-spacer></v-spacer>
 
-      <v-sheet v-if="isCalced" min-width="585" elevation="4" class="mt-3">
-        <v-simple-table>
-          <template v-slot:default>
+      <v-card v-if="isCalced" min-width="620" elevation="4" class="mt-3" justify="center">
+        <div class="pt-5 pl-5">
+<!--          Доработать кнопки копирования в буфер-->
+<!--          <v-chip-->
+<!--            color="default"-->
+<!--            @click="copyPrimaryTable()"-->
+<!--          >Копировать в буфер-->
+<!--          </v-chip>-->
+        </div>
+
+        <v-container id="primaryTable">
+          <v-simple-table
+            dense
+            class="p-5">
             <tbody>
             <tr>
               <td colspan="4" class="font-weight-black">Расчет процентов за отсрочку таможенного платежа (5010 вид)
@@ -185,9 +204,9 @@
               <td>{{item.sum}}</td>
             </tr>
             </tbody>
-          </template>
-        </v-simple-table>
-      </v-sheet>
+          </v-simple-table>
+        </v-container>
+      </v-card>
     </v-col>
 
   </v-row>
@@ -244,6 +263,9 @@
                 isInvalidClosedDateMessage: "",
                 isInvalidUNPaymentMessage: "",
                 isCalced: false,
+                overlayPrimaryTable: false,
+                overlayGraph47Table: false,
+                showSnackbar: false
             }
         },
         computed: {
@@ -293,6 +315,35 @@
                 this.issuedDate = "";
                 this.closedDate = moment(new Date()).format().substring(0, 10);
                 this.UNpayment = "";
+            },
+            copyPrimaryTable: function () {
+                //нашли наш контейнер
+                var primaryTableToBuffer = document.getElementById("primaryTable");
+                this.copyToBufer(primaryTableToBuffer);
+                alert("скопировано");
+            },
+            // copyGraph47Table: function () {
+            //     //нашли наш контейнер
+            //     var graph47TableToBuffer = document.getElementById("graph47Table");
+            //
+            //     this.copyToBufer(graph47TableToBuffer);
+            // },
+
+            copyToBufer: function (tableToBuffer) {
+
+                //производим его выделение
+                var range = document.createRange();
+                range.selectNode(tableToBuffer);
+                window.getSelection().addRange(range);
+
+                //пытаемся скопировать текст в буфер обмена
+                try {
+                    document.execCommand('copy');
+                } catch(err) {
+                    console.log('Can`t copy, boss');
+                }
+                //очистим выделение текста, чтобы пользователь "не парился"
+                window.getSelection().removeAllRanges();
             },
         }
     }
