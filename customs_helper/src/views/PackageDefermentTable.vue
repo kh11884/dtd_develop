@@ -57,7 +57,7 @@
                 <v-btn
                   color="primary"
                   @click="calc"
-                >расчитать
+                >рассчитать
                 </v-btn>
               </div>
               <div class="my-2 ma-2">

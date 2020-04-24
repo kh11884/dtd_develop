@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customs_helper/src/views/PackageDefermentTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/PackageDefermentTable.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/defermentPaymentTableView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/NewTodo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/NewTodo.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,10 +43,10 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578044598901" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PhoneBookSpring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.42415315" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -205,14 +204,9 @@
       <workItem from="1581003354680" duration="7620000" />
       <workItem from="1581095407719" duration="1099000" />
       <workItem from="1581096526194" duration="267000" />
-      <workItem from="1581097181887" duration="2702000" />
-    </task>
-    <task id="LOCAL-00056" summary="Добавлена версия задачи WebPackPhoneBook без подгрузки картинки из без бабель.">
-      <created>1577181564972</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1577181564972</updated>
+      <workItem from="1581097181887" duration="4340000" />
+      <workItem from="1587479047150" duration="23000" />
+      <workItem from="1587738569851" duration="673000" />
     </task>
     <task id="LOCAL-00057" summary="Добавлена версия задачи WebPackPhoneBook&#10;Нужно настроить:&#10;• Однофайловые Vue компоненты&#10;• Babel и переписать код на ES 2015&#10;• SCSS">
       <created>1577185431569</created>
@@ -550,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580535542237</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Добавлена ставка 6% от 10 фев 2020">
+      <created>1581099992305</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1581099992306</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +588,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Сделана основа для TODOList vuetify&#10;Немного причесать отображение списка&#10;Добавить vue валидацию" />
     <MESSAGE value="Добавлена задача TODOList vuetify" />
     <MESSAGE value="В папке vf-test сделан процентный калькулятор на vuetify" />
     <MESSAGE value="В папке customs-helper сделан скелет на шаблоне vuetify&#10;После изучения серверного веба пробовать собрать проект" />
@@ -612,6 +612,7 @@
     <MESSAGE value="В пакетном расчете:&#10;добалено округление входных данных&#10;Добавлена проверка на валидность данных&#10;исправлены опечатки" />
     <MESSAGE value="Добавлены кнопки на стартовой странице для всех разделов" />
     <MESSAGE value="Исправлена задача PhoneBookWebpack согласно замечаний 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправлена задача PhoneBookWebpack согласно замечаний 2" />
+    <MESSAGE value="Добавлена ставка 6% от 10 фев 2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена ставка 6% от 10 фев 2020" />
   </component>
 </project>

@@ -48,11 +48,11 @@
             },
             validate() {
                 if (this.newTodoText === "") {
-                    this.isInvalid = true;
+                     this.isInvalid = true;
                     this.errorMessage = "Заполните поле";
                     return;
                 }
-                this.isInvalid = false;
+                 this.isInvalid = false;
                 this.errorMessage = "";
             }
         }
