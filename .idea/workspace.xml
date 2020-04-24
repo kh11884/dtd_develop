@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customs_helper/src/views/PackageDefermentTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/customs_helper/src/views/PackageDefermentTable.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/NewTodo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuetify_todolist/src/views/NewTodo.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,11 +80,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.build">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AcademITScoool_ClientWEB/vuetify_todolist/dist/index.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="page2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AcademITScoool_ClientWEB/Html/page2.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="npm.build (1)">
+    <configuration name="build (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/customs_helper/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -109,6 +111,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/customs_helper/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/PhoneBookWebpack/package.json" />
       <command value="run" />
@@ -121,6 +133,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build (1)" />
+        <item itemvalue="npm.serve" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.watch" />
@@ -206,14 +220,7 @@
       <workItem from="1581096526194" duration="267000" />
       <workItem from="1581097181887" duration="4340000" />
       <workItem from="1587479047150" duration="23000" />
-      <workItem from="1587738569851" duration="673000" />
-    </task>
-    <task id="LOCAL-00057" summary="Добавлена версия задачи WebPackPhoneBook&#10;Нужно настроить:&#10;• Однофайловые Vue компоненты&#10;• Babel и переписать код на ES 2015&#10;• SCSS">
-      <created>1577185431569</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1577185431569</updated>
+      <workItem from="1587738569851" duration="933000" />
     </task>
     <task id="LOCAL-00058" summary="задача PhoneBookServer&#10;нужно найти способ обратиться к свойству после get запроса">
       <created>1577232297994</created>
@@ -551,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581099992306</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="Добавлена ставка 6% от 10 фев 2020">
+      <created>1587740518609</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1587740518609</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -270,6 +270,10 @@ function getRefinancingRateHistory() {
     {
       startDate: new Date("02/10/2020"),
       refinancing_rate: 0.06,
+    },
+    {
+      startDate: new Date("04/27/2020"),
+      refinancing_rate: 0.055,
     }
   ];
 }
