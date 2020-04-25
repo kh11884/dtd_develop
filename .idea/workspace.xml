@@ -3,6 +3,171 @@
   <component name="ChangeListManager">
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/Html.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/src/page1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Html/src/page2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSArrays/JSArrays.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSArrays/src/arrays.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSArrays/src/arrays.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSObjects/JSObjects.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSObjects/src/objects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSObjects/src/objects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/PercentCalculation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/calc_pack.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/js/calc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/js/calc_for_ED2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/js/calc_pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/js/inputData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/js/jquery-3.4.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/js/refinancingRateHistory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/js/underscore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PercentCalculation/src/page_for_ED2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/PhoneBookJQuery.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/PhoneBook_ jQuery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/icons/remove_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookJQuery/src/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/bin/www" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/public/images/remove_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/public/javascripts/serverPhoneBookScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/public/libs/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/public/libs/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/public/libs/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/public/libs/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/public/stylesheets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/views/error.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/views/index.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookServer/views/layout.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookVue/PhoneBookVue.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookVue/src/PhoneBookVue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookVue/src/css/vuePhoneBookStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookVue/src/icons/remove_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookVue/src/js/vuePhoneBookScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookVue/src/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookVue/src/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/bin/www" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/frontend/images/remove_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/PhoneBook.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/phoneBookService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/frontend/javascripts/webpackPhoneBookScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/frontend/stylesheets/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/views/error.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/views/index.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/views/layout.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneBookWebpack/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemperatureConverter/TemperatureConverter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemperatureConverter/src/TemperatureConverter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemperatureConverter/src/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemperatureConverter/src/css/temperatureConverterStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemperatureConverter/src/icons/icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TemperatureConverter/src/js/temperatureConverter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/TodoList Bootstrap.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/TodoList Bootstrap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/css/todoListStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/icons/cancel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/icons/editing_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/icons/ok_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/icons/remove_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/js/todoListScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList Bootstrap/src/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList JQuery/TodoList JQuery.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList JQuery/src/TodoList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList JQuery/src/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList JQuery/src/css/todoListStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList JQuery/src/icons/cancel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList JQuery/src/icons/editing_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList JQuery/src/icons/ok_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList JQuery/src/icons/remove_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList JQuery/src/js/todoListScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList JQuery/src/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList JQuery/src/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/TodoList.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/TodoList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/css/todoListStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/icons/cancel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/icons/editing_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/icons/ok_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/icons/remove_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/js/todoListScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/TodoListVue.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/src/TodoListVue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/src/css/todoListVueStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/src/icons/cancel_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/src/icons/editing_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/src/icons/ok_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/src/icons/remove_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/src/js/todoListScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/src/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoListVue/src/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Underscore/Underscore.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Underscore/src/js/underscore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Underscore/src/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Underscore/src/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Underscore/src/underscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/assets/vesna.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/plugins/vuetify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/views/About.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/views/Home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/views/defermentPaymentTableView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/src/views/percentCalculationTable.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vf_test/vue.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/plugins/vuetify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/ListItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/NewTodo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/src/views/TodoList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuetify_todolist/vue.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,14 +381,7 @@
       <workItem from="1581097181887" duration="4340000" />
       <workItem from="1587479047150" duration="23000" />
       <workItem from="1587738569851" duration="933000" />
-      <workItem from="1587782361449" duration="789000" />
-    </task>
-    <task id="LOCAL-00058" summary="задача PhoneBookServer&#10;нужно найти способ обратиться к свойству после get запроса">
-      <created>1577232297994</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1577232297995</updated>
+      <workItem from="1587782361449" duration="1095000" />
     </task>
     <task id="LOCAL-00059" summary="задача PhoneBookServer&#10;вариант с синхронным ajax">
       <created>1577334114581</created>
@@ -561,7 +719,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587740518609</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="выделение проекта в отдельный репозиторий">
+      <created>1587783271279</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1587783271279</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,7 +763,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлена задача TODOList vuetify" />
     <MESSAGE value="В папке vf-test сделан процентный калькулятор на vuetify" />
     <MESSAGE value="В папке customs-helper сделан скелет на шаблоне vuetify&#10;После изучения серверного веба пробовать собрать проект" />
     <MESSAGE value="Добавлены рассчеты процентов за отсрочку" />
@@ -623,9 +787,14 @@
     <MESSAGE value="Добавлены кнопки на стартовой странице для всех разделов" />
     <MESSAGE value="Исправлена задача PhoneBookWebpack согласно замечаний 2" />
     <MESSAGE value="Добавлена ставка 6% от 10 фев 2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена ставка 6% от 10 фев 2020" />
+    <MESSAGE value="выделение проекта в отдельный репозиторий" />
+    <option name="LAST_COMMIT_MESSAGE" value="выделение проекта в отдельный репозиторий" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="210" y="0" key="CommitChangelistDialog2" timestamp="1587783269607">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="210" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587783269607" />
     <state x="489" y="240" key="Github.ShareDialog" timestamp="1587782544195">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -646,5 +815,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587782815407" />
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1587783278664">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1587783278664" />
   </component>
 </project>

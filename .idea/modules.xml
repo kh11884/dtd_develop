@@ -4,18 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/1_forTest/1_forTest.iml" filepath="$PROJECT_DIR$/1_forTest/1_forTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/AcademITScoool_ClientWEB.iml" filepath="$PROJECT_DIR$/.idea/AcademITScoool_ClientWEB.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Html/Html.iml" filepath="$PROJECT_DIR$/Html/Html.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JSArrays/JSArrays.iml" filepath="$PROJECT_DIR$/JSArrays/JSArrays.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JSObjects/JSObjects.iml" filepath="$PROJECT_DIR$/JSObjects/JSObjects.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PercentCalculation/PercentCalculation.iml" filepath="$PROJECT_DIR$/PercentCalculation/PercentCalculation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PhoneBookJQuery/PhoneBookJQuery.iml" filepath="$PROJECT_DIR$/PhoneBookJQuery/PhoneBookJQuery.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PhoneBookVue/PhoneBookVue.iml" filepath="$PROJECT_DIR$/PhoneBookVue/PhoneBookVue.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TemperatureConverter/TemperatureConverter.iml" filepath="$PROJECT_DIR$/TemperatureConverter/TemperatureConverter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TodoList/TodoList.iml" filepath="$PROJECT_DIR$/TodoList/TodoList.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TodoList Bootstrap/TodoList Bootstrap.iml" filepath="$PROJECT_DIR$/TodoList Bootstrap/TodoList Bootstrap.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TodoList JQuery/TodoList JQuery.iml" filepath="$PROJECT_DIR$/TodoList JQuery/TodoList JQuery.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TodoListVue/TodoListVue.iml" filepath="$PROJECT_DIR$/TodoListVue/TodoListVue.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Underscore/Underscore.iml" filepath="$PROJECT_DIR$/Underscore/Underscore.iml" />
     </modules>
   </component>
 </project>
