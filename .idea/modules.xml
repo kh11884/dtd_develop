@@ -4,9 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/1_forTest/1_forTest.iml" filepath="$PROJECT_DIR$/1_forTest/1_forTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/AcademITScoool_ClientWEB.iml" filepath="$PROJECT_DIR$/.idea/AcademITScoool_ClientWEB.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CSSForm/CSSForm.iml" filepath="$PROJECT_DIR$/CSSForm/CSSForm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CSSTable/CSSTable.iml" filepath="$PROJECT_DIR$/CSSTable/CSSTable.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CSSText/CSSText.iml" filepath="$PROJECT_DIR$/CSSText/CSSText.iml" />
       <module fileurl="file://$PROJECT_DIR$/Html/Html.iml" filepath="$PROJECT_DIR$/Html/Html.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSArrays/JSArrays.iml" filepath="$PROJECT_DIR$/JSArrays/JSArrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSObjects/JSObjects.iml" filepath="$PROJECT_DIR$/JSObjects/JSObjects.iml" />

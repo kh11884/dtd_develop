@@ -4,7 +4,6 @@
     <list default="true" id="d13483db-46e7-4c4e-a884-0e8741ca9f6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,14 +31,20 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578044598901" />
-    <property name="javascript.nodejs.core.library.configured.version" value="12.13.0" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.13.1" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -68,19 +73,7 @@
       <recent name="C:\Users\User\IdeaProjects\AcademITScoool_ClientWEB\customs_helper\public" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="npm.build (1)">
+  <component name="RunManager" selected="npm.serve">
     <configuration name="build (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/customs_helper/package.json" />
       <command value="run" />
@@ -133,8 +126,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build (1)" />
         <item itemvalue="npm.serve" />
+        <item itemvalue="npm.build (1)" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.watch" />
@@ -142,13 +135,15 @@
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand />
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -221,6 +216,7 @@
       <workItem from="1581097181887" duration="4340000" />
       <workItem from="1587479047150" duration="23000" />
       <workItem from="1587738569851" duration="933000" />
+      <workItem from="1587782361449" duration="789000" />
     </task>
     <task id="LOCAL-00058" summary="задача PhoneBookServer&#10;нужно найти способ обратиться к свойству после get запроса">
       <created>1577232297994</created>
@@ -628,5 +624,27 @@
     <MESSAGE value="Исправлена задача PhoneBookWebpack согласно замечаний 2" />
     <MESSAGE value="Добавлена ставка 6% от 10 фев 2020" />
     <option name="LAST_COMMIT_MESSAGE" value="Добавлена ставка 6% от 10 фев 2020" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="489" y="240" key="Github.ShareDialog" timestamp="1587782544195">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="489" y="240" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1587782544195" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1587782815407">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587782815407" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1587782815407">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587782815407" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1587782815407">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587782815407" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1587782815407">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587782815407" />
   </component>
 </project>
